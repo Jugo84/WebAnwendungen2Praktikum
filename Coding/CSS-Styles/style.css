@@ -1,0 +1,48 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.gap{
+  height: 110px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.caption{
+  color: white;
+  text-shadow: 0 0 5px black;
+  padding: 5px;
+}
+
+.whiteColor{
+  color: white;
+}
+
+.whiteLink{
+  color: white;
+}
+
+.whiteLink:hover{
+  color: rgb(0, 123, 255);
+  text-decoration: none;
+}
