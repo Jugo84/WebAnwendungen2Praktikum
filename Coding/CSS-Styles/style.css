@@ -9,8 +9,6 @@ html {
 
 .container {
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .pricing-header {
@@ -49,7 +47,10 @@ html {
   text-decoration: none;
 }
 
-.footer {
-  position: fixed;
+#header_shop{
+  margin: 30px;
+}
 
+select{
+  margin-bottom: 30px;
 }
