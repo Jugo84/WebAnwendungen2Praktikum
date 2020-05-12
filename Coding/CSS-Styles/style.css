@@ -7,6 +7,20 @@ html {
   }
 }
 
+main{
+  min-height: 50em;
+}
+
+body{
+  background-image: url('../Bilder/cinema.jpg');
+  height: 100%;
+  width: 100%;
+  margin-top: 2%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
   max-width: 960px;
 }
