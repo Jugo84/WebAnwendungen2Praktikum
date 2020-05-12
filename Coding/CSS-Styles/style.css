@@ -54,3 +54,84 @@ html {
 select{
   margin-bottom: 30px;
 }
+
+/*  Style for kinosaal.html */ 
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.background-image{
+  background-image: url("../Bilder/kino-leinwand.jpg");
+  height: 100%;
+  width: 100%;
+  margin-top: 2%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-sits{
+  background-image: url("../Bilder/sitze-footer-1.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -200px;
+}
+
+.card-ticket-input{
+  background-color: rgba(0, 0, 0, .0);
+  color: white;
+  height: 50%;
+  width: 50%;
+}
+.card-form{
+  margin-top: 40%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+video {
+  outline: none;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.goToChat{
+  margin-left: auto;
+  margin-right: 5%;
+  width: 20%;
+}
+
+.chat_video{
+  float: left;
+  margin-left: 0%;
+}
+
+.chatBox{
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.messageLeft{
+  padding-left: 10px;
+  height: 10px;
+}
+
+.personName{
+  float: left;
+}
+
+.messageTime{
+  margin-right: 0px;
+}
+
+div.row.messageText p{
+  padding-top: -10px;
+  padding-left: 10px;
+}
