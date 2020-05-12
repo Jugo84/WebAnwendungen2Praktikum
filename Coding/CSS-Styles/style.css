@@ -135,3 +135,10 @@ div.row.messageText p{
   padding-top: -10px;
   padding-left: 10px;
 }
+
+
+/* Style für impressum */
+
+.impressum{
+  margin-left: auto;
+}
