@@ -38,6 +38,10 @@ body{
   height: 110px;
 }
 
+#home_container{
+  margin-top: 100px;
+}
+
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
@@ -154,7 +158,12 @@ div.row.messageText p{
 
 /* Style für impressum */
 
-.impressum{
+.background_white{
   margin-left: auto;
   background-color: white;
+}
+
+.footer_row{
+  margin-left: 0px;
+  margin-right: 0px;
 }
