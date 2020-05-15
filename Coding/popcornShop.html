@@ -13,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="./CSS-Styles/style.css" rel="stylesheet">
+    <link href="./CSS-Styles/stylePopcornShop.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./Javascript/functionality.js"></script>
   </head>
@@ -48,21 +49,15 @@
         <div class="card mb-12 box-shadow">
           <div class="card-body text-center">
             <h4 id="header_shop"><i>Lassen Sie sich Popcorn und andere Snacks zuliefern und fühlen sie sich wie im echten Kino!</i></h4>
-            <select class="form-control">
-              <option>Kino auswählen</option>
-              <option>Capitol Albstadt</option>
-              <option>Capitol Hechingen</option>
-              <option>Kinopalast Balingen</option>
-            </select>
             <div class="row">
               <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Popcorn</li>
-                    <li class="list-group-item">Nachos</li>
-                    <li class="list-group-item">Süßes</li>
-                    <li class="list-group-item">Andere Snacks</li>
-                    <li class="list-group-item">Getränke</li>
+                    <li type="button" class="p-3 btn list-group-item PopcornButton">Popcorn</li>
+                    <li type="button" class="p-3 btn list-group-item PopcornButton">Nachos</li>
+                    <li type="button" class="p-3 btn list-group-item PopcornButton">Süßes</li>
+                    <li type="button" class="p-3 btn list-group-item PopcornButton">Andere Snacks</li>
+                    <li type="button" class="p-3 btn list-group-item PopcornButton">Getränke</li>
                   </ul>
                 </div>
               </div>
@@ -77,10 +72,10 @@
                         <img class="d-block w-100" src="Bilder\popcorn.jpg" alt="Popcorn">
                       </div>
                       <div class="col-md-8 text-left">
-                        <span>Inhalt 100 g / 2 Ltr.Inhalt. 36,5 x 15,5 cm, recyclebares Polyäthylen. Alle Artikelmerkmale auf einen Blick Material Poly Größe 15,5 x 36,5 cm Volumen 100 g Popcorn Motiv ...</span>
+                        <span>Die Extraportion Puffmais. Das Cinema Popcorn ist der leckere Knabberspaß für Groß und Klein. Das gezuckerte Popcorn kommt im extragroßen  wiederverschließbaren Eimer daher. Mit seiner Höhe von ca. 18 cm und einem Durchmesser von ca. 22 cm übersteht dieser Riese jeden Fernsehspaß mit Bravour. Ob mit Freunden oder allein: Dieser Knabberspaß zaubert Ihnen ein Lächeln auf die Lippen.</span>
                         <div class="row">
                           <div class="col-md-6">
-                            <select class="form-control">
+                            <select class="mt-4 mb-0 form-control">
                               <option>klein</option>
                               <option>mittel</option>
                               <option>groß</option>
@@ -88,7 +83,7 @@
                             </select>
                           </div>
                           <div class="col-md-6">
-                            <button class="btn btn-md btn-block btn-outline-primary" type="button">In den Warenkorb</button>
+                            <button class="mt-4 mb-0 btn btn-md btn-block btn-outline-primary" type="button">In den Warenkorb</button>
                           </div>
                         </div>
                         
