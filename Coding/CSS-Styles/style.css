@@ -167,3 +167,62 @@ div.row.messageText p{
   margin-left: 0px;
   margin-right: 0px;
 }
+
+
+/*Style für Warenkorb*/
+
+
+.checkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox_container input{
+  display:none;
+}
+.checkboxWarenkorb {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkbox_container:hover input ~ .checkboxWarenkorb {
+  background-color: #ccc;
+}
+.checkbox_container input:checked ~ .checkboxWarenkorb {
+  background-color: #2196F3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkboxWarenkorb :after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox_container input:checked ~ .checkboxWarenkorb:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox_container .checkboxWarenkorb:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
