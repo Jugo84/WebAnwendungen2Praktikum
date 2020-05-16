@@ -1,0 +1,55 @@
+video::-webkit-media-controls-play-button, video::-webkit-media-controls-volume-slider {
+	display: none;
+}
+
+video::-webkit-media-controls-timeline {
+	display: none;
+}
+
+.card.messageRight{
+    margin: 5px;
+    float: right;
+    padding: 5px;
+    text-align: left;
+    width: 60%;
+}
+.messageLeft{
+    margin: 5px;
+    float: left;
+    padding: 5px;
+    text-align: left;
+    width: 60%;
+}
+div.header{
+    padding: 5px;
+}
+div.body{
+    padding: 5px;
+}
+
+#videoAndChat{
+    position: relative;
+}
+#sendMessageBox{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+}
+#messageInputContainer{
+    float: left;
+}
+#sendMessageContainer{
+    margin-left: 5px;
+}
+#chat{
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+#wholeChatBox{
+    background-color: rgba(0, 0, 0, .7);
+}

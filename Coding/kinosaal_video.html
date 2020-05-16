@@ -13,8 +13,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="./CSS-Styles/style.css" rel="stylesheet">
+    <link href="./CSS-Styles/kinosaal_style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./Javascript/functionality.js"></script>
+    <script src="./Javascript/kinosaal_functionality.js"></script>
   </head>
 
   <body data-gr-c-s-loaded="true">
@@ -43,11 +45,25 @@
     </nav>
     
     <div class="background-image text-center">
-      <div class="container text-center">
-        <video controls>
-          <source src="Videos/Ruf_der_Wildnis.mp4" type="video/mp4">
-        </video>
-        <a type="button" class="btn btn-lg btn-block btn-outline-primary goToChat" href="kinosaal_chat.html">Chat</a>
+      <div class="row" id="videoAndChat">
+        <div class="col-sm-9" id="video_container">
+          <video controls id="video">
+            <source src="Videos/Ruf_der_Wildnis.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-sm-3 text-center" id="wholeChatBox">
+          <div id="chat">
+
+          </div>
+          <div id="sendMessageBox">
+            <div id="messageInputContainer">
+              <input id="messageInput">
+            </div>
+            <div id="sendMessageContainer">
+              <button id="sendMessage" class="btn btn-lg btn-block btn-outline-primary">Senden</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="background-sits"></div>

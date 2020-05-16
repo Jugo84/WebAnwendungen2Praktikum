@@ -81,8 +81,8 @@ body, html {
   margin: 0;
 }
 
-.background-image{
-  
+#videoAndChat{
+  margin-top: 60px;
 }
 
 .background-sits{
@@ -130,25 +130,6 @@ video {
   height: 100%;
   margin-top: 50px;
 }
-
-.messageLeft{
-  padding-left: 10px;
-  height: 10px;
-}
-
-.personName{
-  float: left;
-}
-
-.messageTime{
-  margin-right: 0px;
-}
-
-div.row.messageText p{
-  padding-top: -10px;
-  padding-left: 10px;
-}
-
 
 /* Style für impressum */
 
