@@ -5,6 +5,10 @@ window.onload = function() {
     video.muted = true;
     video.play();
 
+    video.onpause = function() {
+        video.play();
+    };
+
     // chat functionality
     // var videoBox = this.document.getElementById("video_container");
     // var chatButton = document.getElementById("chatButton");
