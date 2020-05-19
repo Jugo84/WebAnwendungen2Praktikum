@@ -15,6 +15,7 @@
     <link href="./CSS-Styles/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./Javascript/functionality.js"></script>
+    <script src="./Javascript/Warenkorb.js"></script>
   </head>
 
   <body data-gr-c-s-loaded="true">
@@ -72,20 +73,38 @@
                                   <tr>
                                       <th scope="row">1</th>
                                       <td>Der Ruf der Wildnis</td>
-                                      <td>2</td>
+                                      <td><input type="number" min="0" value="10" class="warenkorb_numbertype"></input></td>
                                       <td>24€</td>
                                   </tr>
                                   <tr>
                                       <th scope="row">2</th>
                                       <td>Das perfekte Geheimnis</td>
-                                      <td>10</td>
+                                      <td><input type="number" min="0" value="10" class="warenkorb_numbertype"></input></td>
                                       <td>120€</td>
                                   </tr>
                                   <tr>
                                       <th scope="row">3</th>
                                       <td>Popcorn</td>
-                                      <td>100</td>
+                                      <td><input type="number" min="0" value="10" class="warenkorb_numbertype"></input></td>
                                       <td>300€</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td><strong>Summe</strong></td>
+                                    <td>135,45€</td>
+                                </tr>
+                                  <tr>
+                                      <th scope="row"></th>
+                                      <td></td>
+                                      <td><strong>Mehrwertsteuer 13% </strong></td>
+                                      <td>15€</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row"></th>
+                                      <td></td>
+                                      <td><strong>Summe</strong></td>
+                                      <td>150,45€</td>
                                   </tr>
                                   </tbody>
                               </table>
@@ -99,10 +118,7 @@
                                   </select>
                               </div>
                               <div class="col-md-4">
-                                  <label class="checkbox_container">Geschenk
-                                      <input type="checkbox" >
-                                      <span class="checkboxWarenkorb"></span>
-                                  </label>
+                                <button class="btn btn-md btn-block btn-outline-primary" data-target="#zumVerschenkenModal" data-toggle="modal">Zum Verschenken</button>
                               </div>
                               <div class="col-md-4">
                                   <a href="kasse.html" class="btn btn-md btn-block btn-outline-primary" type="button">Zum Bezahlen</a>
@@ -145,8 +161,36 @@
               </div>
           </div>
         </div>
-      </div><br>
-      
+      </div>
+      <div id="zumVerschenkenModal" class="modal fade show" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"><i>Mache deinem Freund eine freude und schenke ihm ein einzigartiges Kinoerlebnis</i></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form class="form">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="name">Email:</label>
+                  <input class="form-control" type="text" id="name" name="name" />
+                </div>
+                <div class="form-group">
+                  <label for="text">optionaler Text</label>
+                  <textarea class="form-control" name="text" id="text" placeholder="schreibe hier dem/der Glücklichen einen persönlichen Text"></textarea>
+                </div>
+              </div>
+            </form>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Abbrechen</button>
+              <button type="button" class="btn btn-primary" id="createEntryButton">Eintrag hinzufügen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
     </main>
 
     
