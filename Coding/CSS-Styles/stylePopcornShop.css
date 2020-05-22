@@ -1,4 +1,17 @@
+.PopcornButton{
+    height: 60px;
+    border-color: rgba(0,0,0,.125);
+    background-color: rgba(0,0,0,.03);
+    margin-bottom: 1px;
+}
 .PopcornButton:hover{
     background-color: gray;
+    color: white;
+}
+.dropdown-menu{
+    background-color: gray;
+}
+
+.dropdown-item{
     color: white;
 }
