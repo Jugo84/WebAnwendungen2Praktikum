@@ -51,14 +51,39 @@
             <h4 id="header_shop"><i>Lassen Sie sich Popcorn und andere Snacks zuliefern und fühlen sie sich wie im echten Kino!</i></h4>
             <div class="row">
               <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                  <ul class="list-group list-group-flush">
-                    <li type="button" class="p-3 btn list-group-item PopcornButton">Popcorn</li>
-                    <li type="button" class="p-3 btn list-group-item PopcornButton">Nachos</li>
-                    <li type="button" class="p-3 btn list-group-item PopcornButton">Süßes</li>
-                    <li type="button" class="p-3 btn list-group-item PopcornButton">Andere Snacks</li>
-                    <li type="button" class="p-3 btn list-group-item PopcornButton">Getränke</li>
-                  </ul>
+                <div class="btn-block btn-group-vertical">
+                  <button type="button" class="btn PopcornButton">Popcorn</button>
+                  <button type="button" class="btn PopcornButton">Nachos</button>
+                  <div class="btn-group dropright">
+                    <button type="button" class="btn PopcornButton dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Süßes
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Haribo</a>
+                      <a class="dropdown-item" href="#">Schokolade</a>
+                      <a class="dropdown-item" href="#">Smarties</a>
+                    </div>
+                  </div>
+                  <div class="btn-group dropright">
+                    <button type="button" class="btn PopcornButton dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Andere Snacks
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Chips</a>
+                      <a class="dropdown-item" href="#">Erdnüsse</a>
+                    </div>
+                  </div>
+                  <div class="btn-group dropright">
+                    <button type="button" class="btn PopcornButton dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Getränke
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Cola</a>
+                      <a class="dropdown-item" href="#">Sprite</a>
+                      <a class="dropdown-item" href="#">Fanta</a>
+                      <a class="dropdown-item" href="#">Bier</a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-8">
@@ -83,11 +108,9 @@
                             </select>
                           </div>
                           <div class="col-md-6">
-                            <button class="mt-4 mb-0 btn btn-md btn-block btn-outline-primary" type="button">In den Warenkorb</button>
+                            <button class="mt-4 mb-0 btn btn-md btn-block btn-outline-primary" type="button" data-toggle="modal" data-target="#exampleModal">In den Warenkorb</button>
                           </div>
                         </div>
-                        
-                        
                       </div>
                     </div>
                   </div>
@@ -137,5 +160,25 @@
         <a class="whiteLink" href="Impressum.html" target="blank">Impressum</a>
       </div>
     </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Bestellung hinzugefügt!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Sie haben Ihre Bestellung dem Warenkorb hinzugefügt. Sehen Sie sich jetzt Ihre Bestellübersicht an oder shoppen Sie noch weiter!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-md  btn-outline-primary" data-dismiss="modal">weitershoppen</button>
+            <a href="warenkorb.html"type="button" class="btn btn-md btn-outline-primary">zum Warenkorb</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
