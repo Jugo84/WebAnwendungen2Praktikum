@@ -1,0 +1,1 @@
+INSERT INTO Film (Titel,Beschreibung,Genre,Trailer,VorstellungsID,FSK,Dauer,Coverpfad,Videopfad) VALUES ('Ruf der Wildnis','dd','Drama','https://www.youtube.com/embed/n-MB85CBVv4',1,12,100,' ','');
