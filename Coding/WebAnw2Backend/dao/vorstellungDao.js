@@ -15,9 +15,6 @@ class VorstellungDao {
 
     loadById(id) {
         const filmDao = new FilmDao(this._conn);
-        const kinosaalDao = new KinosaalDao(this._conn);
-        const reservierungDao = new ReservierungDao(this._conn);
-
         var sql = "SELECT * FROM Vorstellung WHERE ID=?";
         var statement = this._conn.prepare(sql);
         var result = statement.get(id);
@@ -30,20 +27,7 @@ class VorstellungDao {
         result.film = filmDao.loadById(result.filmid);
         delete result.filmid;
 
-        result.kinosaal = kinosaalDao.loadById(result.kinosaalid);
-        delete result.kinosaalid;
-
         result.zeitpunkt = helper.formatToGermanDateTime(helper.parseSQLDateTimeString(result.zeitpunkt));
-
-        result.reservierungen = reservierungDao.loadAllByParent(result.id);
-
-        result.sitze = { "gesammt": result.kinosaal.sitzegesammt };
-        result.sitze.reserviert = 0;
-        for (var element of result.reservierungen) {
-            result.sitze.reserviert += element.reserviertesitze.length;
-        }
-        result.sitze.frei = result.sitze.gesammt - result.sitze.reserviert;
-
         return result;
     }
 
@@ -83,19 +67,7 @@ class VorstellungDao {
 
             result[i].zeitpunkt = helper.formatToGermanDateTime(helper.parseSQLDateTimeString(result[i].zeitpunkt));
 
-            result[i].reservierungen = [];
-            for (var element of reservations) {
-                if (element.vorstellung.id == result[i].id) {
-                    result[i].reservierungen.push(element);
-                }
-            }
-
-            result[i].sitze = { "gesammt": result[i].kinosaal.sitzegesammt };
-            result[i].sitze.reserviert = 0;
-            for (var element of result[i].reservierungen) {
-                result[i].sitze.reserviert += element.reserviertesitze.length;
-            }
-            result[i].sitze.frei = result[i].sitze.gesammt - result[i].sitze.reserviert;
+    
         }
 
         return result;
@@ -144,12 +116,7 @@ class VorstellungDao {
                 }
             }
 
-            result[i].sitze = { "gesammt": result[i].kinosaal.sitzegesammt };
-            result[i].sitze.reserviert = 0;
-            for (var element of result[i].reservierungen) {
-                result[i].sitze.reserviert += element.reserviertesitze.length;
-            }
-            result[i].sitze.frei = result[i].sitze.gesammt - result[i].sitze.reserviert;
+    
         }
 
         return result;

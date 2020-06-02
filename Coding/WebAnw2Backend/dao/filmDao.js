@@ -13,7 +13,6 @@ class FilmDao {
 
     loadById(id) {
         const filmgenreDao = new FilmgenreDao(this._conn);
-        helper.log(id)
         var sql = "SELECT * FROM Film WHERE ID=?";
         var statement = this._conn.prepare(sql);
         var result = statement.get(id);
