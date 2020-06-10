@@ -14,8 +14,8 @@ class BenutzerDao {
     }
 
     loadById(id) {
-        const benutzerrolleDao = new BenutzerrolleDao(this._conn);
-        const personDao = new PersonDao(this._conn);
+        //const benutzerrolleDao = new BenutzerrolleDao(this._conn);
+        //const personDao = new PersonDao(this._conn);
 
         var sql = "SELECT * FROM Benutzer WHERE ID=?";
         var statement = this._conn.prepare(sql);
@@ -26,24 +26,24 @@ class BenutzerDao {
 
         result = helper.objectKeysToLower(result);
 
-        result.benutzerrolle = benutzerrolleDao.loadById(result.benutzerrolleid);
-        delete result.benutzerrolleid;
+        //result.benutzerrolle = benutzerrolleDao.loadById(result.benutzerrolleid);
+        //delete result.benutzerrolleid;
 
         if (helper.isNull(result.personid)) {
             result.person = null;
         } else {
-            result.person = personDao.loadById(result.personid);
+            //result.person = personDao.loadById(result.personid);
         }
-        delete result.personid;
+        //delete result.personid;
 
         return result;
     }
 
     loadAll() {
-        const benutzerrolleDao = new BenutzerrolleDao(this._conn);
-        var roles = benutzerrolleDao.loadAll();
-        const personDao = new PersonDao(this._conn);
-        var persons = personDao.loadAll();
+        //const benutzerrolleDao = new BenutzerrolleDao(this._conn);
+        //var roles = benutzerrolleDao.loadAll();
+        //const personDao = new PersonDao(this._conn);
+        //var persons = personDao.loadAll();
 
         var sql = "SELECT * FROM Benutzer";
         var statement = this._conn.prepare(sql);
@@ -54,28 +54,28 @@ class BenutzerDao {
 
         result = helper.arrayObjectKeysToLower(result);
 
-        for (var i = 0; i < result.length; i++) {
+        // for (var i = 0; i < result.length; i++) {
 
-            for (var element of roles) {
-                if (element.id == result[i].benutzerrolleid) {
-                    result[i].benutzerrolle = element;
-                    break;
-                }
-            }
-            delete result[i].benutzerrolleid;
+        //     for (var element of roles) {
+        //         if (element.id == result[i].benutzerrolleid) {
+        //             result[i].benutzerrolle = element;
+        //             break;
+        //         }
+        //     }
+        //     delete result[i].benutzerrolleid;
 
-            if (helper.isNull(result[i].personid)) {
-                result[i].person = null;
-            } else {
-                for (var element of persons) {
-                    if (element.id == result[i].personid) {
-                        result[i].person = element;
-                        break;
-                    }
-                }
-            }
-            delete result[i].personid;
-        }
+        //     if (helper.isNull(result[i].personid)) {
+        //         result[i].person = null;
+        //     } else {
+        //         for (var element of persons) {
+        //             if (element.id == result[i].personid) {
+        //                 result[i].person = element;
+        //                 break;
+        //             }
+        //         }
+        //     }
+        //     delete result[i].personid;
+        // }
 
         return result;
     }

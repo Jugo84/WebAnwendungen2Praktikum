@@ -1,14 +1,5 @@
 window.onload = function() {
 
-    // Video
-    var video = document.getElementById("video");
-    video.muted = true;
-    video.play();
-
-    video.onpause = function() {
-        video.play();
-    };
-
     // chat functionality
     // var videoBox = this.document.getElementById("video_container");
     // var chatButton = document.getElementById("chatButton");
@@ -22,16 +13,6 @@ window.onload = function() {
     //         chatBox.style.display = "none";
     //     }
     // });
-
-    var sendMessage = document.getElementById("sendMessage");
-    var messageInput = document.getElementById("messageInput");
-    sendMessage.addEventListener("click", function(){
-        var input = messageInput.value;
-        
-        if (input.length > 0){
-            addToChat(input, "messageRight");
-        }
-    });
 
     function getHoursAndMinutes(){
         var d = new Date();
