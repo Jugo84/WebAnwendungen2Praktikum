@@ -21,15 +21,9 @@ $(document).ready(function() {
 });
 
 function playVideoLive(video, response){
-    var uhrzeit = response['daten']['uhrzeit'];
     var date = response['daten']['datum'];
-    var day = date.substring(0,2);
-    var month = date.substring(3,5) - 1; // because monthsnumber go from 0 to 11
-    var year = date.substring(6);
-    var hours = uhrzeit.substring(0,2);
-    var minutes = uhrzeit.substring(3,5); 
 
-    var videoStartDate = new Date(year, month, day, hours, minutes, 0, 0);
+    var videoStartDate = new Date(date);
     var currentDate = new Date();
 
     var timeDifference = videoStartDate.getTime() - currentDate.getTime();
