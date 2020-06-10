@@ -14,7 +14,8 @@
     <!-- Custom styles for this template -->
     <link href="./CSS-Styles/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./Javascript/functionality.js"></script>
+    <script src="./Javascript/helpers.js"></script>
+    <script src="./Javascript/kinosaal_API.js"></script>
   </head>
 
   <body data-gr-c-s-loaded="true">
@@ -49,9 +50,9 @@
             <div class="card-body card-from">
               <div class="form-group">
                 <label for="exampleFormControlInput1">Streaming-Code</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="z.B. Ticket-DE0815xy7">
+                <input type="text" class="form-control" id="ticketCodeInput" placeholder="z.B. Ticket-DE0815xy7">
               </div>
-              <a type="button" class="btn btn-lg btn-block btn-outline-primary" href="kinosaal_video.html">Film starten</a>
+              <button type="button" id="checkTicketCode" class="btn btn-lg btn-block btn-outline-primary">Film starten</button>
             </div>
           </div>
         </div>
