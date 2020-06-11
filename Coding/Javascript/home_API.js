@@ -40,18 +40,25 @@ function createCard(film){
         var i = 0;
         var _datum;
         var datumString;
+        var vorstellungen = []
+        var vorstellungen_sort = []
         for (vorstellung in response["daten"]){
             _datum = new Date((response['daten'][vorstellung]['datum']));
-            datumString = _datum.getDate() + '.' + (_datum.getMonth() + 1) + '.' + _datum.getFullYear();
+            vorstellungen.push(_datum)
+        }
+        vorstellungen_sort =  vorstellungen.sort(function(a, b){return a-b})
+        for (i in vorstellungen_sort){
+            vorstellung = vorstellungen_sort[i]
+            datumString = vorstellung.getDate() + '.' + (vorstellung.getMonth() + 1) + '.' + vorstellung.getFullYear();
             if (datumString == heuteString){
                 datumString = 'Heute';
             }
             if (datumString == morgenString){
                 datumString = 'Morgen';
             }
-            if (_datum >= heute){
+            if (vorstellung >= heute){
                 datum[i] = datumString;
-                uhrzeit[i] = _datum.getHours() + ':' + _datum.getMinutes() + ' Uhr';
+                uhrzeit[i] = vorstellung.getHours() + ':' + vorstellung.getMinutes() + ' Uhr';
                 i += 1;
             }
             if (i == 2){break;}

@@ -37,17 +37,20 @@ class TicketDao {
     }
 
     // TODO @ Johannes
-    create(benutzername = "", passwort = "", benutzerrolleid = 1, personid = null) {
-        var sql = "INSERT INTO Benutzer (Benutzername,Passwort,BenutzerrolleID,PersonID) VALUES (?,?,?,?)";
+    create(vorstellungsID, benutzerID,code='', preis=12.0) {
+        for (var i = 0; i < 9; i++){
+            code += parseInt(Math.random()*10)
+        }
+        var sql = "INSERT INTO Ticket (VorstellungsID,BenutzerID,Code,Preis) VALUES (?,?,?,?)";
         var statement = this._conn.prepare(sql);
-        var params = [benutzername, md5(passwort), benutzerrolleid, personid];
+        var params = [vorstellungsID, benutzerID, code, preis];
         var result = statement.run(params);
 
         if (result.changes != 1) 
             throw new Error("Could not insert new Record. Data: " + params);
 
-        var newObj = this.loadById(result.lastInsertRowid);
-        return newObj;
+        //var newObj = this.loadById(result.lastInsertRowid);
+        //return newObj;
     }
 
     update(id, benutzername = "", neuespasswort = null, benutzerrolleid = 1, personid = null) {
