@@ -32,15 +32,13 @@ serviceRouter.get("/ticket/existiert/:id", function(request, response) {
 });
 
 serviceRouter.post("/ticket", function(request, response) {
-    helper.log("Service Ticker: Client requested creation of new record");
+    helper.log("Service Ticket: Client requested creation of new record");
 
-    // TODO @ Johannes
-
-    // var errorMsgs=[];
-    // if (helper.isUndefined(request.body.benutzername)) 
-    //     errorMsgs.push("benutzername fehlt");
-    // if (helper.isUndefined(request.body.passwort)) 
-    //     errorMsgs.push("passwort fehlt");
+    var errorMsgs=[];
+    if (helper.isUndefined(request.body.vorstellungsID)) 
+         errorMsgs.push("vorstellungsID fehlt");
+    if (helper.isUndefined(request.body.benutzerID)) 
+         errorMsgs.push("benutzerID fehlt");
     // if (helper.isUndefined(request.body.benutzerrolle)) {
     //     errorMsgs.push("benutzerrolle fehlt");
     // } else if (helper.isUndefined(request.body.benutzerrolle.id)) {
@@ -60,15 +58,15 @@ serviceRouter.post("/ticket", function(request, response) {
     //     return;
     // }
 
-    // const benutzerDao = new BenutzerDao(request.app.locals.dbConnection);
-    // try {
-    //     var result = benutzerDao.create(request.body.benutzername, request.body.passwort, request.body.benutzerrolle.id, request.body.person);
-    //     helper.log("Service Benutzer: Record inserted");
-    //     response.status(200).json(helper.jsonMsgOK(result));
-    // } catch (ex) {
-    //     helper.logError("Service Benutzer: Error creating new record. Exception occured: " + ex.message);
-    //     response.status(400).json(helper.jsonMsgError(ex.message));
-    // }
+    const ticketDao = new TicketDao(request.app.locals.dbConnection);
+    try {
+        var result = ticketDao.create(request.body.vorstellungsID, request.body.benutzerID);
+        helper.log("Service Ticket: Record inserted");
+        response.status(200).json(helper.jsonMsgOK(result));
+    } catch (ex) {
+        helper.logError("Service Ticket: Error creating new record. Exception occured: " + ex.message);
+        response.status(400).json(helper.jsonMsgError(ex.message));
+    }
 });
 
 serviceRouter.delete("/ticket/:id", function(request, response) {
