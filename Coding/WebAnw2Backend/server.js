@@ -64,8 +64,6 @@ try {
 
     serviceRouter = require("./services/person.js");
     app.use(TOPLEVELPATH, serviceRouter);
-
-    
     
     serviceRouter = require("./services/branche.js");
     app.use(TOPLEVELPATH, serviceRouter);
@@ -73,18 +71,12 @@ try {
     serviceRouter = require("./services/firma.js");
     app.use(TOPLEVELPATH, serviceRouter);
 
-
-    
     serviceRouter = require("./services/download.js");
     app.use(TOPLEVELPATH, serviceRouter);
-
-
 
     serviceRouter = require("./services/termin.js");
     app.use(TOPLEVELPATH, serviceRouter);
 
-    
-    
     serviceRouter = require("./services/produktkategorie.js");
     app.use(TOPLEVELPATH, serviceRouter);
 
@@ -104,6 +96,8 @@ try {
     serviceRouter = require("./services/bestellung.js");
     app.use(TOPLEVELPATH, serviceRouter);
 
+    serviceRouter = require("./services/snacktyp.js");
+    app.use(TOPLEVELPATH, serviceRouter);
 
     serviceRouter = require("./services/speisenart.js");
     app.use(TOPLEVELPATH, serviceRouter);
@@ -121,8 +115,6 @@ try {
     app.use(TOPLEVELPATH, serviceRouter);
 
 
-
-
     serviceRouter = require("./services/benutzerrolle.js");
     app.use(TOPLEVELPATH, serviceRouter);
 
@@ -131,8 +123,6 @@ try {
 
     serviceRouter = require("./services/forumsbereich.js");
     app.use(TOPLEVELPATH, serviceRouter);
-
-
 
     serviceRouter = require("./services/ticket.js");
     app.use(TOPLEVELPATH, serviceRouter);
@@ -154,8 +144,6 @@ try {
     
     serviceRouter = require("./services/vorstellung.js");
     app.use(TOPLEVELPATH, serviceRouter);
-
-    
 
     serviceRouter = require("./services/benutzer.js");
     app.use(TOPLEVELPATH, serviceRouter);
