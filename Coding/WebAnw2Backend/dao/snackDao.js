@@ -1,6 +1,7 @@
 const helper = require("../helper.js");
 const BenutzerDao = require("./benutzerDao.js");
 const SnackTypDao = require("./snackTypDao.js");
+const snacktypDao = require("./snackTypDao.js");
 
 class SnackDao {
 
@@ -69,30 +70,27 @@ class SnackDao {
 
     // snacks which a user ordered
 
-    loadAllByParent(){
+    loadByBenutzerId(id){
         const snackTypDao = new SnackTypDao(this._conn);
-        var snacks = snackTypDao.loadAll();  
 
         var sql = "SELECT * FROM Snack WHERE BenutzerID=?";
         var statement = this._conn.prepare(sql);
-        var result = statement.all();
+        var result = statement.all(id);
+        helper.log(result);
 
-        if (helper.isArrayEmpty(result)) 
+        if (helper.isUndefined(result)){
+            helper.log("hier drin");
             return [];
-        
+        }
+
         result = helper.arrayObjectKeysToLower(result);
-
+        helper.log(result.length);
         for (var i = 0; i < result.length; i++){
-            result[i].benutzer = { "id": result[i].benutzerid };
+            helper.log("wieder drin");
+            helper.log(result[i]);
             delete result[i].benutzerid;
-
-            for (var element of snacks) {
-                if (element.id == result[i].snackTypid) {
-                    result[i].snackTyp = element;
-                    break;
-                }
-            }
-            delete result[i].snackTypid;
+            result[i].snack = snackTypDao.loadById(result[i].snacktypid);
+            delete result[i].snacktypid;
         }
 
         return result;

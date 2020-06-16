@@ -25,6 +25,20 @@ class TicketDao {
         return result;
     }
 
+    loadByBenutzerID(id) {
+
+        var sql = "SELECT * FROM Ticket WHERE BenutzerID=?";
+        var statement = this._conn.prepare(sql);
+        var result = statement.get(id);
+
+        if (helper.isUndefined(result)) 
+            throw new Error("No Record found by BenutzerID=" + id);
+
+        result = helper.objectKeysToLower(result);
+
+        return result;
+    }
+
     exists(id) {
         var sql = "SELECT COUNT(ID) AS cnt FROM Ticket WHERE ID=?";
         var statement = this._conn.prepare(sql);
