@@ -155,7 +155,11 @@ try {
     serviceRouter = require("./services/vorstellung.js");
     app.use(TOPLEVELPATH, serviceRouter);
 
-    
+    serviceRouter = require("./services/snackTyp.js");
+    app.use(TOPLEVELPATH, serviceRouter);
+
+    serviceRouter = require("./services/snack.js");
+    app.use(TOPLEVELPATH, serviceRouter);
 
     serviceRouter = require("./services/benutzer.js");
     app.use(TOPLEVELPATH, serviceRouter);

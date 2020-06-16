@@ -1,94 +1,40 @@
 const helper = require("../helper.js");
 
-class SnackTypDao {
-
+class snacktypDao{
     constructor(dbConnection) {
         this._conn = dbConnection;
     }
-
     getConnection() {
         return this._conn;
     }
-
-    loadById(id) {
-        var sql = "SELECT * FROM SnackTyp WHERE ID=?";
+    
+    loadById(id){
+        var sql = "SELECT * FROM Snacktyp WHERE ID=?";
         var statement = this._conn.prepare(sql);
         var result = statement.get(id);
 
         if (helper.isUndefined(result)) 
             throw new Error("No Record found by id=" + id);
 
-        return helper.objectKeysToLower(result);
+        result = helper.objectKeysToLower(result);
+
+        return result;
     }
 
     loadAll() {
-        var sql = "SELECT * FROM SnackTyp";
+
+        var sql = "SELECT * FROM Snacktyp";
         var statement = this._conn.prepare(sql);
         var result = statement.all();
 
-        if (helper.isArrayEmpty(result)) 
+        if (helper.isArrayEmpty(result))
             return [];
+            
         
-        return helper.arrayObjectKeysToLower(result);
-    }
+        result = helper.arrayObjectKeysToLower(result);
 
-    exists(id) {
-        var sql = "SELECT COUNT(ID) AS cnt FROM SnackTyp WHERE ID=?";
-        var statement = this._conn.prepare(sql);
-        var result = statement.get(id);
-
-        if (result.cnt == 1) 
-            return true;
-
-        return false;
-    }
-
-    create(name= "", preis = 5.0, beschreibung = "", bildpfad = "") {
-        // id wird automatisch schrittweiter inkrementiert
-        var sql = "INSERT INTO SnackTyp (Name, Preis, Beschreibung, Bildpfad) VALUES (?,?,?,?)";
-        var statement = this._conn.prepare(sql);
-        var params = [name, preis, beschreibung, bildpfad];
-        var result = statement.run(params);
-
-        if (result.changes != 1) 
-            throw new Error("Could not insert new Record. Data: " + params);
-
-        var newObj = this.loadById(result.lastInsertRowid);
-        return newObj;
-    }
-
-    update(id, name = "", preis = 5.0, beschreibung = "",bildpfad = "") {
-        var sql = "UPDATE SnackTyp SET Name=?,Preis=?,Beschreibung=?,Bildpfad=? WHERE ID=?";
-        var statement = this._conn.prepare(sql);
-        var params = [name, preis, beschreibung, bildpfad,id];
-        var result = statement.run(params);
-
-        if (result.changes != 1) {
-            throw new Error("Could not update existing Record. Data: " + params);
-        }
-
-        var updatedObj = this.loadById(id);
-        return updatedObj;
-    }
-
-    delete(id) {
-        try {
-            var sql = "DELETE FROM SnackTyp WHERE ID=?";
-            var statement = this._conn.prepare(sql);
-            var result = statement.run(id);
-
-            if (result.changes != 1) 
-                throw new Error("Could not delete Record by id=" + id);
-
-            return true;
-        } catch (ex) {
-            throw new Error("Could not delete Record by id=" + id + ". Reason: " + ex.message);
-        }
-    }
-
-    toString() {
-        helper.log("SnackTypDao [_conn=" + this._conn + "]");
+        return result;
     }
 }
 
-module.exports = SnackTypDao;
+module.exports = snacktypDao;
