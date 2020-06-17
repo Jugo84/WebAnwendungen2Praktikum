@@ -133,6 +133,11 @@ try {
     app.use(TOPLEVELPATH, serviceRouter);
 
 
+    serviceRouter = require("./services/chatNachricht.js");
+    app.use(TOPLEVELPATH, serviceRouter);
+
+    serviceRouter = require("./services/chat.js");
+    app.use(TOPLEVELPATH, serviceRouter);
 
     serviceRouter = require("./services/ticket.js");
     app.use(TOPLEVELPATH, serviceRouter);

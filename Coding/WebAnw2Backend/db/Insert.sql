@@ -16,4 +16,4 @@ INSERT INTO Benutzer VALUES (1,'Lustig','Peter','Peter@gmx.de','PayPal',123,133,
 INSERT INTO Benutzer VALUES (2,'Lustig','Markus','Markus@gmx.de','PayPal',123,133,2);
 
 INSERT INTO Chat VALUES (1,1);
-INSERT INTO ChatNachicht VALUES (1,1,1,'NAchicht');
+INSERT INTO ChatNachricht VALUES (1,1,1,'NAchicht', '2020-05-31T20:15');

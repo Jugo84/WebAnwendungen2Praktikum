@@ -14,8 +14,6 @@ class BenutzerDao {
     }
 
     loadById(id) {
-        //const benutzerrolleDao = new BenutzerrolleDao(this._conn);
-        //const personDao = new PersonDao(this._conn);
 
         var sql = "SELECT * FROM Benutzer WHERE ID=?";
         var statement = this._conn.prepare(sql);
@@ -25,16 +23,6 @@ class BenutzerDao {
             throw new Error("No Record found by id=" + id);
 
         result = helper.objectKeysToLower(result);
-
-        //result.benutzerrolle = benutzerrolleDao.loadById(result.benutzerrolleid);
-        //delete result.benutzerrolleid;
-
-        if (helper.isNull(result.personid)) {
-            result.person = null;
-        } else {
-            //result.person = personDao.loadById(result.personid);
-        }
-        //delete result.personid;
 
         return result;
     }
