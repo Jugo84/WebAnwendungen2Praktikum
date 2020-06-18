@@ -105,7 +105,7 @@ class BenutzerDao {
         return this.loadById(result.ID);
     }
 
-    create(name = "", vorname = "", email = "", bezahlmöglichkeit = "", kreditkartennummer=0, cvs = 0, adresseId = 1) {
+    create(name = null, vorname = null, email = null, bezahlmöglichkeit = null, kreditkartennummer=null, cvs = null, adresseId = null) {
         var sql = "INSERT INTO Benutzer (Name,Vorname,Email,Bezahlmöglichkeit,Kreditkartennummer,CVS,AdresseID) VALUES (?,?,?,?,?,?,?)";
         var statement = this._conn.prepare(sql);
         var params = [name, vorname, email, bezahlmöglichkeit, kreditkartennummer, cvs, adresseId];

@@ -37,7 +37,7 @@ CREATE TABLE Benutzer (
 	Bezahlmöglichkeit TEXT NOT NULL,
 	Kreditkartennummer INTEGER,
 	CVS INTEGER,
-	Lieferadresse TEXT
+	AdresseID INTEGER
 );
 
 CREATE TABLE SnackTyp (
