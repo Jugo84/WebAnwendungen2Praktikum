@@ -50,7 +50,6 @@ class TicketDao {
         return false;
     }
 
-    // TODO @ Johannes
     create(vorstellungsID, benutzerID,code='', preis=12.0) {
         for (var i = 0; i < 9; i++){
             code += parseInt(Math.random()*10)

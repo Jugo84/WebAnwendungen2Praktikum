@@ -117,10 +117,10 @@ class BenutzerDao {
         return this.loadById(result.ID);
     }
 
-    create(benutzername = "", passwort = "", benutzerrolleid = 1, personid = null) {
-        var sql = "INSERT INTO Benutzer (Benutzername,Passwort,BenutzerrolleID,PersonID) VALUES (?,?,?,?)";
+    create(name = "", vorname = "", email = "", bezahlmöglichkeit = "", kreditkartennummer=0, cvs = 0, adresseId = 1) {
+        var sql = "INSERT INTO Benutzer (Name,Vorname,Email,Bezahlmöglichkeit,Kreditkartennummer,CVS,AdresseID) VALUES (?,?,?,?,?,?,?)";
         var statement = this._conn.prepare(sql);
-        var params = [benutzername, md5(passwort), benutzerrolleid, personid];
+        var params = [name, vorname, email, bezahlmöglichkeit, kreditkartennummer, cvs, adresseId];
         var result = statement.run(params);
 
         if (result.changes != 1) 
