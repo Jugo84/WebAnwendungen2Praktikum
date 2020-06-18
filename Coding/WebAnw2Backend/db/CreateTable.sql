@@ -31,10 +31,10 @@ CREATE TABLE Ticket (
 
 CREATE TABLE Benutzer (
 	ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-	Name TEXT NOT NULL,
-	Vorname TEXT NOT NULL,
-	Email TEXT NOT NULL,
-	Bezahlmöglichkeit TEXT NOT NULL,
+	Name TEXT,
+	Vorname TEXT,
+	Email TEXT,
+	Bezahlmöglichkeit TEXT,
 	Kreditkartennummer INTEGER,
 	CVS INTEGER,
 	AdresseID INTEGER
