@@ -105,7 +105,7 @@ class BenutzerDao {
         return this.loadById(result.ID);
     }
 
-    create(name = "", vorname = "", email = "", bezahlmöglichkeit = "", kreditkartennummer=0, cvs = 0, adresseId = 1) {
+    create(name = null, vorname = null, email = null, bezahlmöglichkeit = null, kreditkartennummer=null, cvs = null, adresseId = null) {
         var sql = "INSERT INTO Benutzer (Name,Vorname,Email,Bezahlmöglichkeit,Kreditkartennummer,CVS,AdresseID) VALUES (?,?,?,?,?,?,?)";
         var statement = this._conn.prepare(sql);
         var params = [name, vorname, email, bezahlmöglichkeit, kreditkartennummer, cvs, adresseId];
@@ -118,22 +118,13 @@ class BenutzerDao {
         return newObj;
     }
 
-    update(id, benutzername = "", neuespasswort = null, benutzerrolleid = 1, personid = null) {
-        
-        if (helper.isNull(neuespasswort)) {
-            var sql = "UPDATE Benutzer SET Benutzername=?,BenutzerrolleID=?,PersonID=? WHERE ID=?";
-            var statement = this._conn.prepare(sql);
-            var params = [benutzername, benutzerrolleid, personid, id];
-        } else {
-            var sql = "UPDATE Benutzer SET Benutzername=?,Passwort=?,BenutzerrolleID=?,PersonID=? WHERE ID=?";
-            var statement = this._conn.prepare(sql);
-            var params = [benutzername, md5(neuespasswort), benutzerrolleid, personid, id];
-        }
+    update(id, name, vorname, email, bezahlmöglichkeit, kreditkartennummer=null, cvs = null, adresseId = null) {
+        var sql = "UPDATE Benutzer SET name=?,vorname=?,email=?,bezahlmöglichkeit=?, kreditkartennummer=?, cvs=?, adresseId=? WHERE ID=?"
+        var statement = this._conn.prepare(sql);
+        var params = [name, vorname, email, bezahlmöglichkeit, kreditkartennummer, cvs, adresseId, id];
         var result = statement.run(params);
-
         if (result.changes != 1) 
             throw new Error("Could not update existing Record. Data: " + params);
-
         var updatedObj = this.loadById(id);
         return updatedObj;
     }
