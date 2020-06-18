@@ -14,24 +14,34 @@ $( document ).ready(function() {
         $("#output").html("Ein Fehler ist aufgetreten");
     });
 
-    // create Ticket
     $(document).on("click", ".createTicket" , function() {
-        console.log("create Ticket");
-        var vorstellungsID = this.value
-        var obj = { "vorstellungsID": vorstellungsID, "benutzerID": 1};
+        var obj = {};
+        var vorstellungsId = this.value
+        var benutzerId = getLocalData("benutzerId");
+        if (benutzerId == null){
+            console.log("hier");
+            $.ajax({
+                url: "http://localhost:8000/api/benutzer",
+                method: "post",
+                contentType: "application/json",
+                data: JSON.stringify(obj)
+            }).done(function (response) {
+                console.log(response);
+                $("#output").html(JSON.stringify(response));
+                benutzerId = response['daten']['id'];
+                setLocalData("benutzerId",benutzerId)
+                benutzerId = getLocalData("benutzerId");
+                createTicket(vorstellungsId, benutzerId);
+            }).fail(function (jqXHR, statusText, error) {
+                console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+                $("#output").html("Ein Fehler ist aufgetreten");
+            });
+        }
+        else{
+            createTicket(vorstellungsId, benutzerId);
+        }
+
         
-        $.ajax({
-            url: "http://localhost:8000/api/ticket",
-            method: "post",
-            contentType: "application/json",
-            data: JSON.stringify(obj)
-        }).done(function (response) {
-            console.log(response);
-            $("#output").html(JSON.stringify(response));
-        }).fail(function (jqXHR, statusText, error) {
-            console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
-            $("#output").html("Ein Fehler ist aufgetreten");
-        });
     });
 });
 
@@ -108,6 +118,31 @@ function vorstellungCards(datum,uhrzeit,allID){
     }
     return vorstellungen;
 }
+
+function createTicket(vorstellungsId, benutzerId){
+    var obj = { "vorstellungsID": vorstellungsId, "benutzerID": benutzerId};
+        $.ajax({
+            url: "http://localhost:8000/api/ticket",
+            method: "post",
+            contentType: "application/json",
+            data: JSON.stringify(obj)
+        }).done(function (response) {
+            console.log(response);
+            $("#output").html(JSON.stringify(response));
+        }).fail(function (jqXHR, statusText, error) {
+            console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+            $("#output").html("Ein Fehler ist aufgetreten");
+        });
+}
+
+function setLocalData(key, value) {
+    window.localStorage.setItem(key, value);
+  }
+  
+function getLocalData(key) {
+    var result = window.localStorage.getItem(key);
+    return result;
+  }
 
 
 

@@ -98,14 +98,15 @@ serviceRouter.get("/benutzer/zugang", function(request, response) {
 serviceRouter.post("/benutzer", function(request, response) {
     helper.log("Service Benutzer: Client requested creation of new record");
 
-    var errorMsgs=[];
-    if (helper.isUndefined(request.body.benutzername)) 
-        errorMsgs.push("benutzername fehlt");
-    if (helper.isUndefined(request.body.passwort)) 
-        errorMsgs.push("passwort fehlt");
-    if (helper.isUndefined(request.body.benutzerrolle)) {
-        errorMsgs.push("benutzerrolle fehlt");
-    } else if (helper.isUndefined(request.body.benutzerrolle.id)) {
+    var errorMsgs=[];/*
+    if (helper.isUndefined(request.body.name)) 
+        errorMsgs.push("name fehlt");
+    if (helper.isUndefined(request.body.vorname)) 
+        errorMsgs.push("vorname fehlt");
+    if (helper.isUndefined(request.body.email)) {
+        errorMsgs.push("email fehlt");
+    }
+    else if (helper.isUndefined(request.body.benutzerrolle.id)) {
         errorMsgs.push("benutzerrolle gesetzt, aber id fehlt");
     }        
     if (helper.isUndefined(request.body.person)) {
@@ -115,7 +116,7 @@ serviceRouter.post("/benutzer", function(request, response) {
     } else {
         request.body.person = request.body.person.id;
     }
-    
+    */
     if (errorMsgs.length > 0) {
         helper.log("Service Benutzer: Creation not possible, data missing");
         response.status(400).json(helper.jsonMsgError("Hinzufügen nicht möglich. Fehlende Daten: " + helper.concatArray(errorMsgs)));
@@ -124,7 +125,7 @@ serviceRouter.post("/benutzer", function(request, response) {
 
     const benutzerDao = new BenutzerDao(request.app.locals.dbConnection);
     try {
-        var result = benutzerDao.create(request.body.benutzername, request.body.passwort, request.body.benutzerrolle.id, request.body.person);
+        var result = benutzerDao.create(request.body.name, request.body.vorname, request.body.email, request.body.bezahlmöglichkeit, request.body.kreditkartennummer, request.body.cvs, request.body.adresseId);
         helper.log("Service Benutzer: Record inserted");
         response.status(200).json(helper.jsonMsgOK(result));
     } catch (ex) {
