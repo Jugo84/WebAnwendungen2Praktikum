@@ -1,7 +1,6 @@
 const helper = require("../helper.js");
 const BenutzerDao = require("./benutzerDao.js");
 const SnackTypDao = require("./snackTypDao.js");
-const snacktypDao = require("./snackTypDao.js");
 
 class SnackDao {
 
@@ -76,7 +75,7 @@ class SnackDao {
         var sql = "SELECT * FROM Snack WHERE BenutzerID=?";
         var statement = this._conn.prepare(sql);
         var result = statement.all(id);
-        helper.log(result);
+        
 
         if (helper.isUndefined(result)){
             helper.log("hier drin");
@@ -86,13 +85,11 @@ class SnackDao {
         result = helper.arrayObjectKeysToLower(result);
         helper.log(result.length);
         for (var i = 0; i < result.length; i++){
-            helper.log("wieder drin");
-            helper.log(result[i]);
             delete result[i].benutzerid;
             result[i].snack = snackTypDao.loadById(result[i].snacktypid);
             delete result[i].snacktypid;
         }
-
+        helper.log(result);
         return result;
     }
 

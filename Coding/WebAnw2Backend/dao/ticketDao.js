@@ -1,5 +1,6 @@
 const helper = require("../helper.js");
 const md5 = require("md5");
+const VorstellungDao = require("./vorstellungDao.js");
 
 class TicketDao {
 
@@ -26,16 +27,24 @@ class TicketDao {
     }
 
     loadByBenutzerID(id) {
+        const vorstellungDao = new VorstellungDao(this._conn);
 
         var sql = "SELECT * FROM Ticket WHERE BenutzerID=?";
         var statement = this._conn.prepare(sql);
-        var result = statement.get(id);
+        var result = statement.all(id);
 
         if (helper.isUndefined(result)) 
             throw new Error("No Record found by BenutzerID=" + id);
 
-        result = helper.objectKeysToLower(result);
-
+        helper.log(result);
+        result = helper.arrayObjectKeysToLower(result);
+        helper.log(result.length);
+        for (var i = 0; i < result.length; i++){
+            helper.log("hier bin ich in der for-Schleife");
+            delete result[i].benutzerid;
+            result[i].film = vorstellungDao.loadById(result[i].vorstellungsid);
+            delete result[i].vorstellungsid;
+        }
         return result;
     }
 

@@ -17,6 +17,20 @@ serviceRouter.get("/ticket/gib/:TicketCode", function(request, response) {
     }
 });
 
+serviceRouter.get("/ticket/gib/BenutzerId/:id", function(request, response) {
+    helper.log("Service Ticket: Client requested one record, BenutzerID=" + request.params.id);
+
+    const ticketDao = new TicketDao(request.app.locals.dbConnection);
+    try {
+        var result = ticketDao.loadByBenutzerID(request.params.id);
+        helper.log("Service Ticket: Records loaded");
+        response.status(200).json(helper.jsonMsgOK(result));
+    } catch (ex) {
+        helper.logError("Service Ticket: Error loading record by id. Exception occured: " + ex.message);
+        response.status(400).json(helper.jsonMsgError(ex.message));
+    }
+});
+
 serviceRouter.get("/ticket/existiert/:id", function(request, response) {
     helper.log("Service Ticket: Client requested check, if record exists, id=" + request.params.id);
 
