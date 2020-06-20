@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./Javascript/functionality.js"></script>
     <script src="./Javascript/Warenkorb.js"></script>
+    <script src="./Javascript/warenkorb_API.js"></script>
   </head>
 
   <body data-gr-c-s-loaded="true">
@@ -58,72 +59,25 @@
                       </div>
                       <div class="card-body">
                           <div class="row">
-                          <div class="col-md-12 ">
-                              <table class="table">
-                                  <thead>
-                                  <tr>
-                                      <th scope="col">#</th>
-                                      <th scope="col">Produkt</th>
-                                      <th scope="col">Menge</th>
-                                      <th scope="col">Preis</th>
-                                  </tr>
-                                  </thead>
-                                  <tbody>
-                                  <tr>
-                                      <th scope="row">1</th>
-                                      <td>Der Ruf der Wildnis</td>
-                                      <td><input type="number" min="0" value="10" class="warenkorb_numbertype"></input></td>
-                                      <td>24€</td>
-                                  </tr>
-                                  <tr>
-                                      <th scope="row">2</th>
-                                      <td>Das perfekte Geheimnis</td>
-                                      <td><input type="number" min="0" value="10" class="warenkorb_numbertype"></input></td>
-                                      <td>120€</td>
-                                  </tr>
-                                  <tr>
-                                      <th scope="row">3</th>
-                                      <td>Popcorn</td>
-                                      <td><input type="number" min="0" value="10" class="warenkorb_numbertype"></input></td>
-                                      <td>300€</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row"></th>
-                                    <td></td>
-                                    <td><strong>Summe</strong></td>
-                                    <td>135,45€</td>
-                                </tr>
-                                  <tr>
-                                      <th scope="row"></th>
-                                      <td></td>
-                                      <td><strong>Mehrwertsteuer 13% </strong></td>
-                                      <td>15€</td>
-                                  </tr>
-                                  <tr>
-                                      <th scope="row"></th>
-                                      <td></td>
-                                      <td><strong>Summe</strong></td>
-                                      <td>150,45€</td>
-                                  </tr>
-                                  </tbody>
-                              </table>
-                              <div class="row">
-                              <div class="col-md-4">
-                                  <select class="form-control">
-                                  <option>Kein Kino unterstützen</option>
-                                  <option>Capitol Albstadt</option>
-                                  <option>Capitol Hechingen</option>
-                                  <option>Kinopalast Balingen</option>
-                                  </select>
-                              </div>
-                              <div class="col-md-4">
-                                <button class="btn btn-md btn-block btn-outline-primary" data-target="#zumVerschenkenModal" data-toggle="modal">Zum Verschenken</button>
-                              </div>
-                              <div class="col-md-4">
-                                  <a href="kasse.html" class="btn btn-md btn-block btn-outline-primary" type="button">Zum Bezahlen</a>
-                              </div>
-                              </div>
+                          <div class="col-md-12 " id="warenkorb_reihe_snack">
                           </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                <option>Kein Kino unterstützen</option>
+                                <option>Capitol Albstadt</option>
+                                <option>Capitol Hechingen</option>
+                                <option>Kinopalast Balingen</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                              <button class="btn btn-md btn-block btn-outline-primary" data-target="#zumVerschenkenModal" data-toggle="modal">Zum Verschenken</button>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="kasse.html" class="btn btn-md btn-block btn-outline-primary" type="button">Zum Bezahlen</a>
+                            </div>
+                          </div>
+                          
                           </div>
                       </div>
                     </div>

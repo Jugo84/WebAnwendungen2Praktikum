@@ -9,7 +9,7 @@ serviceRouter.get("/snack/gib/:id", function(request, response) {
     const snackDao = new SnackDao(request.app.locals.dbConnection);
     try {
         var result = snackDao.loadByBenutzerId(request.params.id);
-        helper.log("Service Snack: Record loaded");
+        helper.log("Service Snack: Records loaded");
         response.status(200).json(helper.jsonMsgOK(result));
     } catch (ex) {
         helper.logError("Service Snack: Error loading record by id. Exception occured: " + ex.message);

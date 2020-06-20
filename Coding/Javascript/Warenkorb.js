@@ -39,3 +39,6 @@ async function createNewGuestbookEntry() {
     newEntryModal.modal("hide");
 }
 
+
+
+

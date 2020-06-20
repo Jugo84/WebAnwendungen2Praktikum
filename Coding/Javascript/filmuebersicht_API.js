@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const id = urlParams.get('id')
+    const id = urlParams.get('id');
     $.ajax({
         url: "http://localhost:8000/api/film/gib/" + id,
         method: "get",
