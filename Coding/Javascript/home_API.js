@@ -74,7 +74,9 @@ function createCard(film){
         var $body = $('<div class="card-body"><ul class="list-unstyled mt-3 mb-4 text-left"><li>' + datum[0] + ' ' + uhrzeit[0] + '</li><li>' + datum[1] + ' ' + uhrzeit[1] + '</li><li>' + datum[2] + ' ' + uhrzeit[2] + '</li></ul><a href="filmuebersicht.html?id=' + filmID + '"type="button" class="btn btn-lg btn-block btn-outline-primary"> Ticket bestellen</a><br><span>Dauer: '+ dauer +'min</span></div>')
         $card.append($header,$image,$body);
         $cardBlock.append($card);
-        $('#film_cards').append($cardBlock);
+        if (datum[0] != ''){
+            $('#film_cards').append($cardBlock);
+        }
     }).fail(function (jqXHR, statusText, error) {
         console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
         $("#output").html("Ein Fehler ist aufgetreten");
