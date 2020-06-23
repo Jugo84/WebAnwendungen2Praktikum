@@ -59,9 +59,10 @@ class TicketDao {
         return false;
     }
 
-    create(vorstellungsID, benutzerID,code='', preis=12.0) {
+    create(vorstellungsID, benutzerID, preis=12.0) {
+        var code='';
         for (var i = 0; i < 9; i++){
-            code += parseInt(Math.random()*10)
+            code += parseInt(Math.random()*10);
         }
         var sql = "INSERT INTO Ticket (VorstellungsID,BenutzerID,Code,Preis) VALUES (?,?,?,?)";
         var statement = this._conn.prepare(sql);
@@ -71,8 +72,7 @@ class TicketDao {
         if (result.changes != 1) 
             throw new Error("Could not insert new Record. Data: " + params);
 
-        //var newObj = this.loadById(result.lastInsertRowid);
-        //return newObj;
+        return result.lastInsertRowid;
     }
 
     update(id, benutzername = "", neuespasswort = null, benutzerrolleid = 1, personid = null) {
