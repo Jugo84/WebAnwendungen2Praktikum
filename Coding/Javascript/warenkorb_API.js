@@ -27,7 +27,7 @@ $( document ).ready(function() {
             console.log(beschreibung);
             
             
-            var $reihe = $('<tr><th scope="row">'+nummer+'</th><td>'+ beschreibung + '</td><td><input type="number" min="0" value="'+ menge +'" class="warenkorb_numbertype"></input></td><td>'+preis+'€</td></tr>')
+            var $reihe = $('<tr><th scope="row">'+nummer+'</th><td>'+ beschreibung + '</td><td><input id="'+id+'" type="number" min="0" value="'+ menge +'" class="warenkorb_numbertype"></input></td><td>'+preis+'€</td></tr>')
             
             console.log($reihe);
             $($gesamt).append($reihe);
@@ -54,7 +54,7 @@ $( document ).ready(function() {
             }
             var $filme =$('<tr><td></td><td><label for="filme">Filmtickets</label></td><td></td><td>'+preisfilme+'€</td></tr> ')
             $($gesamt).append($filme);
-            var $footer =$('<tr><td></td><td><label for="mwst">MwSt (%)</label></td><td><input type="number" min="0" id="mwst" value="19" class="warenkorb_numbertype"></td><td></td></tr> <tr><td></td><td>Gesamt:</td><td></td><td><output id="betrag" for="stunden satz mwst">0</output> €</td></tr></tbody></table>');     
+            var $footer =$('<tr><td></td><td><label for="mwst">MwSt (%)</label></td><td>19%</td><td></td></tr> <tr><td></td><td>Gesamt:</td><td></td><td><output id="betrag" for="stunden satz mwst">0</output> €</td></tr></tbody></table>');     
             $($gesamt).append($footer);
             $('#warenkorb_reihe_snack').append($gesamt);
         
