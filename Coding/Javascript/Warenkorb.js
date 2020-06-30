@@ -39,6 +39,8 @@ async function createNewGuestbookEntry() {
     newEntryModal.modal("hide");
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
 	function rechne() {
         console.log("in rechen");
@@ -56,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var popcorn = document.getElementById('Popcorn');
             var popcornPreis = window.localStorage.getItem('Popcorn');
-            var summePopcorn = popcorn.valueAsNumber * parseInt(popcornPreis);
+            var summePopcorn = popcorn.valueAsNumber * parseFloat(popcornPreis);
             document.getElementById('PopcornGesamt')
                 .value = summePopcorn;
          } catch (error) {
@@ -65,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var haribo = document.getElementById('Haribo');
             var hariboPreis = window.localStorage.getItem('Haribo');
-            var summeHaribo = haribo.valueAsNumber * parseInt(hariboPreis);
+            var summeHaribo = haribo.valueAsNumber * parseFloat(hariboPreis);
             document.getElementById('HariboGesamt')
                 .value = summeHaribo;
         } catch (error) {
@@ -74,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var schokolade = document.getElementById('Schokolade');
             var schokoladePreis = window.localStorage.getItem('Schokolade');
-            var summeSchokolade = schokolade.valueAsNumber * parseInt(schokoladePreis);
+            var summeSchokolade = schokolade.valueAsNumber * parseFloat(schokoladePreis);
             document.getElementById('SchokoladeGesamt')
                 .value = summeSchokolade;
         } catch (error) {
@@ -83,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var smarties = document.getElementById('Smarties');
             var smartiesPreis = window.localStorage.getItem('Smarties');
-            var summeSmarties = smarties.valueAsNumber * parseInt(smartiesPreis);
+            var summeSmarties = smarties.valueAsNumber * parseFloat(smartiesPreis);
             document.getElementById('SmartiesGesamt')
                 .value = summeSmarties;
         } catch (error) {
@@ -92,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var chips = document.getElementById('Chips');
             var chipsPreis = window.localStorage.getItem('Chips');
-            var summeChips = chips.valueAsNumber * parseInt(chipsPreis);
+            var summeChips = chips.valueAsNumber * parseFloat(chipsPreis);
             document.getElementById('ChipsGesamt')
                 .value = summeChips;
         } catch (error) {
@@ -101,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var erdnüsse = document.getElementById('Erdnüsse');
             var erdnüssePreis = window.localStorage.getItem('Erdnüsse');
-            var summeErdnüsse = erdnüsse.valueAsNumber * parseInt(erdnüssePreis);
+            var summeErdnüsse = erdnüsse.valueAsNumber * parseFloat(erdnüssePreis);
             document.getElementById('ErdnüsseGesamt')
                 .value = summeErdnüsse;
         } catch (error) {
@@ -110,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var cola = document.getElementById('Cola');
             var colaPreis = window.localStorage.getItem('Cola');
-            var summeCola = cola.valueAsNumber * parseInt(colaPreis);
+            var summeCola = cola.valueAsNumber * parseFloat(colaPreis);
             document.getElementById('ColaGesamt')
                 .value = summeCola;
         } catch (error) {
@@ -119,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var sprite = document.getElementById('Sprite');
             var spritePreis = window.localStorage.getItem('Sprite');
-            var summeSprite = sprite.valueAsNumber * parseInt(spritePreis);
+            var summeSprite = sprite.valueAsNumber * parseFloat(spritePreis);
             document.getElementById('SpriteGesamt')
                 .value = summeSprite;
         } catch (error) {
@@ -128,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var fanta = document.getElementById('Fanta');
             var fantaPreis = window.localStorage.getItem('Fanta');
-            var summeFanta = fanta.valueAsNumber * parseInt(fantaPreis);
+            var summeFanta = fanta.valueAsNumber * parseFloat(fantaPreis);
             document.getElementById('FantaGesamt')
                 .value = summeFanta;
         } catch (error) {
@@ -137,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var bier = document.getElementById('Bier');
             var bierPreis = window.localStorage.getItem('Bier');
-            var summeBier = bier.valueAsNumber * parseInt(bierPreis);
+            var summeBier = bier.valueAsNumber * parseFloat(bierPreis);
             document.getElementById('BierGesamt')
                 .value = summeBier;
         } catch (error) {
@@ -146,13 +148,13 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             var nachos = document.getElementById('Nachos');
             var nachosPreis = window.localStorage.getItem('Nachos');
-            var summeNachos = nachos.valueAsNumber * parseInt(nachosPreis);
+            var summeNachos = nachos.valueAsNumber * parseFloat(nachosPreis);
             document.getElementById('NachosGesamt')
                 .value = summeNachos;
         } catch (error) {
             console.log("nicht vorhanden:"+error);
         }
-            mwst = 19;
+            mwst = 0.19;
         
         var summeSnacks = summeSprite + summeSmarties + summeSchokolade + summePopcorn+ summeNachos+ summeHaribo+ summeFanta+ summeErdnüsse+ summeCola+ summeChips + summeBier 
         document.getElementById('snacksGesamt')
@@ -164,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var summeInception = 0;
         try {
             var rufDerWildnis = document.getElementById('Ruf der Wildnis');
-            var summeRufDerWildnis = rufDerWildnis.valueAsNumber *parseInt(12);
+            var summeRufDerWildnis = rufDerWildnis.valueAsNumber *parseFloat(12);
             document.getElementById('Ruf der WildnisGesamt')
                 .value = summeRufDerWildnis;
         } catch (error) {
@@ -172,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         try {
             var jamesBond = document.getElementById('James Bond');
-            var summeJamesBond = jamesBond.valueAsNumber * parseInt(12);
+            var summeJamesBond = jamesBond.valueAsNumber * parseFloat(12);
             document.getElementById('James BondGesamt')
                 .value = summeJamesBond;
         } catch (error) {
@@ -180,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         try {
             var berlinBerlin = document.getElementById('Berlin Berlin');
-            var summeBerlinBerlin = berlinBerlin.valueAsNumber * parseInt(12);
+            var summeBerlinBerlin = berlinBerlin.valueAsNumber * parseFloat(12);
             document.getElementById('Berlin BerlinGesamt')
                 .value = summeBerlinBerlin;
         } catch (error) {
@@ -188,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         try {
             var inception = document.getElementById('Inception');
-            var summeInception = inception.valueAsNumber * parseInt(12);
+            var summeInception = inception.valueAsNumber * parseFloat(12);
             document.getElementById('Berlin BerlinGesamt')
                 .value = summeInception;
         } catch (error) {
@@ -199,14 +201,84 @@ document.addEventListener('DOMContentLoaded', function () {
             .value = summeFilme;
         console.log("mwst: "+mwst.valueAsNumber);
         console.log("mwst: "+parseInt(mwst));
-        var summe = (summeSnacks + summeFilme) * (1 + parseInt(mwst) /100);
-		summe = summe.toFixed(2);
+        var summe = (summeSnacks + summeFilme);
+        summe = summe.toFixed(2);
+        var steuer = summe*parseFloat(mwst);
+        steuer = steuer.toFixed(2);
+        document.getElementById('Steuer')
+			.value = steuer;
 		document.getElementById('betrag')
 			.value = summe;
 	}
 	document.getElementById("Warenkorbberechnen")
 		.addEventListener("input", rechne);
 });
+
+function bezahlen(){
+    console.log('in bezahlen');
+    // var benutzerId = window.localStorage.getItem("benutzerId");
+    var benutzerId = 1;
+    try {
+        var rufDerWildnis = document.getElementById('Ruf der Wildnis');
+        for (let i = 0; i < rufDerWildnis.valueAsNumber; i++) {
+            var vorstellungsId = window.localStorage.getItem('Ruf der Wildnis');
+            createTicket(vorstellungsId, benutzerId);
+            console.log(i);
+        }
+
+    } catch (error) {
+        
+    }
+    try {
+        console.log('createTicket JB');
+        var jamesBond = document.getElementById('James Bond');
+        for (let i = 0; i < jamesBond.valueAsNumber; i++) {
+            var vorstellungsId = window.localStorage.getItem('James Bond');
+            createTicket(vorstellungsId, benutzerId);
+        }
+        
+    } catch (error) {
+        
+    }
+    try {
+        console.log('createTicket I');
+        var inception = document.getElementById('Inception');
+        for(let i = 0; i < inception.valueAsNumber; i++) {
+            var vorstellungsId = window.localStorage.getItem('Inception');
+            createTicket(vorstellungsId, benutzerId);
+        
+        }
+        
+    } catch (error) {
+        
+    }
+    try {
+        console.log('createTicket BB');
+        var berlinBerlin = document.getElementById('Berlin Berlin');
+        for (let i = 0; i < berlinBerlin.valueAsNumber; i++) {
+            var vorstellungsId = window.localStorage.getItem('Berlin Berlin');
+            createTicket(vorstellungsId, benutzerId);
+        }
+    } catch (error) {
+        
+    }
+    
+}
+function createTicket(vorstellungsId, benutzerId){
+    var obj = { "vorstellungsID": vorstellungsId, "benutzerID": benutzerId};
+        $.ajax({
+            url: "http://localhost:8000/api/ticket",
+            method: "post",
+            contentType: "application/json",
+            data: JSON.stringify(obj)
+        }).done(function (response) {
+            console.log(response);
+            $("#output").html(JSON.stringify(response));
+        }).fail(function (jqXHR, statusText, error) {
+            console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+            $("#output").html("Ein Fehler ist aufgetreten");
+        });
+}
 
 
 

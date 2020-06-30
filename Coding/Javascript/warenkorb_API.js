@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    //var id  = window.localStorage.getItem("benutzerId");
     const id = 1;
     $.ajax({
         url: "http://localhost:8000/api/snack/gib/"+id,
@@ -50,6 +51,8 @@ $( document ).ready(function() {
             for (ticket in response["daten"]){
                 var ticketpreis= response['daten'][ticket]['preis'];
                 var filmname = response['daten'][ticket]['film']['film']['titel'];
+                var vorstellungsID = response['daten'][ticket]['vorstellungsid'] ;
+                window.localStorage.setItem(filmname,vorstellungsID);
                 var $reiheticket = $('<tr><th scope="row">'+nummer+'</th><td>'+ filmname + '</td><td><input type="number" id="'+filmname+'" min="0" value="1" class="warenkorb_numbertype"></input></td><td><output id="'+filmname+'Gesamt" >'+ticketpreis+'€</output></td></tr>')
                 nummer = nummer +1;
                 preisfilme = ticketpreis + preisfilme;
@@ -58,7 +61,7 @@ $( document ).ready(function() {
             var $filme =$('<tr><td></td><td><label for="filme">Filmtickets</label></td><td></td><td><output id="filmeGesamt" >'+preisfilme+'€</output></td></tr> ')
             $($gesamt).append($filme);
             var gesamt = preisgesamt + preisfilme;
-            var $footer =$('<tr><td></td><td><label for="mwst">MwSt (%)</label></td><td>19%</td><td></td></tr> <tr><td></td><td>Gesamt:</td><td></td><td><output id="betrag">'+gesamt+'</output> €</td></tr></tbody></table>');     
+            var $footer =$('<tr><td></td><td><label for="mwst">MwSt (%)</label></td><td>19%</td><td><output id="Steuer" >0</output>€</td></tr> <tr><td></td><td>Gesamt:</td><td></td><td><output id="betrag">'+gesamt+'</output> €</td></tr></tbody></table>');     
             $($gesamt).append($footer);
             $('#warenkorb_reihe_snack').append($gesamt);
         

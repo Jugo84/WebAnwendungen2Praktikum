@@ -43,7 +43,6 @@ class TicketDao {
             helper.log("hier bin ich in der for-Schleife");
             delete result[i].benutzerid;
             result[i].film = vorstellungDao.loadById(result[i].vorstellungsid);
-            delete result[i].vorstellungsid;
         }
         return result;
     }
