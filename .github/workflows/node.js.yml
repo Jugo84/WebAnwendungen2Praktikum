@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     strategy:
@@ -24,7 +23,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd ./Coding/WebAnw2Backend
+      working-directory: /Coding/WebAnw2Backend
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
