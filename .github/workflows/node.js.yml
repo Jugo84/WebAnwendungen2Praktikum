@@ -21,6 +21,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       working-directory: /Coding/WebAnw2Backend
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    
+      run: npm ci
