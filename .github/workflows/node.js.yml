@@ -20,6 +20,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      working-directory: /Coding/WebAnw2Backend
+      working-directory: ./Coding/WebAnw2Backend
     
       run: npm ci
