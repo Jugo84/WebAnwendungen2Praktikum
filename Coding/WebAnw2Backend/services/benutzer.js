@@ -140,22 +140,17 @@ serviceRouter.put("/benutzer", function(request, response) {
     var errorMsgs=[];
     if (helper.isUndefined(request.body.id)) 
         errorMsgs.push("id fehlt");
-    if (helper.isUndefined(request.body.benutzername)) 
-        errorMsgs.push("benutzername fehlt");
-    if (helper.isUndefined(request.body.neuespasswort)) 
-        request.body.neuespasswort = null;
-    if (helper.isUndefined(request.body.benutzerrolle)) {
-        errorMsgs.push("benutzerrolle fehlt");
-    } else if (helper.isUndefined(request.body.benutzerrolle.id)) {
-        errorMsgs.push("benutzerrolle gesetzt, aber id fehlt");
-    }        
-    if (helper.isUndefined(request.body.person)) {
-        request.body.person = null;
-    } else if (helper.isUndefined(request.body.person.id)) {
-        errorMsgs.push("person gesetzt, aber id fehlt");
-    } else {
-        request.body.person = request.body.person.id;
-    }
+    if (helper.isUndefined(request.body.name)) 
+        errorMsgs.push("name fehlt");
+    if (helper.isUndefined(request.body.vorname,)) 
+        errorMsgs.push("vorname fehlt");
+    if (helper.isUndefined(request.body.email)) 
+        errorMsgs.push("email fehlt");
+    if (helper.isUndefined(request.body.email)) 
+        errorMsgs.push("email fehlt");        
+    if (helper.isUndefined(request.body.bezahlmöglichkeit)) {
+        errorMsgs.push("bezahlmöglichkeit fehlt");  
+    } 
 
     if (errorMsgs.length > 0) {
         helper.log("Service Benutzer: Update not possible, data missing");
@@ -165,7 +160,7 @@ serviceRouter.put("/benutzer", function(request, response) {
 
     const benutzerDao = new BenutzerDao(request.app.locals.dbConnection);
     try {
-        var result = benutzerDao.update(request.body.id, request.body.benutzername, request.body.neuespasswort, request.body.benutzerrolle.id, request.body.person);
+        var result = benutzerDao.update(request.body.id, request.body.name,request.body.vorname, request.body.email, request.body.bezahlmöglichkeit, request.body.kreditkartennummer, request.body.cvs, request.body.adresseId );
         helper.log("Service Benutzer: Record updated, id=" + request.body.id);
         response.status(200).json(helper.jsonMsgOK(result));
     } catch (ex) {
