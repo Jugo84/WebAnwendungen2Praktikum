@@ -59,11 +59,6 @@ serviceRouter.post("/adresse", function(request, response) {
         errorMsgs.push("plz fehlt");
     if (helper.isUndefined(request.body.ort)) 
         errorMsgs.push("ort fehlt");
-    if (helper.isUndefined(request.body.land)) {
-        errorMsgs.push("land fehlt");
-    } else if (helper.isUndefined(request.body.land.id)) {
-        errorMsgs.push("land.id fehlt");
-    }
     
     if (errorMsgs.length > 0) {
         helper.log("Service Adresse: Creation not possible, data missing");
@@ -73,7 +68,7 @@ serviceRouter.post("/adresse", function(request, response) {
 
     const adresseDao = new AdresseDao(request.app.locals.dbConnection);
     try {
-        var result = adresseDao.create(request.body.strasse, request.body.hausnummer, request.body.adresszusatz, request.body.plz, request.body.ort, request.body.land.id);
+        var result = adresseDao.create(request.body.strasse, request.body.hausnummer, request.body.adresszusatz, request.body.plz, request.body.ort);
         helper.log("Service Adresse: Record inserted");
         response.status(200).json(helper.jsonMsgOK(result));
     } catch (ex) {
