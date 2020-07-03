@@ -16,6 +16,8 @@
     <link href="./CSS-Styles/stylePopcornShop.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./Javascript/functionality.js"></script>
+    <script src="./Javascript/popcornShop_API.js"></script>
+
   </head>
 
   <body data-gr-c-s-loaded="true">
@@ -49,67 +51,27 @@
         <div class="card mb-12 box-shadow">
           <div class="card-body text-center">
             <h4 id="header_shop"><i>Lassen Sie sich Popcorn und andere Snacks zuliefern und fühlen sie sich wie im echten Kino!</i></h4>
-            <div class="row">
-              <div class="col-md-4">
+            <div class="row" > 
+              <div class="col-md-4"> <!--hier menu_header-->
                 <div class="btn-block btn-group-vertical">
-                  <button type="button" class="btn PopcornButton">Popcorn</button>
-                  <button type="button" class="btn PopcornButton">Nachos</button>
-                  <div class="btn-group dropright">
-                    <button type="button" class="btn PopcornButton dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Süßes
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Haribo</a>
-                      <a class="dropdown-item" href="#">Schokolade</a>
-                      <a class="dropdown-item" href="#">Smarties</a>
-                    </div>
-                  </div>
-                  <div class="btn-group dropright">
-                    <button type="button" class="btn PopcornButton dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Andere Snacks
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Chips</a>
-                      <a class="dropdown-item" href="#">Erdnüsse</a>
-                    </div>
-                  </div>
-                  <div class="btn-group dropright">
-                    <button type="button" class="btn PopcornButton dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Getränke
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Cola</a>
-                      <a class="dropdown-item" href="#">Sprite</a>
-                      <a class="dropdown-item" href="#">Fanta</a>
-                      <a class="dropdown-item" href="#">Bier</a>
-                    </div>
-                  </div>
+                  <!-- hier kommt das popup menü hin, welches dynamisch durch createCard erzeugt wird -->
+                  
                 </div>
               </div>
-              <div class="col-md-8">
-                <div class="card mb-12">
-                  <div class="card-header">
+              <div class="col-md-8"> <!--hier createSnack-alle produkte namen-->
+                <div class="card mb-12" >
+                  <div class="card-header" >
                     <h6 class="my-0 font-weight-normal">Popcorn</h6>
                   </div>
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-4" id="snackBild">
                         <img class="d-block w-100" src="Bilder\popcorn.jpg" alt="Popcorn">
                       </div>
-                      <div class="col-md-8 text-left">
+                      <div class="col-md-8 text-left" id="snackText">
                         <span>Die Extraportion Puffmais. Das Cinema Popcorn ist der leckere Knabberspaß für Groß und Klein. Das gezuckerte Popcorn kommt im extragroßen  wiederverschließbaren Eimer daher. Mit seiner Höhe von ca. 18 cm und einem Durchmesser von ca. 22 cm übersteht dieser Riese jeden Fernsehspaß mit Bravour. Ob mit Freunden oder allein: Dieser Knabberspaß zaubert Ihnen ein Lächeln auf die Lippen.</span>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <select class="mt-4 mb-0 form-control">
-                              <option>klein</option>
-                              <option>mittel</option>
-                              <option>groß</option>
-                              <option>sehr groß</option>
-                            </select>
-                          </div>
-                          <div class="col-md-6">
-                            <button class="mt-4 mb-0 btn btn-md btn-block btn-outline-primary" type="button" data-toggle="modal" data-target="#exampleModal">In den Warenkorb</button>
-                          </div>
+                        <div class="row">  <!--hier URL parameter für den Warenkorb?-->
+                          <button class="mt-4 mb-0 btn btn-md btn-block btn-outline-primary" type="button" data-toggle="modal" data-target="#exampleModal">In den Warenkorb</button>                        
                         </div>
                       </div>
                     </div>

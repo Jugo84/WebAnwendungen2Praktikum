@@ -32,6 +32,20 @@ serviceRouter.get("/snacktyp/alle/", function(request, response) {
     }
 });
 
+serviceRouter.get("/snacktyp/alleFrontend/", function(request, response) {
+    helper.log("Service SnackTyp: Client requested all records for Frontend");
+
+    const snackTypDao = new SnackTypDao(request.app.locals.dbConnection);
+    try {
+        var result = snackTypDao.loadAllForFrontend();
+        helper.log("Service Snack: Records loaded, count=" + result.length);
+        response.status(200).json(helper.jsonMsgOK(result));
+    } catch (ex) {
+        helper.logError("Service Snack: Error loading all records. Exception occured: " + ex.message);
+        response.status(400).json(helper.jsonMsgError(ex.message));
+    }
+});
+
 serviceRouter.get("/snacktyp/existiert/:id", function(request, response) {
     helper.log("Service SnackTyp: Client requested check, if record exists, id=" + request.params.id);
 
@@ -58,6 +72,8 @@ serviceRouter.post("/snacktyp", function(request, response) {
         request.body.beschreibung = "";
     if (helper.isUndefined(request.body.bildpfad)) 
         request.body.bildpfad = null;
+    if (helper.isUndefined(request.body.art)) 
+        errorMsgs.push("art fehlt");
 
     if (errorMsgs.length > 0) {
         helper.log("Service SnackTyp: Creation not possible, data missing");
@@ -67,7 +83,7 @@ serviceRouter.post("/snacktyp", function(request, response) {
 
     const snackTypDao = new SnackTypDao(request.app.locals.dbConnection);
     try {
-        var result = snackTypDao.create(request.body.name, request.body.preis, request.body.beschreibung, request.body.bildpfad);
+        var result = snackTypDao.create(request.body.name, request.body.preis, request.body.beschreibung, request.body.bildpfad, request.body.art);
         helper.log("Service SnackTyp: Record inserted");
         response.status(200).json(helper.jsonMsgOK(result));
     } catch (ex) {
@@ -91,6 +107,8 @@ serviceRouter.put("/snackTyp", function(request, response) {
         request.body.beschreibung = "";
     if (helper.isUndefined(request.body.bildpfad)) 
         request.body.bildpfad = null;
+    if (helper.isUndefined(request.body.art)) 
+        errorMsgs.push("art fehlt");
 
     if (errorMsgs.length > 0) {
         helper.log("Service SnackTyp: Update not possible, data missing");
@@ -100,7 +118,7 @@ serviceRouter.put("/snackTyp", function(request, response) {
 
     const snackTypDao = new SnackTypDao(request.app.locals.dbConnection);
     try {
-        var result = snackTypDao.update(request.body.id, request.body.bezeichnung, request.body.beschreibung, request.body.bildpfad);
+        var result = snackTypDao.update(request.body.id, request.body.bezeichnung, request.body.beschreibung, request.body.bildpfad, request.body.art);
         helper.log("Service SnackTyp: Record updated, id=" + request.body.id);
         response.status(200).json(helper.jsonMsgOK(result));
     } catch (ex) {
