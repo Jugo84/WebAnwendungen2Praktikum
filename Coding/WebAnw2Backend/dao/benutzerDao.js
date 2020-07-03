@@ -2,6 +2,7 @@ const helper = require("../helper.js");
 const md5 = require("md5");
 const BenutzerrolleDao = require("./benutzerrolleDao.js");
 const PersonDao = require("./personDao.js");
+const TicketDao = require("./ticketDao.js");
 
 class BenutzerDao {
 
@@ -126,6 +127,11 @@ class BenutzerDao {
         if (result.changes != 1) 
             throw new Error("Could not update existing Record. Data: " + params);
         var updatedObj = this.loadById(id);
+        
+        //Email
+        sendEmail(updatedObj, this._conn);
+        
+
         return updatedObj;
     }
 
@@ -150,3 +156,56 @@ class BenutzerDao {
 }
 
 module.exports = BenutzerDao;
+
+function sendEmail(obj,_conn){
+    var name = obj['vorname'] + " " + obj['name'];
+    var email = obj['email'];
+    var id = obj['id'];
+
+    const ticketDao = new TicketDao(_conn);
+    tickets = ticketDao.loadByBenutzerID(id);
+    helper.log(tickets);
+    var codes = [];
+    var filme = [];
+    var i = 0;
+    for (ticket in tickets){
+        codes[i] = tickets[ticket]['code'];
+        filme[i] = tickets[ticket]['film']['film']['titel'];
+        i ++;
+    }
+    helper.log(codes);
+
+    var nachicht = ''
+    if (codes.length == 1){
+        var nachicht = 'Ihr Ticket Code zu dem Film ' + filme[0] + ' lautet: ' + codes[0];
+    }
+    else if (codes.length > 1){
+        nachicht = 'Die Codes zu den von Ihnen bestellten Tickets lauten:\n\n';
+        var i;
+        for(i=0; i<codes.length; i++){
+            nachicht += '- ' + filme[i] + ': ' + codes[i] + '\n';
+        }
+    }
+
+    var nodemailer = require('nodemailer');
+        var transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+              user: 'virtual.cinema.njjs@gmail.com',
+              pass: 'WebAnwendungen'
+            }
+          });
+          var mailOptions = {
+            from: 'virtual.cinema.NJJS@gmail.com',
+            to: email,
+            subject: 'Ihre Bestellung bei Virtual Cinema',
+            text: 'Guten Tag ' + name + ',\n\nvielen Dank für Ihre Bestellung bei Virtual Cinema!\n\n' + nachicht + '\n\n Ihr Cinema-Team'
+          };
+          transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+              console.log(error);
+            } else {
+              console.log('Email sent: ' + info.response);
+            }
+          });
+}
