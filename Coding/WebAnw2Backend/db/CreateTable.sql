@@ -46,6 +46,7 @@ CREATE TABLE SnackTyp (
 	Preis REAL NOT NULL,
 	Beschreibung TEXT NOT NULL,
 	Bildpfad TEXT NOT NULL,
+	Art TEXT NOT NULL
 );
 
 CREATE TABLE Snack (
