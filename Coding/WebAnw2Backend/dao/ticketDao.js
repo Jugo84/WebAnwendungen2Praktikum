@@ -40,10 +40,8 @@ class TicketDao {
         result = helper.arrayObjectKeysToLower(result);
         helper.log(result.length);
         for (var i = 0; i < result.length; i++){
-            helper.log("hier bin ich in der for-Schleife");
             delete result[i].benutzerid;
             result[i].film = vorstellungDao.loadById(result[i].vorstellungsid);
-            delete result[i].vorstellungsid;
         }
         return result;
     }
@@ -75,24 +73,15 @@ class TicketDao {
         return result.lastInsertRowid;
     }
 
-    update(id, benutzername = "", neuespasswort = null, benutzerrolleid = 1, personid = null) {
-        
-        if (helper.isNull(neuespasswort)) {
-            var sql = "UPDATE Benutzer SET Benutzername=?,BenutzerrolleID=?,PersonID=? WHERE ID=?";
-            var statement = this._conn.prepare(sql);
-            var params = [benutzername, benutzerrolleid, personid, id];
-        } else {
-            var sql = "UPDATE Benutzer SET Benutzername=?,Passwort=?,BenutzerrolleID=?,PersonID=? WHERE ID=?";
-            var statement = this._conn.prepare(sql);
-            var params = [benutzername, md5(neuespasswort), benutzerrolleid, personid, id];
-        }
+    update(id) {
+        var sql = 'UPDATE Ticket SET Bezahlt=1 WHERE ID=?'
+        var statement = this._conn.prepare(sql);
+        var params = [id];
         var result = statement.run(params);
 
         if (result.changes != 1) 
             throw new Error("Could not update existing Record. Data: " + params);
 
-        var updatedObj = this.loadById(id);
-        return updatedObj;
     }
 
     delete(id) {

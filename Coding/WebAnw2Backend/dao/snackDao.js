@@ -26,8 +26,8 @@ class SnackDao {
         result = helper.objectKeysToLower(result);  
         
         // because Snack has 2 foreign keys benutzerid and snackTypid
-        result.snackTyp = snackTypDao.loadById(result.snackTypid);
-        delete result.snackTypid;
+        result.snackTyp = snackTypDao.loadById(result.snacktypid);
+        delete result.snacktypid;
 
         result.benutzer = { "id": result.benutzerid};
         delete result.benutzerid;
@@ -121,6 +121,19 @@ class SnackDao {
         var sql = "UPDATE Snack SET SnackTypID=?, BenutzerID=?, Menge=? WHERE ID=?";
         var statement = this._conn.prepare(sql);
         var params = [snackTypid, benutzerid, menge, id];
+        var result = statement.run(params);
+
+        if (result.changes != 1) 
+            throw new Error("Could not update existing Record. Data: " + params);
+
+        var updatedObj = this.loadById(id);
+        return updatedObj;
+    }
+
+    updateBezahlt(id){
+        var sql = "UPDATE Snack SET Bezahlt=1 WHERE ID=?";
+        var statement = this._conn.prepare(sql);
+        var params = [id];
         var result = statement.run(params);
 
         if (result.changes != 1) 

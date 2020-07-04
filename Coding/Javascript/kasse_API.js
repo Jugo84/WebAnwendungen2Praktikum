@@ -75,6 +75,7 @@ $( document ).ready(function() {
             $('#emailError').text('');
         }
 
+        //update Benutzer
         if (error == 0){
             //create Adresse
             if(straße != ""){
@@ -106,6 +107,47 @@ $( document ).ready(function() {
             }
         
         }
+
+        
+        
+        if (error==0){
+            // get and update Tickets
+            $.ajax({
+                url: "http://localhost:8000/api/ticket/gib/BenutzerId/" + benutzerId,
+                method: "get",
+                dataType: "json"
+            }).done(function (response) {
+                console.log(response);
+                var i;
+                for (i=0;i<response['daten'].length;i++){
+                    var id = response['daten'][i]['id'];
+                    updateTicket(id);
+                }
+            }).fail(function (jqXHR, statusText, error) {
+                console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+                $("#output").html("Ein Fehler ist aufgetreten");
+            });
+
+            // get and update Snack
+            $.ajax({
+                url: "http://localhost:8000/api/snack/gib/" + benutzerId,
+                method: "get",
+                dataType: "json"
+            }).done(function (response) {
+                console.log(response);
+                var i;
+                for (i=0;i<response['daten'].length;i++){
+                    var id = response['daten'][i]['id'];
+                    updateSnack(id);
+                }
+            }).fail(function (jqXHR, statusText, error) {
+                console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+                $("#output").html("Ein Fehler ist aufgetreten");
+            });
+
+            // zu checkout weiterleiten
+            window.location.href = "checkout.html"
+        };
     })
 })
 
@@ -125,6 +167,38 @@ function updateBenutzer(benutzerId, nachname, vorname, email, bezahlmöglichkeit
     }
     $.ajax({
         url: "http://localhost:8000/api/benutzer",
+        method: "put",
+        contentType: "application/json",
+        data: JSON.stringify(obj)
+    }).done(function (response) {
+        console.log(response);
+        $("#output").html(JSON.stringify(response));
+    }).fail(function (jqXHR, statusText, error) {
+        console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+        $("#output").html("Ein Fehler ist aufgetreten");
+    });
+}
+
+function updateTicket(id){
+    var obj = {'id': id}
+    $.ajax({
+        url: "http://localhost:8000/api/ticket",
+        method: "put",
+        contentType: "application/json",
+        data: JSON.stringify(obj)
+    }).done(function (response) {
+        console.log(response);
+        $("#output").html(JSON.stringify(response));
+    }).fail(function (jqXHR, statusText, error) {
+        console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+        $("#output").html("Ein Fehler ist aufgetreten");
+    });
+}
+
+function updateSnack(id){
+    var obj = {'id': id}
+    $.ajax({
+        url: "http://localhost:8000/api/snack/bezahlt",
         method: "put",
         contentType: "application/json",
         data: JSON.stringify(obj)
