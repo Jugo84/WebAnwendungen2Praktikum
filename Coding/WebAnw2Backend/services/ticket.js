@@ -98,4 +98,28 @@ serviceRouter.delete("/ticket/:id", function(request, response) {
     }
 });
 
+serviceRouter.put("/ticket", function(request, response) {
+    helper.log("Service Ticket: Client requested update of existing record");
+
+    var errorMsgs=[];
+    if (helper.isUndefined(request.body.id)) 
+        errorMsgs.push("id fehlt");
+
+    if (errorMsgs.length > 0) {
+        helper.log("Service Ticket: Update not possible, data missing");
+        response.status(400).json(helper.jsonMsgError("Update nicht möglich. Fehlende Daten: " + helper.concatArray(errorMsgs)));
+        return;
+    }
+
+    const ticketDao = new TicketDao(request.app.locals.dbConnection);
+    try {
+        var result = ticketDao.update(request.body.id, request.body.name,request.body.vorname, request.body.email, request.body.bezahlmöglichkeit, request.body.kreditkartennummer, request.body.cvs, request.body.adresseId );
+        helper.log("Service Ticekt: Record updated, id=" + request.body.id);
+        response.status(200).json(helper.jsonMsgOK(result));
+    } catch (ex) {
+        helper.logError("Service Ticket: Error updating record by id. Exception occured: " + ex.message);
+        response.status(400).json(helper.jsonMsgError(ex.message));
+    }    
+});
+
 module.exports = serviceRouter;
