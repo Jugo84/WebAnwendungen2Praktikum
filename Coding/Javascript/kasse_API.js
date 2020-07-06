@@ -146,7 +146,8 @@ $( document ).ready(function() {
             });
 
             // zu checkout weiterleiten
-            window.location.href = "checkout.html"
+            var checkout = '<div class="gap"></div><div class="card container background_white"> <div class="row"> <div class="col-sm-12 p-3"> <p>Großartig ! Vielen Dank für Deine Bestellung! Du erhälst in Kürze eine Bestätigungemail mit deinen Ticket-Codes.</p> <div class="row"> <div class="col-sm-auto"> <p>Aufgeregt? Teil es gleich mit Deinen Freunde</p> </div> <div class="col-sm-auto"> <a href="https://facebook.com/" target="blank"> <i class="fa fa-facebook"></i> </a> <a href="https://twitter.com/" target="blank"> <i class="fa fa-twitter"></i></a><a href="https://www.wechat.com/en/" target="blank"> <i class="fa fa-wechat"></i> </a> <a href="https://www.viber.com/de/" target="blank"> <i class="fab fa-viber"></i> </a> <a  href="https://www.pinterest.de/" target="blank"> <i class="fa fa-pinterest"></i> </a> <a  href="https://whatsapp.com/" target="blank"> <i class="fa fa-whatsapp"></i> </a> <a href="https://instagram.com/" target="blank"> <i class="fa fa-instagram"></i> </a> <a  href="https://www.tumblr.com/" target="blank"> <i class="fa fa-tumblr"></i> </a> </div> </div> </div> </div> <p>Oder setzt ein Reminder für den Film<a href="" target="blank"> <i class="material-icons" style="font-size:18px">access_alarm</i> </a> </p> <p>Wir benachrichtigen Dich 1 Stunde bevor es los geht</p> <p><a href="https://albstadt.zollernalb-kinos.de/"><img class="img-fluid" src="Bilder/zollernalb.jpg"></a> bedankt sich für Deine Unterstützung ! </p> </div>';
+            $('main').html(checkout);
         };
     })
 })
