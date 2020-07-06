@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    const id = 1;
+    id = window.localStorage.getItem('benutzerid');
     $.ajax({
         url: "http://localhost:8000/api/snack/gib/"+id,
         method: "get",
@@ -13,19 +13,20 @@ $( document ).ready(function() {
         
 
         for (inhalt in response["daten"]){
-            var menge = response['daten'][inhalt]['menge'];
+            var bezahlt = response['daten'][inhalt]['bezahlt'];
+            if (bezahlt==0) {
+                var menge = response['daten'][inhalt]['menge'];
 
             var preisEinzeln = response['daten'][inhalt]['snack']['preis'];
             var preis = preisEinzeln * menge;
             preisgesamt = preisgesamt + preis;
             var beschreibung = response['daten'][inhalt]['snack']['name'];
-            window.localStorage.setItem(beschreibung,preisEinzeln);
-            
-            
             var $reihe = $('<tr><th scope="row">'+nummer+'</th><td>'+ beschreibung + '</td><td><input id="'+beschreibung+'" type="number" min="0" value="'+ menge +'" class="warenkorb_numbertype"></input></td><td><output id="'+beschreibung+beschreibung+'" >'+preis+'</output>€</td></tr>')
             
             $($gesamt).append($reihe);
             nummer = nummer +1;
+            }
+            
         }
         var $snacks =$('<tr><td></td><td><label for="snacks">Snacks</label></td><td></td><td><output id="snacksGesamt" >'+preisgesamt+'€</output></td></tr> ')
         $($gesamt).append($snacks);
@@ -37,12 +38,16 @@ $( document ).ready(function() {
             var ticket;
             var preisfilme = 0;
             for (ticket in response["daten"]){
-                var ticketpreis= response['daten'][ticket]['preis'];
+                var bezahlt1 = response['daten'][ticket]['bezahlt'];
+                if (bezahlt1 == 0) {
+                    var ticketpreis= response['daten'][ticket]['preis'];
                 var filmname = response['daten'][ticket]['film']['film']['titel'];
                 var $reiheticket = $('<tr><th scope="row">'+nummer+'</th><td>'+ filmname + '</td><td><input type="number" id="'+filmname+'" min="0" value="1" class="warenkorb_numbertype"></input></td><td><output id="'+filmname+ filmname+'" >'+ticketpreis+'</output>€</td></tr>')
                 nummer = nummer +1;
                 preisfilme = ticketpreis + preisfilme;
                 $($gesamt).append($reiheticket);
+                }
+                
             }
             var $filme =$('<tr><td></td><td><label for="filme">Filmtickets</label></td><td></td><td><output id="filmeGesamt" >'+preisfilme+'€</output></td></tr> ')
             $($gesamt).append($filme);

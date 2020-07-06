@@ -111,6 +111,82 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+function bezahlen(){
+    console.log('in bezahlen');
+    var benutzerId = window.localStorage.getItem("benutzerId");
+    $.ajax({
+        url: "http://localhost:8000/api/ticket/gib/BenutzerId/"+benutzerId,
+        method: "get",
+        dataType: "json"
+    }).done(function (response) {
+        var ticket;
+        for (ticket in response["daten"]){
+            var vorstellungsId = response['daten'][ticket]['vorstellungsid'];
+            var filmname = response['daten'][ticket]['film']['film']['titel'];
+            try {
+                var menge2 = document.getElementById(filmname);
+                    for (var i = 1; i < menge2.valueAsNumber; i++) {
+                    createTicket(vorstellungsId, benutzerId);
+                }
+                
+            } catch (error) {
+                
+            }   
+        }
+    }).fail(function (jqXHR, statusText, error) {
+        console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+        $("#output").html("Ein Fehler ist aufgetreten");
+    });
+    $.ajax({
+        url: "http://localhost:8000/api/snack/gib/"+benutzerId,
+        method: "get",
+        dataType: "json"
+    }).done(function (response) {
+        var inhalt;
+        for (inhalt in response["daten"]){
+            var ids = response['daten'][inhalt]['id'];
+            var beschreibung = response['daten'][inhalt]['snack']['name'];
+            var menge3 = document.getElementById(beschreibung);
+            var snacktypID = response['daten'][inhalt]['snacktypid'];
+            updateSnack(parseInt(ids),parseInt(snacktypID),parseInt(benutzerId),menge3.valueAsNumber);
+        }
+    }).fail(function (jqXHR, statusText, error) {
+        console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+        $("#output").html("Ein Fehler ist aufgetreten");
+    });
+
+    
+    
+}
+function createTicket(vorstellungsId, benutzerId){
+    var obj = { "vorstellungsID": vorstellungsId, "benutzerID": benutzerId};
+        $.ajax({
+            url: "http://localhost:8000/api/ticket",
+            method: "post",
+            contentType: "application/json",
+            data: JSON.stringify(obj)
+        }).done(function (response) {
+            $("#output").html(JSON.stringify(response));
+        }).fail(function (jqXHR, statusText, error) {
+            console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+            $("#output").html("Ein Fehler ist aufgetreten");
+        });
+}
+function updateSnack(id,snackTypid=null, benutzerid=null, menge){
+    var obj = {'id': id, 'snacktypid': snackTypid, 'benutzerid': benutzerid, 'menge':menge};
+    $.ajax({
+        url: "http://localhost:8000/api/snack/update",
+        method: "put",
+        contentType: "application/json",
+        data: JSON.stringify(obj)
+    }).done(function (response) {
+        $("#output").html(JSON.stringify(response));
+    }).fail(function (jqXHR, statusText, error) {
+        console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+        $("#output").html("Ein Fehler ist aufgetreten");
+    });
+}
+
 
 
 
