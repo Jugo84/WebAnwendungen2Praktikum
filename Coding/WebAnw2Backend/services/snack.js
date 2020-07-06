@@ -50,7 +50,7 @@ serviceRouter.post("/snack", function(request, response) {
     }
 });
 
-serviceRouter.put("/snack", function(request, response) {
+serviceRouter.put("/snack/update", function(request, response) {
     helper.log("Service Snack: Client requested update of existing record");
 
     var errorMsgs=[];
@@ -65,7 +65,8 @@ serviceRouter.put("/snack", function(request, response) {
 
     const snackDao = new SnackDao(request.app.locals.dbConnection);
     try {
-        var result = snackDao.update(request.body.id, request.body.name,request.body.vorname, request.body.email, request.body.bezahlmöglichkeit, request.body.kreditkartennummer, request.body.cvs, request.body.adresseId );
+        helper.log('id: '+request.body.id+' snacktypid: '+request.body.snacktypid+ 'benutzerid: '+request.body.benutzerid+' menge: '+request.body.menge);
+        var result = snackDao.update(request.body.id, request.body.snacktypid,request.body.benutzerid, request.body.menge);
         helper.log("Service Snack: Record updated, id=" + request.body.id);
         response.status(200).json(helper.jsonMsgOK(result));
     } catch (ex) {
