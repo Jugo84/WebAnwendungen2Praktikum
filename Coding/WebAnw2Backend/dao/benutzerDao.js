@@ -169,8 +169,10 @@ function sendEmail(obj,_conn){
     var filme = [];
     var i = 0;
     for (ticket in tickets){
-        codes[i] = tickets[ticket]['code'];
-        filme[i] = tickets[ticket]['film']['film']['titel'];
+        if(tickets[ticket]['bezahlt'] == 0){
+            codes[i] = tickets[ticket]['code'];
+            filme[i] = tickets[ticket]['film']['film']['titel'];
+        }
         i ++;
     }
     helper.log(codes);

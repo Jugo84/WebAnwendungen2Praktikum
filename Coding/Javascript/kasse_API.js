@@ -146,7 +146,8 @@ $( document ).ready(function() {
             });
 
             // zu checkout weiterleiten
-            window.location.href = "checkout.html"
+            
+            setTimeout(() => { window.location.href = "checkout.html"; }, 2000);
         };
     })
 })
