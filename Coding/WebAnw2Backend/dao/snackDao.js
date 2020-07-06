@@ -87,7 +87,7 @@ class SnackDao {
         for (var i = 0; i < result.length; i++){
             delete result[i].benutzerid;
             result[i].snack = snackTypDao.loadById(result[i].snacktypid);
-            delete result[i].snacktypid;
+
         }
         helper.log(result);
         return result;
@@ -117,7 +117,7 @@ class SnackDao {
         return newObj;
     }
 
-    update(id, snackTypid = null, benutzerid = null, menge = 1) {
+    update(id, snackTypid, benutzerid, menge = 1) {
         var sql = "UPDATE Snack SET SnackTypID=?, BenutzerID=?, Menge=? WHERE ID=?";
         var statement = this._conn.prepare(sql);
         var params = [snackTypid, benutzerid, menge, id];
