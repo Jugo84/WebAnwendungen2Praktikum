@@ -11,8 +11,7 @@ $(document).ready(function() {
             if(isNaN(vorstellungsid)){
                 return;
             }
-            // Not working because html, css and javascript only rendered through browser and not spreaded via node.js
-            //setCookie('vorstellungsid', String(vorstellungsid), 365);
+            
             setLocalData("VorstellungsID", vorstellungsid);
             window.location.href = "kinosaal_video.html";
     
@@ -23,4 +22,3 @@ $(document).ready(function() {
         });
     });
 });
-
