@@ -172,8 +172,8 @@ function sendEmail(obj,_conn){
         if(tickets[ticket]['bezahlt'] == 0){
             codes[i] = tickets[ticket]['code'];
             filme[i] = tickets[ticket]['film']['film']['titel'];
+            i ++;
         }
-        i ++;
     }
     helper.log(codes);
 
