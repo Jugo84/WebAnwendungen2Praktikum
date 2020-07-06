@@ -10,6 +10,8 @@ serviceRouter.get("/ticket/gib/:TicketCode", function(request, response) {
     try {
         var result = ticketDao.loadByTicketCode(request.params.TicketCode);
         helper.log("Service Ticket: Record loaded");
+        // Delete Ticket, that you cant share your ticket
+        ticketDao.delete(result['id'])
         response.status(200).json(helper.jsonMsgOK(result));
     } catch (ex) {
         helper.logError("Service Ticket: Error loading record by id. Exception occured: " + ex.message);
