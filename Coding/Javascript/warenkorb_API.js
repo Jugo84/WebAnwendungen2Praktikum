@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    id = window.localStorage.getItem('benutzerid');
+    id = window.localStorage.getItem('benutzerId');
     $.ajax({
         url: "http://localhost:8000/api/snack/gib/"+id,
         method: "get",
