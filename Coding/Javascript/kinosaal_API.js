@@ -11,8 +11,10 @@ $(document).ready(function() {
             if(isNaN(vorstellungsid)){
                 return;
             }
+            var benutzerId = (response['daten']['benutzerid']);
             
             setLocalData("VorstellungsID", vorstellungsid);
+            setLocalData("benutzerId", benutzerId);
             window.location.href = "kinosaal_video.html";
     
         }).fail(function (jqXHR, statusText, error) {

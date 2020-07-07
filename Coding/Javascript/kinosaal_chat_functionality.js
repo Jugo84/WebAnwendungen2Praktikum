@@ -7,12 +7,11 @@ $(document).ready(function() {
     if (isNaN(vorstellungsId)){
         return;
     }
-    // TODO Use when BenutzerID in Storage
-    // benutzerID = getLocalData('BenutzerID');
-    // if (isNaN(benutzerID)){
-    //     return;
-    // }
-    benutzerID = 1;
+    
+    benutzerID = getLocalData('benutzerId');
+    if (isNaN(benutzerID)){
+        return;
+    }
     chatIntervalID = window.setInterval(function() { checkForMessages(vorstellungsId);}, 100);
 });
 
@@ -47,8 +46,6 @@ function checkForMessages(vorstellungsId){
             }
         }
 
-        scrollDown();
-
     }).fail(function (jqXHR, statusText, error) {
         console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
     });
@@ -62,7 +59,7 @@ function addToChat(input, name, time, messageType){
     var $footer = $('<span class="timeLeft">'+parsedTime+ '</span>');
     $card.append($header, $message, $footer);
     $("#chat").append($card);
-    //scrollDown();
+    scrollDown();
 }
 
 // Scroll down when ever new Message arrives
