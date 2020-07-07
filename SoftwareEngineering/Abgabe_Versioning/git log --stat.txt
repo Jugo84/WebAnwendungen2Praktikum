@@ -1,0 +1,3695 @@
+commit 760115e50170b93f6d6417181778a2fcc14edf11
+Merge: 91d9079 cb8958c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jul 7 14:19:10 2020 +0200
+
+    Merge pull request #100 from Jugo84/gitignore
+    
+    gitignore
+
+commit 91d9079d599dc333158d7e5564f6cb99af73ce12
+Merge: 61a83d2 df625bc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jul 7 14:01:49 2020 +0200
+
+    Merge pull request #99 from Jugo84/Warenkorb-bild
+    
+    Bilderpfad angepasst
+
+commit df625bc68bbf3c0ce5fd79fe683efd1d423dc0b8
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jul 7 12:25:00 2020 +0200
+
+    Bilderpfad angepasst
+
+ Coding/warenkorb.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit cb8958c4f97660acdb3ddbe8974520f248c0eb97
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jul 7 10:31:06 2020 +0200
+
+    gitignore
+
+ .gitignore | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 61a83d25dc3f839cc3f235410992a8d2472c660d
+Merge: 11c4eaa feded1a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jul 7 09:38:07 2020 +0200
+
+    Merge pull request #98 from Jugo84/FixesForKinosaal
+    
+    Little Fixes for Kinosaal
+
+commit feded1a7791f5b8bac81a68f04d5d0cee4372d3f
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue Jul 7 09:37:44 2020 +0200
+
+    Little Fixes for Kinosaal
+
+ Coding/Javascript/kinosaal_API.js                |  4 +++-
+ Coding/Javascript/kinosaal_chat_functionality.js | 15 ++++++---------
+ 2 files changed, 9 insertions(+), 10 deletions(-)
+
+commit 11c4eaa5f16deaac4361e38dbc053396f919677c
+Merge: 19c7ae0 defc8e6
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jul 6 16:22:55 2020 +0200
+
+    Merge pull request #97 from Jugo84/Kasse
+    
+    Kasse
+
+commit 19c7ae07c2da2260bf06cd9148ef06ba834a7171
+Merge: b095fd8 d311001
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jul 6 16:22:43 2020 +0200
+
+    Merge pull request #96 from Jugo84/warenkorb-benutzerId
+    
+    benutzerid --> benutzerId
+
+commit defc8e67c5129387cad6b8c1b369db4cda731160
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Mon Jul 6 14:39:54 2020 +0200
+
+    zu Checkout weiterleiten
+
+ Coding/Checkout.html                     | 138 -------------------------------
+ Coding/Javascript/kasse_API.js           |   4 +-
+ Coding/WebAnw2Backend/dao/benutzerDao.js |   2 +-
+ Coding/WebAnw2Backend/db/db.sqlite       | Bin 180224 -> 180224 bytes
+ Coding/kasse.html                        |   1 +
+ 5 files changed, 4 insertions(+), 141 deletions(-)
+
+commit bcc58bae23373ec5b2ba820ddbe2ee0e66444c29
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Mon Jul 6 14:12:04 2020 +0200
+
+    Kasse
+
+ Coding/Javascript/kasse_API.js           | 3 ++-
+ Coding/WebAnw2Backend/dao/benutzerDao.js | 6 ++++--
+ 2 files changed, 6 insertions(+), 3 deletions(-)
+
+commit d31100125c5bedaae148edbf1d844e027194331c
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 11:49:00 2020 +0200
+
+    benutzerid --> benutzerId
+
+ Coding/Javascript/warenkorb_API.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b095fd8320c18b1489ec586cb4aa43c5c50587e8
+Merge: fc6e8e2 cc9927a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jul 6 11:38:33 2020 +0200
+
+    Merge pull request #95 from Jugo84/Warenkorb-fertig
+    
+    Warenkorb fertig tickets erstellen und menge anpssen
+
+commit cc9927ad2268e47ada5a8178ecad41657a04a1ee
+Merge: 7b3d66a 6b1bff2
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 11:35:48 2020 +0200
+
+    Merge branch 'master' into Warenkorb-fertig
+
+commit 6b1bff2a411a10a0ad36468457cf0344fbfc585a
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 10:07:32 2020 +0200
+
+    Warenkorb fertig tickets erstellen und menge anpssen
+
+ Coding/Javascript/Warenkorb.js          | 76 +++++++++++++++++++++++++++++++++
+ Coding/Javascript/warenkorb_API.js      | 17 +++++---
+ Coding/WebAnw2Backend/dao/snackDao.js   |  4 +-
+ Coding/WebAnw2Backend/services/snack.js |  5 ++-
+ Coding/warenkorb.html                   |  2 +-
+ 5 files changed, 93 insertions(+), 11 deletions(-)
+
+commit 6245a9b864f5fda053f4139aefa132ca87dacd44
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 10:08:21 2020 +0200
+
+    rf
+
+ Coding/WebAnw2Backend/db/db.sqlite | Bin 180224 -> 180224 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7b3d66a636588f893ef73d7e5563773b3c7e3ed5
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 10:07:32 2020 +0200
+
+    Warenkorb fertig tickets erstellen und menge anpssen
+
+ Coding/Javascript/Warenkorb.js          |  76 ++++++++++++++++++++++++++++++++
+ Coding/Javascript/warenkorb_API.js      |  17 ++++---
+ Coding/WebAnw2Backend/dao/snackDao.js   |   4 +-
+ Coding/WebAnw2Backend/db/db.sqlite      | Bin 180224 -> 180224 bytes
+ Coding/WebAnw2Backend/services/snack.js |   5 ++-
+ Coding/warenkorb.html                   |   2 +-
+ 6 files changed, 93 insertions(+), 11 deletions(-)
+
+commit fc6e8e29c3e733fd8a6a4af8bdf845550c58f04f
+Merge: e1dd482 cffea23
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jul 6 09:48:39 2020 +0200
+
+    Merge pull request #94 from Jugo84/HTML-Site-Delivery
+    
+    HTML SiteDelivery
+
+commit cffea23a46c7d535d63bcab4e96f0b0ee78b4883
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Mon Jul 6 09:47:41 2020 +0200
+
+    HTML SiteDelivery
+
+ .gitignore                               |   3 +-
+ Coding/Checkout.html                     |   8 +-
+ Coding/FrontEndServer/app.js             | 232 +++++++++++++++++++
+ Coding/FrontEndServer/package-lock.json  | 374 +++++++++++++++++++++++++++++++
+ Coding/FrontEndServer/package.json       |  15 ++
+ Coding/Impressum.html                    |   6 +-
+ Coding/Javascript/kinosaal_API.js        |   4 +-
+ Coding/WebAnw2Backend/db/db.sqlite       | Bin 180224 -> 180224 bytes
+ Coding/WebAnw2Backend/services/ticket.js |   2 +
+ Coding/filmuebersicht.html               |   8 +-
+ Coding/home.html                         |   8 +-
+ Coding/kasse.html                        |  12 +-
+ Coding/kinosaal.html                     |   8 +-
+ Coding/kinosaal_video.html               |  12 +-
+ Coding/popcornShop.html                  |  12 +-
+ Coding/warenkorb.html                    |  12 +-
+ 16 files changed, 669 insertions(+), 47 deletions(-)
+
+commit e1dd482939883dbb57cace327c98c7dce681def0
+Merge: 61bbec5 1b2f8a7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sun Jul 5 15:26:29 2020 +0200
+
+    Merge pull request #92 from Jugo84/Kasse
+    
+    update Snack and Ticket
+
+commit 1b2f8a7c1b562f16b04ecd596e55e30b71fccc86
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sat Jul 4 15:52:51 2020 +0200
+
+    update Snack and Ticket
+
+ Coding/Checkout.html                     |  3 +-
+ Coding/Javascript/kasse_API.js           | 74 ++++++++++++++++++++++++++++++++
+ Coding/WebAnw2Backend/dao/snackDao.js    | 17 +++++++-
+ Coding/WebAnw2Backend/dao/ticketDao.js   | 19 ++------
+ Coding/WebAnw2Backend/services/snack.js  | 48 +++++++++++++++++++++
+ Coding/WebAnw2Backend/services/ticket.js | 24 +++++++++++
+ 6 files changed, 166 insertions(+), 19 deletions(-)
+
+commit 61bbec5cf829f96a77075a62aba209296c0dcfee
+Merge: b2ea77a aebff31
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat Jul 4 14:06:11 2020 +0200
+
+    Merge pull request #91 from Jugo84/Kasse
+    
+    Kasse
+
+commit aebff31b0baf10d0fabeef0907eba353539adb69
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sat Jul 4 12:58:32 2020 +0200
+
+    DB Snack Ticket
+
+ Coding/WebAnw2Backend/db/db.sqlite | Bin 180224 -> 180224 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7c729f8c3c76450db9f4d28e516e550cd0f98665
+Merge: 22f17b7 b2ea77a
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sat Jul 4 12:55:22 2020 +0200
+
+    Merge branch 'master' into Kasse
+    
+    # Conflicts:
+    #       Coding/WebAnw2Backend/db/db.sqlite
+
+commit 22f17b7db8b599b67129f0b0061669ce4b74a085
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sat Jul 4 12:52:12 2020 +0200
+
+    send Email und Datenbank Snack,Ticket
+
+ Coding/WebAnw2Backend/db/CreateTable.sql |   2 ++
+ Coding/WebAnw2Backend/db/Insert.sql      |   6 +++---
+ Coding/WebAnw2Backend/db/db.sqlite       | Bin 180224 -> 180224 bytes
+ 3 files changed, 5 insertions(+), 3 deletions(-)
+
+commit b2ea77aed362df275405dcc335a94e0865fa5316
+Merge: 9622476 6008c01
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat Jul 4 11:51:32 2020 +0200
+
+    Merge pull request #90 from Jugo84/Warenkorb-neue-berechnung
+    
+    Warenkorb neue berechnung (Preis uas Datenbank und alles dynamisch)
+
+commit 6008c01a3bb0468fd5e4c6de61ba982b6c02ea51
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat Jul 4 09:22:49 2020 +0200
+
+    Preis aus Datenbank gelesen und alles dynamisch berechnen
+
+ Coding/Javascript/Warenkorb.js     | 234 +++++++++++--------------------------
+ Coding/Javascript/warenkorb_API.js |  19 +--
+ 2 files changed, 73 insertions(+), 180 deletions(-)
+
+commit 21253e4bc944baf488be3f20c7da69ef7eb6f8f8
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jun 30 15:51:01 2020 +0200
+
+    db
+
+ Coding/WebAnw2Backend/db/db.sqlite | Bin 180224 -> 180224 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 96224761d08f279bd2f0b092525d51818411f65f
+Merge: 9f19b07 ce32de2
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Jul 3 20:11:32 2020 +0200
+
+    Merge pull request #89 from Jugo84/popcornAPI
+    
+    popcorn
+
+commit 7f44b234aa85c8e204d7a60698c9ccaaa95ebfc2
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Fri Jul 3 14:43:00 2020 +0200
+
+    send Email
+
+ Coding/WebAnw2Backend/dao/benutzerDao.js | 61 +++++++++++++++++++++++++++++++-
+ Coding/WebAnw2Backend/package-lock.json  |  5 +++
+ Coding/WebAnw2Backend/package.json       |  3 +-
+ 3 files changed, 67 insertions(+), 2 deletions(-)
+
+commit ce32de2f84c9c9a6f6aeb60d44370565d4aee22a
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jul 3 12:18:38 2020 +0200
+
+    popcorn
+    
+    Bilder und backend
+
+ Coding/Bilder/chips.jpg                    | Bin 70104 -> 46119 bytes
+ Coding/Javascript/popcornShop_API.js       | 155 +++++++++++++++++++++++++++++
+ Coding/WebAnw2Backend/dao/snackTypDao.js   |  90 ++++++++++++++++-
+ Coding/WebAnw2Backend/services/snack.js    |  19 ++++
+ Coding/WebAnw2Backend/services/snackTyp.js |  22 +++-
+ Coding/popcornShop.html                    |  64 +++---------
+ 6 files changed, 295 insertions(+), 55 deletions(-)
+
+commit 9f19b072a62a669a9c947feb8fff8b0b86519408
+Merge: 44901c5 6956c64
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Thu Jul 2 22:05:28 2020 +0200
+
+    Merge pull request #88 from Jugo84/Kasse
+    
+    update Benutzer (Kasse)
+
+commit 6956c642b01efc82fb9e0251638a2c397f9f4063
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jul 2 17:04:50 2020 +0200
+
+    update Benutzer
+
+ Coding/Javascript/kasse_API.js             | 143 +++++++++++++++++++++++++++++
+ Coding/WebAnw2Backend/services/adresse.js  |   7 +-
+ Coding/WebAnw2Backend/services/benutzer.js |  29 +++---
+ Coding/kasse.html                          |  97 +++++++++++--------
+ 4 files changed, 215 insertions(+), 61 deletions(-)
+
+commit 44901c5c14f9049af9c31e56dcd3a61df37358f1
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:58:49 2020 +0200
+
+    Update node.js.yml
+
+ .github/workflows/node.js.yml | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+commit 9ad2c1210ee116f77fbe4cc77e8866c57f715a50
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:56:09 2020 +0200
+
+    Update node.js.yml
+
+ .github/workflows/node.js.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b236515e60dc13e094c8dc4b4cd549250595428f
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:54:49 2020 +0200
+
+    Update node.js.yml
+
+ .github/workflows/node.js.yml | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit 54bf2e603ccfc428c9161ddfb5e73237fa4dc107
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:53:10 2020 +0200
+
+    Update node.js.yml
+
+ .github/workflows/node.js.yml | 3 ---
+ 1 file changed, 3 deletions(-)
+
+commit 890d887dca870d1da3242fbe34df83d7ec6c5bab
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:50:43 2020 +0200
+
+    Update node.js.yml
+
+ .github/workflows/node.js.yml | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 5cbc7faf928471d29e50da35642cff3782c6a557
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:41:29 2020 +0200
+
+    Update node.js.yml
+
+ .github/workflows/node.js.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit dac95819d1dd1150665c9126f502e05974988a4c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:34:31 2020 +0200
+
+    Update node.js.yml
+
+ .github/workflows/node.js.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 09c603d833a419134484cd9ec256e67e26e97b9a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:28:53 2020 +0200
+
+    Create node.js.yml
+
+ .github/workflows/node.js.yml | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+
+commit 5aabc801b86d76b211b5a3221b69a3402708a8e3
+Merge: ef9442c a2eed1a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 29 13:20:58 2020 +0200
+
+    Merge pull request #87 from Jugo84/TestSoftwareEngineering
+    
+    SoftwareEngineeringZip
+
+commit a2eed1a68aa78bc8c5cc9be43ab48bde5a78d3d3
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Mon Jun 29 13:20:33 2020 +0200
+
+    SoftwareEngineeringZip
+
+ .../{ => Screenshot_Test}/Jest_Test.PNG                | Bin
+ .../{ => Screenshot_Test}/Jest_Test_Ergebnis.PNG       | Bin
+ SoftwareEngineering/SoftwareEngineeringTesting.zip     | Bin 0 -> 156418 bytes
+ SoftwareEngineering/githubRepositoryAddress.txt        |   1 +
+ 4 files changed, 1 insertion(+)
+
+commit ef9442c20e4ab747dc007dca39bcb8a59db5f6a2
+Merge: bf05a34 abd9c79
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 29 13:05:06 2020 +0200
+
+    Merge pull request #86 from Jugo84/Warenkorbberechnung
+    
+    Warenkorb berechnen komplett
+
+commit abd9c79ee589bc523b3bfedd3d5a9e8a764e047e
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jun 29 10:15:35 2020 +0200
+
+    Warenkorb berechnen
+
+ Coding/Javascript/Warenkorb.js     | 168 +++++++++++++++++++++++++++++++++++++
+ Coding/Javascript/warenkorb_API.js |  16 ++--
+ Coding/warenkorb.html              |   2 +
+ 3 files changed, 180 insertions(+), 6 deletions(-)
+
+commit bf05a34aa6bf3688794a5f6b42e4f62eeba452f3
+Merge: 5b43c47 2dd4442
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 23 16:34:19 2020 +0200
+
+    Merge pull request #85 from Jugo84/screens
+    
+    Screens
+
+commit 5b43c4797e391671080d205fbee4afacd0f184ba
+Merge: f6bc859 ad6a1f9
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 23 16:34:02 2020 +0200
+
+    Merge pull request #83 from Jugo84/STuer-richtig
+    
+    Steuer nicht ändernbar
+
+commit f6bc859bbc4300c370ce78f0cf8b92f29832c6b5
+Merge: ef7d48a e1b31fc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 23 16:33:45 2020 +0200
+
+    Merge pull request #84 from Jugo84/Test
+    
+    Test
+
+commit 2dd4442babe001360a84ea2ee62b6a754f787083
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue Jun 23 16:33:26 2020 +0200
+
+    Screens
+
+ SoftwareEngineering/Screenshot_Test/PostmanGet.JPG  | Bin 0 -> 64447 bytes
+ SoftwareEngineering/Screenshot_Test/PostmanPost.JPG | Bin 0 -> 67139 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit e1b31fc0b91d1107f1e3ba97299bef4f2cea5a7e
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jun 23 16:29:01 2020 +0200
+
+    Jest-Test
+
+ Coding/WebAnw2Backend/Test/dao.test.js     |   40 +
+ Coding/WebAnw2Backend/dao/ticketDao.js     |    8 +-
+ Coding/WebAnw2Backend/package-lock.json    | 4854 +++++++++++++++++++++++++++-
+ Coding/WebAnw2Backend/package.json         |    7 +-
+ SoftwareEngineering/Jest_Test.PNG          |  Bin 0 -> 72231 bytes
+ SoftwareEngineering/Jest_Test_Ergebnis.PNG |  Bin 0 -> 13625 bytes
+ 6 files changed, 4725 insertions(+), 184 deletions(-)
+
+commit f2924725c79b4d8ea295dcbb263fd08b680ee965
+Merge: ef7d48a 39e5ec4
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jun 23 16:28:15 2020 +0200
+
+    Merge branch 'gitignore' into Test
+
+commit ad6a1f9618b62cbaa1c5be13aa34a2204edcdbd8
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jun 23 13:58:38 2020 +0200
+
+    Steuer nicht ändern
+
+ Coding/Javascript/warenkorb_API.js | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit ef7d48a09e6f4174a4a8894c3a222f197ddd7f4a
+Merge: 76e1f91 253b8cc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 22 16:08:54 2020 +0200
+
+    Merge pull request #82 from Jugo84/Chats
+    
+    Added some ChatMessages and Chats to the Vorstellungen
+
+commit 253b8cc2174fc0a979d726aba3486fdba1223070
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Mon Jun 22 16:08:26 2020 +0200
+
+    Added some ChatMessages and Chats to the Vorstellungen
+
+ Coding/WebAnw2Backend/db/db.sqlite | Bin 180224 -> 180224 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 76e1f910d192f85d448ded7e849140b2a0db0c53
+Merge: 7758a45 2249097
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 22 15:56:00 2020 +0200
+
+    Merge pull request #81 from Jugo84/Home
+    
+    Home
+
+commit 22490970902eed43c20f2e8f51490bfe0ef9e993
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Mon Jun 22 14:20:00 2020 +0200
+
+    Home
+
+ Coding/Javascript/home_API.js | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 7758a4500d5e3e994618da9f2172febed53e83bd
+Merge: 7b841de d99fbd9
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat Jun 20 13:01:00 2020 +0200
+
+    Merge pull request #80 from Jugo84/WarenkorbDynamisch
+    
+    Warenkorbdynamisch_ohneBerechnung
+
+commit d99fbd924e562253b60f9ab3d1793b19c109f99d
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat Jun 20 12:43:00 2020 +0200
+
+    Warenkorbdynamisch_ohneBerechnung
+
+ Coding/Javascript/Warenkorb.js           |   3 ++
+ Coding/Javascript/filmuebersicht_API.js  |   2 +-
+ Coding/Javascript/warenkorb_API.js       |  73 +++++++++++++++++++++++++++
+ Coding/WebAnw2Backend/dao/snackDao.js    |   7 +--
+ Coding/WebAnw2Backend/dao/ticketDao.js   |  15 ++++--
+ Coding/WebAnw2Backend/db/db.sqlite       | Bin 180224 -> 180224 bytes
+ Coding/WebAnw2Backend/services/snack.js  |   2 +-
+ Coding/WebAnw2Backend/services/ticket.js |  14 ++++++
+ Coding/filmuebersicht.html               |   2 +-
+ Coding/warenkorb.html                    |  84 +++++++------------------------
+ 10 files changed, 126 insertions(+), 76 deletions(-)
+
+commit 7b841dec0483273b50265992203e0ecf98d286c6
+Merge: 16d6ef1 127c728
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Thu Jun 18 15:02:07 2020 +0200
+
+    Merge pull request #79 from Jugo84/Benutzer
+    
+    Benutzer
+
+commit 127c72829aa3f3af69ae6292ad1c4d00ab4c209b
+Merge: 4723b0f ba5c159
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:33:54 2020 +0200
+
+    Merge branch 'Benutzer' of https://github.com/Jugo84/WebAnwendungen2Praktikum into Benutzer
+
+commit 4723b0f995eabd7446e05b2f578cf7ddc49fdd8c
+Merge: d8ffffb 85f878c
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:32:17 2020 +0200
+
+    Benutzer
+
+commit ba5c15976bda54e4dc7f44d6b49f1710aeefa520
+Merge: d8ffffb 85f878c
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:32:17 2020 +0200
+
+    Merge branch 'Benutzer' of https://github.com/Jugo84/WebAnwendungen2Praktikum into Benutzer
+
+commit d8ffffbd0a94d229607360a502195c72cf58a1eb
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:25:16 2020 +0200
+
+    Benutzer
+
+ Coding/WebAnw2Backend/dao/benutzerDao.js |  19 +++++--------------
+ Coding/WebAnw2Backend/db/CreateTable.sql |   2 +-
+ Coding/WebAnw2Backend/db/db.sqlite       | Bin 180224 -> 180224 bytes
+ 3 files changed, 6 insertions(+), 15 deletions(-)
+
+commit 85f878ca7d7451059826321fa14e00bd126654a8
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:25:16 2020 +0200
+
+    Benutzer
+
+ Coding/WebAnw2Backend/dao/benutzerDao.js |   2 +-
+ Coding/WebAnw2Backend/db/CreateTable.sql |   2 +-
+ Coding/WebAnw2Backend/db/db.sqlite       | Bin 180224 -> 180224 bytes
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 97fba31f1ca95d321326bdd1db6548873e3cf30e
+Merge: 8eca348 16d6ef1
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 13:55:17 2020 +0200
+
+    Merge branch 'master' into Benutzer
+
+commit 16d6ef104c9f041438b26930a831c7a3e4e1ce66
+Merge: c95eada 70a8dd9
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Thu Jun 18 13:42:23 2020 +0200
+
+    Merge pull request #78 from Jugo84/KinosaalChatFunctionality
+    
+    Removed the unused, copied Routes
+
+commit 70a8dd98789dd49f3d2bddca96f9ea033f2e00ed
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Thu Jun 18 13:41:50 2020 +0200
+
+    Removed the unused, copied Routes
+
+ Coding/WebAnw2Backend/services/chat.js | 191 ---------------------------------
+ 1 file changed, 191 deletions(-)
+
+commit 39e5ec48a0928651fdc168b96e83cedf9b8666a1
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 10:32:22 2020 +0200
+
+    gitignore
+
+ .gitignore                                         |      1 +
+ Coding/WebAnw2Backend/node_modules/.bin/mime       |     15 -
+ Coding/WebAnw2Backend/node_modules/.bin/mime.cmd   |      7 -
+ Coding/WebAnw2Backend/node_modules/.bin/mkdirp     |     15 -
+ Coding/WebAnw2Backend/node_modules/.bin/mkdirp.cmd |      7 -
+ .../WebAnw2Backend/node_modules/accepts/HISTORY.md |    236 -
+ Coding/WebAnw2Backend/node_modules/accepts/LICENSE |     23 -
+ .../WebAnw2Backend/node_modules/accepts/README.md  |    142 -
+ .../WebAnw2Backend/node_modules/accepts/index.js   |    238 -
+ .../node_modules/accepts/package.json              |     86 -
+ .../node_modules/array-flatten/LICENSE             |     21 -
+ .../node_modules/array-flatten/README.md           |     43 -
+ .../node_modules/array-flatten/array-flatten.js    |     64 -
+ .../node_modules/array-flatten/package.json        |     64 -
+ .../node_modules/better-sqlite3/.gitattributes     |      1 -
+ .../node_modules/better-sqlite3/.travis.yml        |     17 -
+ .../node_modules/better-sqlite3/LICENSE            |     21 -
+ .../node_modules/better-sqlite3/README.md          |     73 -
+ .../node_modules/better-sqlite3/appveyor.yml       |     17 -
+ .../better-sqlite3/benchmark/benchmark.js          |     31 -
+ .../better-sqlite3/benchmark/drivers.js            |     20 -
+ .../node_modules/better-sqlite3/benchmark/index.js |     84 -
+ .../node_modules/better-sqlite3/benchmark/seed.js  |     47 -
+ .../better-sqlite3/benchmark/trials.js             |     65 -
+ .../better-sqlite3/benchmark/types/insert.js       |     16 -
+ .../better-sqlite3/benchmark/types/select-all.js   |     14 -
+ .../benchmark/types/select-iterate.js              |     23 -
+ .../better-sqlite3/benchmark/types/select.js       |     14 -
+ .../better-sqlite3/benchmark/types/transaction.js  |     40 -
+ .../node_modules/better-sqlite3/binding.gyp        |     37 -
+ .../build/Release/better_sqlite3.exp               |    Bin 978 -> 0 bytes
+ .../build/Release/better_sqlite3.ilk               |    Bin 5749120 -> 0 bytes
+ .../build/Release/better_sqlite3.lib               |    Bin 1898 -> 0 bytes
+ .../build/Release/better_sqlite3.node              |    Bin 2151424 -> 0 bytes
+ .../build/Release/better_sqlite3.pdb               |    Bin 10866688 -> 0 bytes
+ .../Release/obj/better_sqlite3/better_sqlite3.obj  |    Bin 1496068 -> 0 bytes
+ .../better_sqlite3.tlog/CL.16180.write.1.tlog      |    Bin 1192 -> 0 bytes
+ .../better_sqlite3.tlog/CL.command.1.tlog          |    Bin 6306 -> 0 bytes
+ .../better_sqlite3.tlog/CL.read.1.tlog             |    Bin 37008 -> 0 bytes
+ .../better_sqlite3.lastbuildstate                  |      2 -
+ .../better_sqlite3.write.1u.tlog                   |    Bin 938 -> 0 bytes
+ .../better_sqlite3.tlog/link.command.1.tlog        |    Bin 2950 -> 0 bytes
+ .../better_sqlite3.tlog/link.read.1.tlog           |    Bin 6440 -> 0 bytes
+ .../better_sqlite3.tlog/link.write.1.tlog          |    Bin 1958 -> 0 bytes
+ .../obj/better_sqlite3/win_delay_load_hook.obj     |    Bin 28734 -> 0 bytes
+ .../obj/global_intermediate/sqlite3/sqlite3.c      | 223793 ------------------
+ .../obj/global_intermediate/sqlite3/sqlite3.h      |  11792 -
+ .../obj/global_intermediate/sqlite3/sqlite3ext.h   |    634 -
+ .../custombuild.command.1.tlog                     |    Bin 1798 -> 0 bytes
+ .../place_re.2A566C5B.tlog/custombuild.read.1.tlog |    Bin 638 -> 0 bytes
+ .../custombuild.write.1.tlog                       |    Bin 1238 -> 0 bytes
+ .../place_resulting_binaries.lastbuildstate        |      2 -
+ .../Release/obj/test_extension/test_extension.obj  |    Bin 27000 -> 0 bytes
+ .../test_extension.tlog/CL.command.1.tlog          |    Bin 6302 -> 0 bytes
+ .../test_extension.tlog/CL.read.1.tlog             |    Bin 18450 -> 0 bytes
+ .../test_extension.tlog/CL.write.1.tlog            |    Bin 1194 -> 0 bytes
+ .../test_extension.tlog/link.command.1.tlog        |    Bin 2950 -> 0 bytes
+ .../test_extension.tlog/link.read.1.tlog           |    Bin 5744 -> 0 bytes
+ .../test_extension.tlog/link.write.1.tlog          |    Bin 1958 -> 0 bytes
+ .../test_extension.lastbuildstate                  |      2 -
+ .../obj/test_extension/win_delay_load_hook.obj     |    Bin 28734 -> 0 bytes
+ .../better-sqlite3/build/Release/sqlite3.lib       |    Bin 7464524 -> 0 bytes
+ .../build/Release/test_extension.ilk               |    Bin 2778440 -> 0 bytes
+ .../build/Release/test_extension.node              |    Bin 547328 -> 0 bytes
+ .../build/Release/test_extension.pdb               |    Bin 6410240 -> 0 bytes
+ .../better-sqlite3/build/better_sqlite3.node       |    Bin 2151424 -> 0 bytes
+ .../better-sqlite3/build/better_sqlite3.vcxproj    |    143 -
+ .../build/better_sqlite3.vcxproj.filters           |     49 -
+ .../node_modules/better-sqlite3/build/binding.sln  |     64 -
+ .../node_modules/better-sqlite3/build/config.gypi  |    200 -
+ .../locate_sqlite3.tlog/custombuild.command.1.tlog |    Bin 798 -> 0 bytes
+ .../locate_sqlite3.tlog/custombuild.read.1.tlog    |    Bin 292 -> 0 bytes
+ .../locate_sqlite3.tlog/custombuild.write.1.tlog   |    Bin 1378 -> 0 bytes
+ .../locate_sqlite3.lastbuildstate                  |      2 -
+ .../build/deps/Release/obj/sqlite3/sqlite3.obj     |    Bin 7280451 -> 0 bytes
+ .../obj/sqlite3/sqlite3.tlog/CL.command.1.tlog     |    Bin 8654 -> 0 bytes
+ .../obj/sqlite3/sqlite3.tlog/CL.read.1.tlog        |    Bin 46006 -> 0 bytes
+ .../obj/sqlite3/sqlite3.tlog/CL.write.1.tlog       |    Bin 1240 -> 0 bytes
+ .../obj/sqlite3/sqlite3.tlog/Lib-link.read.1.tlog  |    Bin 1548 -> 0 bytes
+ .../obj/sqlite3/sqlite3.tlog/Lib-link.write.1.tlog |    Bin 994 -> 0 bytes
+ .../obj/sqlite3/sqlite3.tlog/Lib.command.1.tlog    |    Bin 1200 -> 0 bytes
+ .../sqlite3/sqlite3.tlog/sqlite3.lastbuildstate    |      2 -
+ .../Release/obj/sqlite3/win_delay_load_hook.obj    |    Bin 29318 -> 0 bytes
+ .../build/deps/locate_sqlite3.vcxproj              |    130 -
+ .../build/deps/locate_sqlite3.vcxproj.filters      |     61 -
+ .../better-sqlite3/build/deps/sqlite3.sln          |     28 -
+ .../better-sqlite3/build/deps/sqlite3.vcxproj      |    136 -
+ .../build/deps/sqlite3.vcxproj.filters             |     58 -
+ .../build/place_resulting_binaries.vcxproj         |    146 -
+ .../build/place_resulting_binaries.vcxproj.filters |     52 -
+ .../better-sqlite3/build/test_extension.node       |    Bin 547328 -> 0 bytes
+ .../better-sqlite3/build/test_extension.vcxproj    |    143 -
+ .../build/test_extension.vcxproj.filters           |     49 -
+ .../node_modules/better-sqlite3/deps/common.gypi   |     70 -
+ .../node_modules/better-sqlite3/deps/defines.gypi  |     28 -
+ .../node_modules/better-sqlite3/deps/download.sh   |     96 -
+ .../node_modules/better-sqlite3/deps/extract.js    |     16 -
+ .../node_modules/better-sqlite3/deps/sqlite3.gyp   |     80 -
+ .../better-sqlite3/deps/sqlite3.tar.gz             |    Bin 2189468 -> 0 bytes
+ .../node_modules/better-sqlite3/deps/symlink.js    |     16 -
+ .../better-sqlite3/deps/test_extension.c           |     17 -
+ .../node_modules/better-sqlite3/docs/api.md        |    518 -
+ .../node_modules/better-sqlite3/docs/benchmark.md  |     38 -
+ .../better-sqlite3/docs/compilation.md             |     38 -
+ .../node_modules/better-sqlite3/docs/integer.md    |     57 -
+ .../better-sqlite3/docs/performance.md             |     39 -
+ .../node_modules/better-sqlite3/docs/tips.md       |     35 -
+ .../better-sqlite3/docs/troubleshooting.md         |     31 -
+ .../node_modules/better-sqlite3/lib/aggregate.js   |     40 -
+ .../node_modules/better-sqlite3/lib/backup.js      |     66 -
+ .../node_modules/better-sqlite3/lib/database.js    |     55 -
+ .../node_modules/better-sqlite3/lib/function.js    |     26 -
+ .../node_modules/better-sqlite3/lib/index.js       |      4 -
+ .../node_modules/better-sqlite3/lib/pragma.js      |     20 -
+ .../better-sqlite3/lib/sqlite-error.js             |     21 -
+ .../node_modules/better-sqlite3/lib/transaction.js |     68 -
+ .../node_modules/better-sqlite3/lib/util.js        |     17 -
+ .../node_modules/better-sqlite3/package.json       |     79 -
+ .../better-sqlite3/src/better_sqlite3.cpp          |   1777 -
+ .../better-sqlite3/src/better_sqlite3.hpp          |    914 -
+ .../better-sqlite3/src/better_sqlite3.lzz          |     41 -
+ .../better-sqlite3/src/objects/backup.lzz          |    149 -
+ .../better-sqlite3/src/objects/database.lzz        |    381 -
+ .../src/objects/statement-iterator.lzz             |    152 -
+ .../better-sqlite3/src/objects/statement.lzz       |    306 -
+ .../better-sqlite3/src/util/bind-map.lzz           |     67 -
+ .../better-sqlite3/src/util/binder.lzz             |    189 -
+ .../better-sqlite3/src/util/constants.lzz          |    159 -
+ .../better-sqlite3/src/util/custom-aggregate.lzz   |    106 -
+ .../better-sqlite3/src/util/custom-function.lzz    |     48 -
+ .../node_modules/better-sqlite3/src/util/data.lzz  |    134 -
+ .../better-sqlite3/src/util/integer.lzz            |     45 -
+ .../better-sqlite3/src/util/macros.lzz             |    154 -
+ .../better-sqlite3/src/util/query-macros.lzz       |     70 -
+ .../node_modules/better-sqlite3/test/00.setup.js   |     26 -
+ .../better-sqlite3/test/01.sqlite-error.js         |     27 -
+ .../better-sqlite3/test/10.database.open.js        |    157 -
+ .../better-sqlite3/test/11.database.close.js       |     68 -
+ .../better-sqlite3/test/12.database.pragma.js      |     65 -
+ .../better-sqlite3/test/13.database.prepare.js     |     51 -
+ .../better-sqlite3/test/14.database.exec.js        |     46 -
+ .../better-sqlite3/test/20.statement.run.js        |    168 -
+ .../better-sqlite3/test/21.statement.get.js        |    101 -
+ .../better-sqlite3/test/22.statement.all.js        |    115 -
+ .../better-sqlite3/test/23.statement.iterate.js    |    209 -
+ .../better-sqlite3/test/24.statement.bind.js       |     95 -
+ .../better-sqlite3/test/25.statement.columns.js    |     46 -
+ .../better-sqlite3/test/30.database.transaction.js |    157 -
+ .../better-sqlite3/test/31.database.checkpoint.js  |     62 -
+ .../better-sqlite3/test/32.database.function.js    |    210 -
+ .../better-sqlite3/test/33.database.aggregate.js   |    602 -
+ .../test/34.database.load-extension.js             |     62 -
+ .../better-sqlite3/test/35.database.backup.js      |    245 -
+ .../better-sqlite3/test/40.integers.js             |    106 -
+ .../node_modules/better-sqlite3/test/41.at-exit.js |     52 -
+ .../better-sqlite3/test/42.integrity.js            |    497 -
+ .../node_modules/better-sqlite3/test/43.verbose.js |    101 -
+ .../node_modules/better-sqlite3/test/50.misc.js    |     44 -
+ .../node_modules/body-parser/HISTORY.md            |    609 -
+ .../node_modules/body-parser/LICENSE               |     23 -
+ .../node_modules/body-parser/README.md             |    443 -
+ .../node_modules/body-parser/index.js              |    157 -
+ .../node_modules/body-parser/lib/read.js           |    181 -
+ .../node_modules/body-parser/lib/types/json.js     |    230 -
+ .../node_modules/body-parser/lib/types/raw.js      |    101 -
+ .../node_modules/body-parser/lib/types/text.js     |    121 -
+ .../body-parser/lib/types/urlencoded.js            |    284 -
+ .../node_modules/body-parser/package.json          |     91 -
+ .../WebAnw2Backend/node_modules/bytes/History.md   |     87 -
+ Coding/WebAnw2Backend/node_modules/bytes/LICENSE   |     23 -
+ Coding/WebAnw2Backend/node_modules/bytes/Readme.md |    126 -
+ Coding/WebAnw2Backend/node_modules/bytes/index.js  |    162 -
+ .../WebAnw2Backend/node_modules/bytes/package.json |     84 -
+ .../node_modules/charenc/LICENSE.mkd               |     27 -
+ .../WebAnw2Backend/node_modules/charenc/README.js  |      1 -
+ .../WebAnw2Backend/node_modules/charenc/charenc.js |     33 -
+ .../node_modules/charenc/package.json              |     54 -
+ Coding/WebAnw2Backend/node_modules/chownr/LICENSE  |     15 -
+ .../WebAnw2Backend/node_modules/chownr/README.md   |      3 -
+ .../WebAnw2Backend/node_modules/chownr/chownr.js   |    125 -
+ .../node_modules/chownr/package.json               |     59 -
+ .../node_modules/content-disposition/HISTORY.md    |     55 -
+ .../node_modules/content-disposition/LICENSE       |     22 -
+ .../node_modules/content-disposition/README.md     |    148 -
+ .../node_modules/content-disposition/index.js      |    458 -
+ .../node_modules/content-disposition/package.json  |     79 -
+ .../node_modules/content-type/HISTORY.md           |     24 -
+ .../node_modules/content-type/LICENSE              |     22 -
+ .../node_modules/content-type/README.md            |     92 -
+ .../node_modules/content-type/index.js             |    222 -
+ .../node_modules/content-type/package.json         |     76 -
+ .../node_modules/cookie-signature/.npmignore       |      4 -
+ .../node_modules/cookie-signature/History.md       |     38 -
+ .../node_modules/cookie-signature/Readme.md        |     42 -
+ .../node_modules/cookie-signature/index.js         |     51 -
+ .../node_modules/cookie-signature/package.json     |     57 -
+ .../WebAnw2Backend/node_modules/cookie/HISTORY.md  |    123 -
+ Coding/WebAnw2Backend/node_modules/cookie/LICENSE  |     24 -
+ .../WebAnw2Backend/node_modules/cookie/README.md   |    253 -
+ Coding/WebAnw2Backend/node_modules/cookie/index.js |    198 -
+ .../node_modules/cookie/package.json               |     78 -
+ .../WebAnw2Backend/node_modules/crypt/LICENSE.mkd  |     27 -
+ .../WebAnw2Backend/node_modules/crypt/README.mkd   |      1 -
+ Coding/WebAnw2Backend/node_modules/crypt/crypt.js  |     96 -
+ .../WebAnw2Backend/node_modules/crypt/package.json |     52 -
+ .../node_modules/debug/.coveralls.yml              |      1 -
+ Coding/WebAnw2Backend/node_modules/debug/.eslintrc |     11 -
+ .../WebAnw2Backend/node_modules/debug/.npmignore   |      9 -
+ .../WebAnw2Backend/node_modules/debug/.travis.yml  |     14 -
+ .../WebAnw2Backend/node_modules/debug/CHANGELOG.md |    362 -
+ Coding/WebAnw2Backend/node_modules/debug/LICENSE   |     19 -
+ Coding/WebAnw2Backend/node_modules/debug/Makefile  |     50 -
+ Coding/WebAnw2Backend/node_modules/debug/README.md |    312 -
+ .../node_modules/debug/component.json              |     19 -
+ .../node_modules/debug/karma.conf.js               |     70 -
+ Coding/WebAnw2Backend/node_modules/debug/node.js   |      1 -
+ .../WebAnw2Backend/node_modules/debug/package.json |     91 -
+ .../node_modules/debug/src/browser.js              |    185 -
+ .../WebAnw2Backend/node_modules/debug/src/debug.js |    202 -
+ .../WebAnw2Backend/node_modules/debug/src/index.js |     10 -
+ .../node_modules/debug/src/inspector-log.js        |     15 -
+ .../WebAnw2Backend/node_modules/debug/src/node.js  |    248 -
+ Coding/WebAnw2Backend/node_modules/depd/History.md |     96 -
+ Coding/WebAnw2Backend/node_modules/depd/LICENSE    |     22 -
+ Coding/WebAnw2Backend/node_modules/depd/Readme.md  |    280 -
+ Coding/WebAnw2Backend/node_modules/depd/index.js   |    522 -
+ .../node_modules/depd/lib/browser/index.js         |     77 -
+ .../depd/lib/compat/callsite-tostring.js           |    103 -
+ .../depd/lib/compat/event-listener-count.js        |     22 -
+ .../node_modules/depd/lib/compat/index.js          |     79 -
+ .../WebAnw2Backend/node_modules/depd/package.json  |     79 -
+ Coding/WebAnw2Backend/node_modules/destroy/LICENSE |     22 -
+ .../WebAnw2Backend/node_modules/destroy/README.md  |     60 -
+ .../WebAnw2Backend/node_modules/destroy/index.js   |     75 -
+ .../node_modules/destroy/package.json              |     71 -
+ .../WebAnw2Backend/node_modules/ee-first/LICENSE   |     22 -
+ .../WebAnw2Backend/node_modules/ee-first/README.md |     80 -
+ .../WebAnw2Backend/node_modules/ee-first/index.js  |     95 -
+ .../node_modules/ee-first/package.json             |     63 -
+ .../node_modules/encodeurl/HISTORY.md              |     14 -
+ .../WebAnw2Backend/node_modules/encodeurl/LICENSE  |     22 -
+ .../node_modules/encodeurl/README.md               |    128 -
+ .../WebAnw2Backend/node_modules/encodeurl/index.js |     60 -
+ .../node_modules/encodeurl/package.json            |     78 -
+ .../node_modules/escape-html/LICENSE               |     24 -
+ .../node_modules/escape-html/Readme.md             |     43 -
+ .../node_modules/escape-html/index.js              |     78 -
+ .../node_modules/escape-html/package.json          |     59 -
+ Coding/WebAnw2Backend/node_modules/etag/HISTORY.md |     83 -
+ Coding/WebAnw2Backend/node_modules/etag/LICENSE    |     22 -
+ Coding/WebAnw2Backend/node_modules/etag/README.md  |    159 -
+ Coding/WebAnw2Backend/node_modules/etag/index.js   |    131 -
+ .../WebAnw2Backend/node_modules/etag/package.json  |     86 -
+ .../WebAnw2Backend/node_modules/express/History.md |   3477 -
+ Coding/WebAnw2Backend/node_modules/express/LICENSE |     24 -
+ .../WebAnw2Backend/node_modules/express/Readme.md  |    155 -
+ .../WebAnw2Backend/node_modules/express/index.js   |     11 -
+ .../node_modules/express/lib/application.js        |    644 -
+ .../node_modules/express/lib/express.js            |    116 -
+ .../node_modules/express/lib/middleware/init.js    |     43 -
+ .../node_modules/express/lib/middleware/query.js   |     47 -
+ .../node_modules/express/lib/request.js            |    525 -
+ .../node_modules/express/lib/response.js           |   1142 -
+ .../node_modules/express/lib/router/index.js       |    662 -
+ .../node_modules/express/lib/router/layer.js       |    181 -
+ .../node_modules/express/lib/router/route.js       |    216 -
+ .../node_modules/express/lib/utils.js              |    306 -
+ .../node_modules/express/lib/view.js               |    182 -
+ .../node_modules/express/package.json              |    154 -
+ .../node_modules/finalhandler/HISTORY.md           |    187 -
+ .../node_modules/finalhandler/LICENSE              |     22 -
+ .../node_modules/finalhandler/README.md            |    148 -
+ .../node_modules/finalhandler/index.js             |    331 -
+ .../node_modules/finalhandler/package.json         |     80 -
+ .../node_modules/forwarded/HISTORY.md              |     16 -
+ .../WebAnw2Backend/node_modules/forwarded/LICENSE  |     22 -
+ .../node_modules/forwarded/README.md               |     57 -
+ .../WebAnw2Backend/node_modules/forwarded/index.js |     76 -
+ .../node_modules/forwarded/package.json            |     78 -
+ .../WebAnw2Backend/node_modules/fresh/HISTORY.md   |     70 -
+ Coding/WebAnw2Backend/node_modules/fresh/LICENSE   |     23 -
+ Coding/WebAnw2Backend/node_modules/fresh/README.md |    119 -
+ Coding/WebAnw2Backend/node_modules/fresh/index.js  |    137 -
+ .../WebAnw2Backend/node_modules/fresh/package.json |     90 -
+ .../node_modules/fs-minipass/LICENSE               |     15 -
+ .../node_modules/fs-minipass/README.md             |     70 -
+ .../node_modules/fs-minipass/index.js              |    387 -
+ .../node_modules/fs-minipass/package.json          |     65 -
+ .../node_modules/http-errors/HISTORY.md            |    149 -
+ .../node_modules/http-errors/LICENSE               |     23 -
+ .../node_modules/http-errors/README.md             |    163 -
+ .../node_modules/http-errors/index.js              |    266 -
+ .../node_modules/http-errors/package.json          |     93 -
+ .../node_modules/iconv-lite/Changelog.md           |    162 -
+ .../WebAnw2Backend/node_modules/iconv-lite/LICENSE |     21 -
+ .../node_modules/iconv-lite/README.md              |    156 -
+ .../iconv-lite/encodings/dbcs-codec.js             |    555 -
+ .../node_modules/iconv-lite/encodings/dbcs-data.js |    176 -
+ .../node_modules/iconv-lite/encodings/index.js     |     22 -
+ .../node_modules/iconv-lite/encodings/internal.js  |    188 -
+ .../iconv-lite/encodings/sbcs-codec.js             |     72 -
+ .../iconv-lite/encodings/sbcs-data-generated.js    |    451 -
+ .../node_modules/iconv-lite/encodings/sbcs-data.js |    174 -
+ .../iconv-lite/encodings/tables/big5-added.json    |    122 -
+ .../iconv-lite/encodings/tables/cp936.json         |    264 -
+ .../iconv-lite/encodings/tables/cp949.json         |    273 -
+ .../iconv-lite/encodings/tables/cp950.json         |    177 -
+ .../iconv-lite/encodings/tables/eucjp.json         |    182 -
+ .../encodings/tables/gb18030-ranges.json           |      1 -
+ .../iconv-lite/encodings/tables/gbk-added.json     |     55 -
+ .../iconv-lite/encodings/tables/shiftjis.json      |    125 -
+ .../node_modules/iconv-lite/encodings/utf16.js     |    177 -
+ .../node_modules/iconv-lite/encodings/utf7.js      |    290 -
+ .../node_modules/iconv-lite/lib/bom-handling.js    |     52 -
+ .../node_modules/iconv-lite/lib/extend-node.js     |    217 -
+ .../node_modules/iconv-lite/lib/index.d.ts         |     24 -
+ .../node_modules/iconv-lite/lib/index.js           |    153 -
+ .../node_modules/iconv-lite/lib/streams.js         |    121 -
+ .../node_modules/iconv-lite/package.json           |     77 -
+ .../WebAnw2Backend/node_modules/inherits/LICENSE   |     16 -
+ .../WebAnw2Backend/node_modules/inherits/README.md |     42 -
+ .../node_modules/inherits/inherits.js              |      7 -
+ .../node_modules/inherits/inherits_browser.js      |     23 -
+ .../node_modules/inherits/package.json             |     61 -
+ .../node_modules/integer/.travis.yml               |     17 -
+ Coding/WebAnw2Backend/node_modules/integer/LICENSE |     21 -
+ .../WebAnw2Backend/node_modules/integer/README.md  |    223 -
+ Coding/WebAnw2Backend/node_modules/integer/TODO    |      1 -
+ .../WebAnw2Backend/node_modules/integer/bench.js   |     14 -
+ .../node_modules/integer/binding.gyp               |     78 -
+ .../node_modules/integer/build/Release/integer.exp |    Bin 929 -> 0 bytes
+ .../node_modules/integer/build/Release/integer.ilk |    Bin 3145976 -> 0 bytes
+ .../node_modules/integer/build/Release/integer.lib |    Bin 1716 -> 0 bytes
+ .../integer/build/Release/integer.node             |    Bin 607744 -> 0 bytes
+ .../node_modules/integer/build/Release/integer.pdb |    Bin 7163904 -> 0 bytes
+ .../integer/build/Release/obj/integer/integer.obj  |    Bin 671677 -> 0 bytes
+ .../obj/integer/integer.tlog/CL.15792.write.1.tlog |    Bin 1094 -> 0 bytes
+ .../obj/integer/integer.tlog/CL.command.1.tlog     |    Bin 5450 -> 0 bytes
+ .../obj/integer/integer.tlog/CL.read.1.tlog        |    Bin 35648 -> 0 bytes
+ .../integer/integer.tlog/integer.lastbuildstate    |      2 -
+ .../obj/integer/integer.tlog/integer.write.1u.tlog |    Bin 854 -> 0 bytes
+ .../obj/integer/integer.tlog/link.command.1.tlog   |    Bin 2184 -> 0 bytes
+ .../obj/integer/integer.tlog/link.read.1.tlog      |    Bin 5702 -> 0 bytes
+ .../obj/integer/integer.tlog/link.write.1.tlog     |    Bin 1506 -> 0 bytes
+ .../Release/obj/integer/win_delay_load_hook.obj    |    Bin 28486 -> 0 bytes
+ .../custombuild.command.1.tlog                     |    Bin 830 -> 0 bytes
+ .../place_re.AF7A9B7C.tlog/custombuild.read.1.tlog |    Bin 292 -> 0 bytes
+ .../custombuild.write.1.tlog                       |    Bin 564 -> 0 bytes
+ .../place_resulting_binary.lastbuildstate          |      2 -
+ .../node_modules/integer/build/binding.sln         |     28 -
+ .../node_modules/integer/build/config.gypi         |    200 -
+ .../node_modules/integer/build/integer.node        |    Bin 607744 -> 0 bytes
+ .../node_modules/integer/build/integer.vcxproj     |    133 -
+ .../integer/build/integer.vcxproj.filters          |     49 -
+ .../integer/build/place_resulting_binary.vcxproj   |    136 -
+ .../build/place_resulting_binary.vcxproj.filters   |     46 -
+ .../node_modules/integer/lib/index.js              |     43 -
+ .../node_modules/integer/package.json              |     62 -
+ .../node_modules/integer/src/integer.cpp           |    408 -
+ .../node_modules/integer/src/integer.hpp           |     20 -
+ .../node_modules/integer/src/macros.hpp            |     49 -
+ .../node_modules/integer/src/result.hpp            |     19 -
+ .../node_modules/integer/test/10.constructor.js    |    128 -
+ .../node_modules/integer/test/11.from-number.js    |     58 -
+ .../node_modules/integer/test/12.from-string.js    |    148 -
+ .../node_modules/integer/test/13.from-bits.js      |     63 -
+ .../node_modules/integer/test/20.to-number.js      |     28 -
+ .../integer/test/21.to-number-unsafe.js            |     24 -
+ .../node_modules/integer/test/22.to-string.js      |     60 -
+ .../node_modules/integer/test/23.getters.js        |     34 -
+ .../node_modules/integer/test/30.arithmetic.js     |    115 -
+ .../node_modules/integer/test/31.bitwise.js        |     79 -
+ .../node_modules/integer/test/32.logical.js        |     60 -
+ .../node_modules/integer/test/33.utility.js        |    113 -
+ .../node_modules/integer/test/40.constants.js      |     86 -
+ .../WebAnw2Backend/node_modules/ipaddr.js/LICENSE  |     19 -
+ .../node_modules/ipaddr.js/README.md               |    233 -
+ .../node_modules/ipaddr.js/ipaddr.min.js           |      1 -
+ .../node_modules/ipaddr.js/lib/ipaddr.js           |    673 -
+ .../node_modules/ipaddr.js/lib/ipaddr.js.d.ts      |     71 -
+ .../node_modules/ipaddr.js/package.json            |     69 -
+ .../WebAnw2Backend/node_modules/is-buffer/LICENSE  |     21 -
+ .../node_modules/is-buffer/README.md               |     53 -
+ .../WebAnw2Backend/node_modules/is-buffer/index.js |     21 -
+ .../node_modules/is-buffer/package.json            |     77 -
+ .../node_modules/is-buffer/test/basic.js           |     24 -
+ Coding/WebAnw2Backend/node_modules/luxon/README.md |     54 -
+ .../node_modules/luxon/build/amd/luxon.js          |   8200 -
+ .../node_modules/luxon/build/amd/luxon.js.map      |      1 -
+ .../node_modules/luxon/build/cjs-browser/luxon.js  |   8198 -
+ .../luxon/build/cjs-browser/luxon.js.map           |      1 -
+ .../node_modules/luxon/build/global/luxon.js       |   8201 -
+ .../node_modules/luxon/build/global/luxon.js.map   |      1 -
+ .../node_modules/luxon/build/global/luxon.min.js   |      1 -
+ .../luxon/build/global/luxon.min.js.map            |      1 -
+ .../node_modules/luxon/build/node/luxon.js         |   7209 -
+ .../node_modules/luxon/build/node/luxon.js.map     |      1 -
+ .../node_modules/luxon/build/readme.md             |      1 -
+ .../WebAnw2Backend/node_modules/luxon/changelog.md |    452 -
+ .../WebAnw2Backend/node_modules/luxon/license.md   |      7 -
+ .../WebAnw2Backend/node_modules/luxon/package.json |    131 -
+ .../node_modules/luxon/src/datetime.js             |   2095 -
+ .../node_modules/luxon/src/duration.js             |    763 -
+ .../node_modules/luxon/src/errors.js               |     61 -
+ .../node_modules/luxon/src/impl/conversions.js     |    157 -
+ .../node_modules/luxon/src/impl/diff.js            |     79 -
+ .../node_modules/luxon/src/impl/digits.js          |     76 -
+ .../node_modules/luxon/src/impl/english.js         |    231 -
+ .../node_modules/luxon/src/impl/formats.js         |    185 -
+ .../node_modules/luxon/src/impl/formatter.js       |    386 -
+ .../node_modules/luxon/src/impl/invalid.js         |     14 -
+ .../node_modules/luxon/src/impl/locale.js          |    468 -
+ .../node_modules/luxon/src/impl/regexParser.js     |    315 -
+ .../node_modules/luxon/src/impl/tokenParser.js     |    400 -
+ .../node_modules/luxon/src/impl/util.js            |    287 -
+ .../node_modules/luxon/src/impl/zoneUtil.js        |     36 -
+ .../WebAnw2Backend/node_modules/luxon/src/info.js  |    186 -
+ .../node_modules/luxon/src/interval.js             |    565 -
+ .../WebAnw2Backend/node_modules/luxon/src/luxon.js |     23 -
+ .../node_modules/luxon/src/luxonFilled.js          |     13 -
+ .../node_modules/luxon/src/settings.js             |    137 -
+ .../WebAnw2Backend/node_modules/luxon/src/zone.js  |     88 -
+ .../node_modules/luxon/src/zones/IANAZone.js       |    175 -
+ .../luxon/src/zones/fixedOffsetZone.js             |     94 -
+ .../node_modules/luxon/src/zones/invalidZone.js    |     53 -
+ .../node_modules/luxon/src/zones/localZone.js      |     63 -
+ Coding/WebAnw2Backend/node_modules/md5/.npmignore  |      1 -
+ Coding/WebAnw2Backend/node_modules/md5/.travis.yml |      4 -
+ Coding/WebAnw2Backend/node_modules/md5/LICENSE     |     27 -
+ Coding/WebAnw2Backend/node_modules/md5/README.md   |    108 -
+ Coding/WebAnw2Backend/node_modules/md5/md5.js      |    160 -
+ .../WebAnw2Backend/node_modules/md5/package.json   |     69 -
+ Coding/WebAnw2Backend/node_modules/md5/test.js     |     45 -
+ .../node_modules/media-typer/HISTORY.md            |     22 -
+ .../node_modules/media-typer/LICENSE               |     22 -
+ .../node_modules/media-typer/README.md             |     81 -
+ .../node_modules/media-typer/index.js              |    270 -
+ .../node_modules/media-typer/package.json          |     61 -
+ .../node_modules/merge-descriptors/HISTORY.md      |     21 -
+ .../node_modules/merge-descriptors/LICENSE         |     23 -
+ .../node_modules/merge-descriptors/README.md       |     48 -
+ .../node_modules/merge-descriptors/index.js        |     60 -
+ .../node_modules/merge-descriptors/package.json    |     69 -
+ .../WebAnw2Backend/node_modules/methods/HISTORY.md |     29 -
+ Coding/WebAnw2Backend/node_modules/methods/LICENSE |     24 -
+ .../WebAnw2Backend/node_modules/methods/README.md  |     51 -
+ .../WebAnw2Backend/node_modules/methods/index.js   |     69 -
+ .../node_modules/methods/package.json              |     79 -
+ .../WebAnw2Backend/node_modules/mime-db/HISTORY.md |    417 -
+ Coding/WebAnw2Backend/node_modules/mime-db/LICENSE |     22 -
+ .../WebAnw2Backend/node_modules/mime-db/README.md  |     94 -
+ Coding/WebAnw2Backend/node_modules/mime-db/db.json |   7834 -
+ .../WebAnw2Backend/node_modules/mime-db/index.js   |     11 -
+ .../node_modules/mime-db/package.json              |    101 -
+ .../node_modules/mime-types/HISTORY.md             |    308 -
+ .../WebAnw2Backend/node_modules/mime-types/LICENSE |     23 -
+ .../node_modules/mime-types/README.md              |    113 -
+ .../node_modules/mime-types/index.js               |    188 -
+ .../node_modules/mime-types/package.json           |     87 -
+ Coding/WebAnw2Backend/node_modules/mime/.npmignore |      0
+ .../WebAnw2Backend/node_modules/mime/CHANGELOG.md  |    164 -
+ Coding/WebAnw2Backend/node_modules/mime/LICENSE    |     21 -
+ Coding/WebAnw2Backend/node_modules/mime/README.md  |     90 -
+ Coding/WebAnw2Backend/node_modules/mime/cli.js     |      8 -
+ Coding/WebAnw2Backend/node_modules/mime/mime.js    |    108 -
+ .../WebAnw2Backend/node_modules/mime/package.json  |     73 -
+ .../WebAnw2Backend/node_modules/mime/src/build.js  |     53 -
+ .../WebAnw2Backend/node_modules/mime/src/test.js   |     60 -
+ Coding/WebAnw2Backend/node_modules/mime/types.json |      1 -
+ .../node_modules/minimist/.travis.yml              |      4 -
+ .../WebAnw2Backend/node_modules/minimist/LICENSE   |     18 -
+ .../node_modules/minimist/example/parse.js         |      2 -
+ .../WebAnw2Backend/node_modules/minimist/index.js  |    187 -
+ .../node_modules/minimist/package.json             |     71 -
+ .../node_modules/minimist/readme.markdown          |     73 -
+ .../node_modules/minimist/test/dash.js             |     24 -
+ .../node_modules/minimist/test/default_bool.js     |     20 -
+ .../node_modules/minimist/test/dotted.js           |     16 -
+ .../node_modules/minimist/test/long.js             |     31 -
+ .../node_modules/minimist/test/parse.js            |    318 -
+ .../node_modules/minimist/test/parse_modified.js   |      9 -
+ .../node_modules/minimist/test/short.js            |     67 -
+ .../node_modules/minimist/test/whitespace.js       |      8 -
+ .../WebAnw2Backend/node_modules/minipass/LICENSE   |     15 -
+ .../WebAnw2Backend/node_modules/minipass/README.md |    606 -
+ .../WebAnw2Backend/node_modules/minipass/index.js  |    537 -
+ .../node_modules/minipass/package.json             |     72 -
+ .../WebAnw2Backend/node_modules/minizlib/LICENSE   |     26 -
+ .../WebAnw2Backend/node_modules/minizlib/README.md |     53 -
+ .../node_modules/minizlib/constants.js             |    115 -
+ .../WebAnw2Backend/node_modules/minizlib/index.js  |    320 -
+ .../node_modules/minizlib/package.json             |     71 -
+ .../WebAnw2Backend/node_modules/mkdirp/.travis.yml |      8 -
+ Coding/WebAnw2Backend/node_modules/mkdirp/LICENSE  |     21 -
+ .../WebAnw2Backend/node_modules/mkdirp/bin/cmd.js  |     33 -
+ .../node_modules/mkdirp/bin/usage.txt              |     12 -
+ .../node_modules/mkdirp/examples/pow.js            |      6 -
+ Coding/WebAnw2Backend/node_modules/mkdirp/index.js |     98 -
+ .../node_modules/mkdirp/package.json               |     62 -
+ .../node_modules/mkdirp/readme.markdown            |    100 -
+ .../node_modules/mkdirp/test/chmod.js              |     41 -
+ .../node_modules/mkdirp/test/clobber.js            |     38 -
+ .../node_modules/mkdirp/test/mkdirp.js             |     28 -
+ .../node_modules/mkdirp/test/opts_fs.js            |     29 -
+ .../node_modules/mkdirp/test/opts_fs_sync.js       |     27 -
+ .../node_modules/mkdirp/test/perm.js               |     32 -
+ .../node_modules/mkdirp/test/perm_sync.js          |     36 -
+ .../node_modules/mkdirp/test/race.js               |     37 -
+ .../WebAnw2Backend/node_modules/mkdirp/test/rel.js |     32 -
+ .../node_modules/mkdirp/test/return.js             |     25 -
+ .../node_modules/mkdirp/test/return_sync.js        |     24 -
+ .../node_modules/mkdirp/test/root.js               |     19 -
+ .../node_modules/mkdirp/test/sync.js               |     32 -
+ .../node_modules/mkdirp/test/umask.js              |     28 -
+ .../node_modules/mkdirp/test/umask_sync.js         |     32 -
+ Coding/WebAnw2Backend/node_modules/ms/index.js     |    152 -
+ Coding/WebAnw2Backend/node_modules/ms/license.md   |     21 -
+ Coding/WebAnw2Backend/node_modules/ms/package.json |     69 -
+ Coding/WebAnw2Backend/node_modules/ms/readme.md    |     51 -
+ .../node_modules/negotiator/HISTORY.md             |    103 -
+ .../WebAnw2Backend/node_modules/negotiator/LICENSE |     24 -
+ .../node_modules/negotiator/README.md              |    203 -
+ .../node_modules/negotiator/index.js               |    124 -
+ .../node_modules/negotiator/lib/charset.js         |    169 -
+ .../node_modules/negotiator/lib/encoding.js        |    184 -
+ .../node_modules/negotiator/lib/language.js        |    179 -
+ .../node_modules/negotiator/lib/mediaType.js       |    294 -
+ .../node_modules/negotiator/package.json           |     84 -
+ .../node_modules/on-finished/HISTORY.md            |     88 -
+ .../node_modules/on-finished/LICENSE               |     23 -
+ .../node_modules/on-finished/README.md             |    154 -
+ .../node_modules/on-finished/index.js              |    196 -
+ .../node_modules/on-finished/package.json          |     73 -
+ .../node_modules/parseurl/HISTORY.md               |     58 -
+ .../WebAnw2Backend/node_modules/parseurl/LICENSE   |     24 -
+ .../WebAnw2Backend/node_modules/parseurl/README.md |    133 -
+ .../WebAnw2Backend/node_modules/parseurl/index.js  |    158 -
+ .../node_modules/parseurl/package.json             |     81 -
+ .../node_modules/path-to-regexp/History.md         |     36 -
+ .../node_modules/path-to-regexp/LICENSE            |     21 -
+ .../node_modules/path-to-regexp/Readme.md          |     35 -
+ .../node_modules/path-to-regexp/index.js           |    129 -
+ .../node_modules/path-to-regexp/package.json       |     59 -
+ .../node_modules/proxy-addr/HISTORY.md             |    150 -
+ .../WebAnw2Backend/node_modules/proxy-addr/LICENSE |     22 -
+ .../node_modules/proxy-addr/README.md              |    155 -
+ .../node_modules/proxy-addr/index.js               |    327 -
+ .../node_modules/proxy-addr/package.json           |     82 -
+ .../WebAnw2Backend/node_modules/qs/.editorconfig   |     30 -
+ .../WebAnw2Backend/node_modules/qs/.eslintignore   |      1 -
+ Coding/WebAnw2Backend/node_modules/qs/.eslintrc    |     21 -
+ Coding/WebAnw2Backend/node_modules/qs/CHANGELOG.md |    256 -
+ Coding/WebAnw2Backend/node_modules/qs/LICENSE      |     28 -
+ Coding/WebAnw2Backend/node_modules/qs/README.md    |    570 -
+ Coding/WebAnw2Backend/node_modules/qs/dist/qs.js   |    782 -
+ .../WebAnw2Backend/node_modules/qs/lib/formats.js  |     18 -
+ Coding/WebAnw2Backend/node_modules/qs/lib/index.js |     11 -
+ Coding/WebAnw2Backend/node_modules/qs/lib/parse.js |    242 -
+ .../node_modules/qs/lib/stringify.js               |    269 -
+ Coding/WebAnw2Backend/node_modules/qs/lib/utils.js |    230 -
+ Coding/WebAnw2Backend/node_modules/qs/package.json |     87 -
+ .../WebAnw2Backend/node_modules/qs/test/.eslintrc  |     17 -
+ .../WebAnw2Backend/node_modules/qs/test/index.js   |      7 -
+ .../WebAnw2Backend/node_modules/qs/test/parse.js   |    676 -
+ .../node_modules/qs/test/stringify.js              |    679 -
+ .../WebAnw2Backend/node_modules/qs/test/utils.js   |    136 -
+ .../node_modules/range-parser/HISTORY.md           |     56 -
+ .../node_modules/range-parser/LICENSE              |     23 -
+ .../node_modules/range-parser/README.md            |     84 -
+ .../node_modules/range-parser/index.js             |    162 -
+ .../node_modules/range-parser/package.json         |     91 -
+ .../node_modules/raw-body/HISTORY.md               |    270 -
+ .../WebAnw2Backend/node_modules/raw-body/LICENSE   |     22 -
+ .../WebAnw2Backend/node_modules/raw-body/README.md |    219 -
+ .../node_modules/raw-body/index.d.ts               |     87 -
+ .../WebAnw2Backend/node_modules/raw-body/index.js  |    286 -
+ .../node_modules/raw-body/package.json             |     90 -
+ .../node_modules/safe-buffer/LICENSE               |     21 -
+ .../node_modules/safe-buffer/README.md             |    584 -
+ .../node_modules/safe-buffer/index.d.ts            |    187 -
+ .../node_modules/safe-buffer/index.js              |     62 -
+ .../node_modules/safe-buffer/package.json          |     63 -
+ .../node_modules/safer-buffer/LICENSE              |     21 -
+ .../node_modules/safer-buffer/Porting-Buffer.md    |    268 -
+ .../node_modules/safer-buffer/Readme.md            |    156 -
+ .../node_modules/safer-buffer/dangerous.js         |     58 -
+ .../node_modules/safer-buffer/package.json         |     60 -
+ .../node_modules/safer-buffer/safer.js             |     77 -
+ .../node_modules/safer-buffer/tests.js             |    406 -
+ Coding/WebAnw2Backend/node_modules/send/HISTORY.md |    496 -
+ Coding/WebAnw2Backend/node_modules/send/LICENSE    |     23 -
+ Coding/WebAnw2Backend/node_modules/send/README.md  |    329 -
+ Coding/WebAnw2Backend/node_modules/send/index.js   |   1129 -
+ .../node_modules/send/node_modules/ms/index.js     |    162 -
+ .../node_modules/send/node_modules/ms/license.md   |     21 -
+ .../node_modules/send/node_modules/ms/package.json |     69 -
+ .../node_modules/send/node_modules/ms/readme.md    |     60 -
+ .../WebAnw2Backend/node_modules/send/package.json  |    106 -
+ .../node_modules/serve-static/HISTORY.md           |    451 -
+ .../node_modules/serve-static/LICENSE              |     25 -
+ .../node_modules/serve-static/README.md            |    259 -
+ .../node_modules/serve-static/index.js             |    210 -
+ .../node_modules/serve-static/package.json         |     77 -
+ .../node_modules/setprototypeof/LICENSE            |     13 -
+ .../node_modules/setprototypeof/README.md          |     31 -
+ .../node_modules/setprototypeof/index.d.ts         |      2 -
+ .../node_modules/setprototypeof/index.js           |     17 -
+ .../node_modules/setprototypeof/package.json       |     64 -
+ .../node_modules/setprototypeof/test/index.js      |     24 -
+ .../node_modules/statuses/HISTORY.md               |     65 -
+ .../WebAnw2Backend/node_modules/statuses/LICENSE   |     23 -
+ .../WebAnw2Backend/node_modules/statuses/README.md |    127 -
+ .../node_modules/statuses/codes.json               |     66 -
+ .../WebAnw2Backend/node_modules/statuses/index.js  |    113 -
+ .../node_modules/statuses/package.json             |     90 -
+ Coding/WebAnw2Backend/node_modules/tar/LICENSE     |     15 -
+ Coding/WebAnw2Backend/node_modules/tar/README.md   |    954 -
+ Coding/WebAnw2Backend/node_modules/tar/index.js    |     18 -
+ .../WebAnw2Backend/node_modules/tar/lib/buffer.js  |     11 -
+ .../WebAnw2Backend/node_modules/tar/lib/create.js  |    105 -
+ .../WebAnw2Backend/node_modules/tar/lib/extract.js |    112 -
+ .../WebAnw2Backend/node_modules/tar/lib/header.js  |    289 -
+ .../node_modules/tar/lib/high-level-opt.js         |     29 -
+ .../node_modules/tar/lib/large-numbers.js          |     97 -
+ Coding/WebAnw2Backend/node_modules/tar/lib/list.js |    130 -
+ .../WebAnw2Backend/node_modules/tar/lib/mkdir.js   |    206 -
+ .../node_modules/tar/lib/mode-fix.js               |     14 -
+ Coding/WebAnw2Backend/node_modules/tar/lib/pack.js |    404 -
+ .../WebAnw2Backend/node_modules/tar/lib/parse.js   |    428 -
+ Coding/WebAnw2Backend/node_modules/tar/lib/pax.js  |    146 -
+ .../node_modules/tar/lib/read-entry.js             |     98 -
+ .../WebAnw2Backend/node_modules/tar/lib/replace.js |    220 -
+ .../WebAnw2Backend/node_modules/tar/lib/types.js   |     44 -
+ .../WebAnw2Backend/node_modules/tar/lib/unpack.js  |    621 -
+ .../WebAnw2Backend/node_modules/tar/lib/update.js  |     36 -
+ .../node_modules/tar/lib/warn-mixin.js             |     14 -
+ .../node_modules/tar/lib/winchars.js               |     23 -
+ .../node_modules/tar/lib/write-entry.js            |    422 -
+ .../WebAnw2Backend/node_modules/tar/package.json   |     82 -
+ .../node_modules/toidentifier/LICENSE              |     21 -
+ .../node_modules/toidentifier/README.md            |     61 -
+ .../node_modules/toidentifier/index.js             |     30 -
+ .../node_modules/toidentifier/package.json         |     76 -
+ .../WebAnw2Backend/node_modules/type-is/HISTORY.md |    259 -
+ Coding/WebAnw2Backend/node_modules/type-is/LICENSE |     23 -
+ .../WebAnw2Backend/node_modules/type-is/README.md  |    170 -
+ .../WebAnw2Backend/node_modules/type-is/index.js   |    266 -
+ .../node_modules/type-is/package.json              |     85 -
+ .../WebAnw2Backend/node_modules/unpipe/HISTORY.md  |      4 -
+ Coding/WebAnw2Backend/node_modules/unpipe/LICENSE  |     22 -
+ .../WebAnw2Backend/node_modules/unpipe/README.md   |     43 -
+ Coding/WebAnw2Backend/node_modules/unpipe/index.js |     69 -
+ .../node_modules/unpipe/package.json               |     63 -
+ .../node_modules/utils-merge/.npmignore            |      9 -
+ .../node_modules/utils-merge/LICENSE               |     20 -
+ .../node_modules/utils-merge/README.md             |     34 -
+ .../node_modules/utils-merge/index.js              |     23 -
+ .../node_modules/utils-merge/package.json          |     66 -
+ Coding/WebAnw2Backend/node_modules/vary/HISTORY.md |     39 -
+ Coding/WebAnw2Backend/node_modules/vary/LICENSE    |     22 -
+ Coding/WebAnw2Backend/node_modules/vary/README.md  |    101 -
+ Coding/WebAnw2Backend/node_modules/vary/index.js   |    149 -
+ .../WebAnw2Backend/node_modules/vary/package.json  |     78 -
+ Coding/WebAnw2Backend/node_modules/yallist/LICENSE |     15 -
+ .../WebAnw2Backend/node_modules/yallist/README.md  |    204 -
+ .../node_modules/yallist/iterator.js               |      8 -
+ .../node_modules/yallist/package.json              |     63 -
+ .../WebAnw2Backend/node_modules/yallist/yallist.js |    426 -
+ 668 files changed, 1 insertion(+), 353004 deletions(-)
+
+commit 8eca348719507380dd11f5740f7c4b89e2103a76
+Merge: 0dc819f c95eada
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 09:55:00 2020 +0200
+
+    Merge branch 'master' into Benutzer
+
+commit 0dc819f1dc75bfbb306ae5b28b1e8e5fd1a2c65a
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 09:54:28 2020 +0200
+
+    Benutzer
+
+ Coding/Javascript/filmuebersicht_API.js    | 67 +++++++++++++++++++++++-------
+ Coding/WebAnw2Backend/dao/benutzerDao.js   |  6 +--
+ Coding/WebAnw2Backend/dao/ticketDao.js     |  1 -
+ Coding/WebAnw2Backend/services/benutzer.js | 21 +++++-----
+ 4 files changed, 65 insertions(+), 30 deletions(-)
+
+commit c95eada6381f69890835239aa9a7e7addfdc9a31
+Merge: 53d58d7 754bce2
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 17 16:42:05 2020 +0200
+
+    Merge pull request #77 from Jugo84/KinosaalChatFunctionality
+    
+    Chat Functionality
+
+commit 754bce20b231f00699674864fd194b8a2c2b71fd
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 17 16:41:30 2020 +0200
+
+    Chat Functionality
+
+ Coding/Javascript/kinosaal_chat_functionality.js | 139 ++++++++++-----
+ Coding/WebAnw2Backend/dao/benutzerDao.js         |  12 --
+ Coding/WebAnw2Backend/dao/chatDao.js             |  89 ++++++++++
+ Coding/WebAnw2Backend/dao/chatNachrichtDao.js    |  67 +++++++
+ Coding/WebAnw2Backend/db/CreateTable.sql         |  10 ++
+ Coding/WebAnw2Backend/db/Insert.sql              |   2 +-
+ Coding/WebAnw2Backend/db/db.sqlite               | Bin 180224 -> 180224 bytes
+ Coding/WebAnw2Backend/server.js                  |   5 +
+ Coding/WebAnw2Backend/services/chat.js           | 211 +++++++++++++++++++++++
+ Coding/WebAnw2Backend/services/chatNachricht.js  |  40 +++++
+ 10 files changed, 519 insertions(+), 56 deletions(-)
+
+commit 53d58d7dbe2330f1a6a5d1d96cafe392fc2bfd8d
+Merge: c128655 5eae22a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 16 15:18:43 2020 +0200
+
+    Merge pull request #76 from Jugo84/SNackfunktionen
+    
+    snack
+
+commit 5eae22ae57b2a9695c7accf8d684013ad1cf92b6
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jun 16 15:14:15 2020 +0200
+
+    snack
+    
+    Snakc
+
+ Coding/Javascript/helpers.js               |   2 +-
+ Coding/WebAnw2Backend/dao/snackDao.js      |  28 +++++-----
+ Coding/WebAnw2Backend/dao/snackTypDao.js   |  82 +++++------------------------
+ Coding/WebAnw2Backend/dao/ticketDao.js     |  14 +++++
+ Coding/WebAnw2Backend/db/db.sqlite         | Bin 180224 -> 180224 bytes
+ Coding/WebAnw2Backend/server.js            |   6 ++-
+ Coding/WebAnw2Backend/services/snack.js    |  34 ++++++++++++
+ Coding/WebAnw2Backend/services/snackTyp.js |   1 +
+ 8 files changed, 82 insertions(+), 85 deletions(-)
+
+commit c1286556b3a5a59f16872d67f9993c1bae95280a
+Merge: 37c7208 e387c6d
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 15 08:15:13 2020 +0200
+
+    Merge pull request #74 from Jugo84/popcornShop-backend
+    
+    popcornShop-draft
+
+commit e387c6db89a4a1b4cb103d59777768635983b83e
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sat Jun 13 18:17:28 2020 +0200
+
+    popcornShop-draft
+
+ Coding/WebAnw2Backend/dao/snackDao.js      | 172 +++++++++++++++++++++++++++++
+ Coding/WebAnw2Backend/dao/snackTypDao.js   |  94 ++++++++++++++++
+ Coding/WebAnw2Backend/services/snackTyp.js | 126 +++++++++++++++++++++
+ 3 files changed, 392 insertions(+)
+
+commit 37c72088a711e7fe2ce4ff8f84a6539db07423c0
+Merge: 555283d a2889b5
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Jun 12 16:29:15 2020 +0200
+
+    Merge pull request #73 from Jugo84/Filmübersicht
+    
+    Filmübersicht - Ticket erstellen
+
+commit 555283d24a8734a36a7a4572f0f4f401689f17e5
+Merge: 257d848 0f893c2
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Jun 12 16:28:46 2020 +0200
+
+    Merge pull request #72 from Jugo84/db-update-popcornShopimage
+    
+    db-images
+
+commit a2889b5e1e8e3b8341a54147b816c93cae007650
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 11 12:46:55 2020 +0200
+
+    Filmübersicht - Ticket erstellen
+
+ Coding/Javascript/filmuebersicht_API.js  | 56 +++++++++++++++++++++++++-------
+ Coding/Javascript/home_API.js            | 13 ++++++--
+ Coding/WebAnw2Backend/dao/ticketDao.js   | 13 +++++---
+ Coding/WebAnw2Backend/services/ticket.js | 32 +++++++++---------
+ 4 files changed, 78 insertions(+), 36 deletions(-)
+
+commit 0f893c2962f0644248c87e04af2e4543af184e19
+Author: ngock <ngocbitra@gmail.com>
+Date:   Wed Jun 10 22:59:08 2020 +0200
+
+    db-images
+
+ Coding/Bilder/JamesBond.jpg     | Bin 148039 -> 93961 bytes
+ Coding/Bilder/RufDerWildnis.jpg | Bin 207833 -> 259992 bytes
+ Coding/Bilder/bier.jpg          | Bin 0 -> 71677 bytes
+ Coding/Bilder/chips.jpg         | Bin 0 -> 70104 bytes
+ Coding/Bilder/cola.jpg          | Bin 0 -> 24453 bytes
+ Coding/Bilder/erdnuesse.jpg     | Bin 0 -> 141462 bytes
+ Coding/Bilder/fanta.jpg         | Bin 0 -> 25084 bytes
+ Coding/Bilder/haribo.jpg        | Bin 0 -> 83220 bytes
+ Coding/Bilder/nachos.jpg        | Bin 0 -> 85962 bytes
+ Coding/Bilder/schokolade.jpg    | Bin 0 -> 252388 bytes
+ Coding/Bilder/smarties.jpg      | Bin 0 -> 82059 bytes
+ Coding/Bilder/sprite.jpg        | Bin 0 -> 17818 bytes
+ 12 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 257d848b05dec19159a3de3d40f23b478f73de19
+Merge: f5f9bdf 6e69de7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 10 16:02:51 2020 +0200
+
+    Merge pull request #71 from Jugo84/KinosaalTicketDBFunction
+    
+    Kinosaal ticket and video function
+
+commit f5f9bdfdab76f0c4af25ceec395579366e928c40
+Merge: 5d4e5ab 92c149c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 10 16:02:08 2020 +0200
+
+    Merge pull request #68 from Jugo84/ppt-rename
+    
+    ppt-rename
+
+commit 6e69de7240c3d8ab605cef7cf8940c47a20ae820
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 10 16:01:07 2020 +0200
+
+    Fixed data
+
+ Coding/Javascript/kinosaal_video_API.js |   8 +-------
+ Coding/WebAnw2Backend/db/db.sqlite      | Bin 180224 -> 180224 bytes
+ 2 files changed, 1 insertion(+), 7 deletions(-)
+
+commit 6ba85e20b88133c339cb911e2ff6a5b24152b1cc
+Merge: fdd31df 5d4e5ab
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 10 15:50:37 2020 +0200
+
+    Merge branch 'master' into KinosaalTicketDBFunction
+    
+    # Conflicts:
+    #       Coding/WebAnw2Backend/db/db.sqlite
+
+commit fdd31df4f64d8340ed580896d95e934a1f92ef50
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 10 15:47:05 2020 +0200
+
+    Made Ticket Input and Chat live dynamic
+
+ Coding/Javascript/helpers.js                       |  11 +++
+ Coding/Javascript/kinosaal_API.js                  |  26 ++++++
+ ...tionality.js => kinosaal_chat_functionality.js} |  19 -----
+ Coding/Javascript/kinosaal_video_API.js            |  92 ++++++++++++++++++++
+ .../{Ruf_der_Wildnis.mp4 => RufderWildnis.mp4}     | Bin
+ Coding/WebAnw2Backend/dao/benutzerDao.js           |  64 +++++++-------
+ Coding/WebAnw2Backend/dao/ticketDao.js             |  93 +++++++++++++++++++++
+ Coding/WebAnw2Backend/db/db.sqlite                 | Bin 180224 -> 180224 bytes
+ Coding/WebAnw2Backend/server.js                    |   3 +
+ Coding/WebAnw2Backend/services/ticket.js           |  89 ++++++++++++++++++++
+ Coding/kinosaal.html                               |   7 +-
+ Coding/kinosaal_video.html                         |   6 +-
+ package-lock.json                                  |   3 +
+ 13 files changed, 356 insertions(+), 57 deletions(-)
+
+commit 5d4e5ab89c30f79336baacc1fe35d329c35f18d9
+Merge: 385dbc5 358deec
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 9 15:05:56 2020 +0200
+
+    Merge pull request #70 from Jugo84/home_filmübersicht
+    
+    Home filmübersicht
+
+commit 358deec3e9e04e6f3093085d9d410abadcf41000
+Merge: f7e43f9 385dbc5
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jun 9 14:10:09 2020 +0200
+
+    Merge branch 'master' into home_filmübersicht
+    
+    # Conflicts:
+    #       Coding/WebAnw2Backend/Bilder/Film4.jpg
+    #       Coding/WebAnw2Backend/Bilder/RufderWildnis.jpg
+    #       Coding/WebAnw2Backend/db/db.sqlite
+
+commit 92c149cc4ad8c2c40a4d265b141dfa2b81740298
+Author: ngock <ngocbitra@gmail.com>
+Date:   Tue Jun 9 13:18:04 2020 +0200
+
+    ppt-rename
+
+ .../Team NJJS_Virtual Cinema_MockUp.pptx              | Bin 0 -> 4797632 bytes
+ ... Team_NJJS_Virtual Cinema_UMLDiagramm_Backend.mdj} |   0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit f7e43f94d8f325716fc179496a3a65b234de3767
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Mon Jun 8 11:59:15 2020 +0200
+
+    home_filmübersicht
+
+ Coding/Bilder/{Film4.jpg => BerlinBerlin.jpg}      | Bin
+ Coding/Bilder/Inception.jpg                        | Bin 0 -> 211082 bytes
+ Coding/Bilder/JamesBond.jpg                        | Bin 0 -> 148039 bytes
+ Coding/Bilder/{Film3.jpg => RufDerWildnis.jpg}     | Bin
+ Coding/Javascript/filmuebersicht_API.js            |  79 +++++++++++
+ Coding/Javascript/home_API.js                      |  55 +++++---
+ Coding/Javascript/home_API_original.js             |  49 -------
+ .../WebAnw2Backend/Backend_Bilder/BerlinBerlin.png | Bin 141911 -> 0 bytes
+ .../Backend_Bilder/Bild_Groe\303\237e.PNG"         | Bin 756008 -> 0 bytes
+ Coding/WebAnw2Backend/Backend_Bilder/Film1.jpg     | Bin 627952 -> 0 bytes
+ Coding/WebAnw2Backend/Backend_Bilder/Film2.jpg     | Bin 627952 -> 0 bytes
+ Coding/WebAnw2Backend/Backend_Bilder/JamesBond.png | Bin 819159 -> 0 bytes
+ .../Backend_Bilder/RufDerWildnis.jpg               | Bin 1022527 -> 0 bytes
+ Coding/WebAnw2Backend/BerlinBerlin.png             | Bin 141911 -> 0 bytes
+ Coding/WebAnw2Backend/JamesBond.png                | Bin 819159 -> 0 bytes
+ Coding/WebAnw2Backend/RufDerWildnis.jpg            | Bin 1022527 -> 0 bytes
+ Coding/WebAnw2Backend/db/Insert.sql                |   4 +-
+ Coding/WebAnw2Backend/db/db.sqlite                 | Bin 180224 -> 180224 bytes
+ Coding/filmuebersicht.html                         | 121 +----------------
+ Coding/home.html                                   |   2 +-
+ Coding/home_original.html                          | 146 ---------------------
+ 21 files changed, 125 insertions(+), 331 deletions(-)
+
+commit d7ad63528228dd37495396cad4b4df865b7d0813
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jun 5 21:50:58 2020 +0200
+
+    home_API_Versuch
+
+ Coding/Javascript/home_API.js          |  36 ++++++--
+ Coding/Javascript/home_API_original.js |  49 +++++++++++
+ Coding/WebAnw2Backend/db/db.sqlite     | Bin 180224 -> 180224 bytes
+ Coding/home.html                       |  30 +------
+ Coding/home_original.html              | 146 +++++++++++++++++++++++++++++++++
+ 5 files changed, 227 insertions(+), 34 deletions(-)
+
+commit 385dbc5bfa3cf42fd95304f7773c7e547ab16fce
+Merge: cd12939 30c1467
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Jun 5 21:07:06 2020 +0200
+
+    Merge pull request #65 from Jugo84/db_update
+    
+    db update
+
+commit 30c14671159d4ec7bd52da3cc194339e2f5d2a0e
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jun 5 19:32:07 2020 +0200
+
+    db update
+
+ Coding/WebAnw2Backend/Bilder/Film1.jpg             | Bin 627952 -> 0 bytes
+ Coding/WebAnw2Backend/Bilder/Film2.jpg             | Bin 627952 -> 0 bytes
+ Coding/WebAnw2Backend/Bilder/Film4.jpg             | Bin 120825 -> 141911 bytes
+ .../Bilder/{Film3.jpg => RufderWildnis.jpg}        | Bin
+ Coding/WebAnw2Backend/db/db.sqlite                 | Bin 180224 -> 180224 bytes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+
+commit d242a3a3824bcb0dc50943b8343e66205c91cbf7
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jun 5 19:19:42 2020 +0200
+
+    db update
+
+ .../WebAnw2Backend/Backend_Bilder/BerlinBerlin.png | Bin 0 -> 141911 bytes
+ .../Backend_Bilder/Bild_Groe\303\237e.PNG"         | Bin 0 -> 756008 bytes
+ .../Backend_Bilder}/Film1.jpg                      | Bin
+ .../Backend_Bilder}/Film2.jpg                      | Bin
+ Coding/WebAnw2Backend/Backend_Bilder/JamesBond.png | Bin 0 -> 819159 bytes
+ .../Backend_Bilder/RufDerWildnis.jpg               | Bin 0 -> 1022527 bytes
+ Coding/WebAnw2Backend/BerlinBerlin.png             | Bin 0 -> 141911 bytes
+ Coding/WebAnw2Backend/Bilder/Film1.jpg             | Bin 627952 -> 0 bytes
+ Coding/WebAnw2Backend/Bilder/Film2.jpg             | Bin 627952 -> 0 bytes
+ Coding/WebAnw2Backend/Bilder/Film3.jpg             | Bin 207833 -> 0 bytes
+ Coding/WebAnw2Backend/Bilder/Film4.jpg             | Bin 120825 -> 0 bytes
+ Coding/WebAnw2Backend/JamesBond.png                | Bin 0 -> 819159 bytes
+ Coding/WebAnw2Backend/RufDerWildnis.jpg            | Bin 0 -> 1022527 bytes
+ Coding/WebAnw2Backend/db/db.sqlite                 | Bin 180224 -> 180224 bytes
+ 14 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cd129392464ba5edf7ad7671294435f1af8afcae
+Merge: 9f6fcb4 13ed3f2
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 3 16:44:44 2020 +0200
+
+    Merge pull request #64 from Jugo84/Datenbank
+    
+    Datenbank
+
+commit 13ed3f231ec00a7e2d75d378621c339afa385336
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Wed Jun 3 16:44:06 2020 +0200
+
+    Datenbank
+
+ Coding/WebAnw2Backend/Bilder/Film1.jpg   | Bin 0 -> 627952 bytes
+ Coding/WebAnw2Backend/Bilder/Film2.jpg   | Bin 0 -> 627952 bytes
+ Coding/WebAnw2Backend/Bilder/Film3.jpg   | Bin 0 -> 207833 bytes
+ Coding/WebAnw2Backend/Bilder/Film4.jpg   | Bin 0 -> 120825 bytes
+ Coding/WebAnw2Backend/db/CreateTable.sql |  34 +++++++++++++++++++++++++++++--
+ Coding/WebAnw2Backend/db/Insert.sql      |  14 ++++++++++++-
+ Coding/WebAnw2Backend/db/db.sqlite       | Bin 163840 -> 180224 bytes
+ 7 files changed, 45 insertions(+), 3 deletions(-)
+
+commit 9f6fcb4ca051c3cd8a5778e8bdd1b785cf5e34f3
+Merge: 5b7a83c 7a9ee03
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 3 15:21:40 2020 +0200
+
+    Merge pull request #63 from Jugo84/uml
+    
+    uml
+
+commit 7a9ee0353f91e345e53bfd9b139253aea9461a90
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 3 15:20:53 2020 +0200
+
+    uml
+
+ .../Team_NJJS_Virtual Cinema_UML.jpg               |  Bin 0 -> 207998 bytes
+ SoftwareEngineering/UMLDiagramm_Backend.mdj        | 4761 ++++++++++++++++++++
+ 2 files changed, 4761 insertions(+)
+
+commit 5b7a83c28f430d4c5f4f6edd4575e51872ba5b7f
+Merge: 301bebb 771e2df
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 3 08:11:06 2020 +0200
+
+    Merge pull request #62 from Jugo84/Backend
+    
+    Backend
+
+commit 771e2df7b15cd318e81a18e75162b7ba5b8dfd42
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jun 2 17:15:06 2020 +0200
+
+    Backend
+
+ Coding/Javascript/home_API.js               |  47 +++++++++++++++++++++++++
+ Coding/WebAnw2Backend/dao/filmDao.js        |   1 -
+ Coding/WebAnw2Backend/dao/vorstellungDao.js |  37 ++------------------
+ Coding/WebAnw2Backend/db/Insert.sql         |   6 +++-
+ Coding/WebAnw2Backend/db/db.sqlite          | Bin 163840 -> 163840 bytes
+ Coding/home.html                            |  51 ++--------------------------
+ 6 files changed, 56 insertions(+), 86 deletions(-)
+
+commit 301bebb80fc24ce420b51dec56e2a16c5a9d4696
+Merge: 3d51ad6 a4d1db1
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 1 11:09:34 2020 +0200
+
+    Merge pull request #61 from Jugo84/Backend
+    
+    Backend
+
+commit a4d1db1c1f8c3eb9f0d2b83c74fe3e86e5f9f35d
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sun May 31 12:05:28 2020 +0200
+
+    Backend
+
+ Coding/WebAnw2Backend/dao/adresseDao.js            |    115 +
+ Coding/WebAnw2Backend/dao/benutzerDao.js           |    173 +
+ Coding/WebAnw2Backend/dao/benutzerrolleDao.js      |     92 +
+ Coding/WebAnw2Backend/dao/bestellpositionDao.js    |    174 +
+ Coding/WebAnw2Backend/dao/bestellungDao.js         |    203 +
+ Coding/WebAnw2Backend/dao/bewertungDao.js          |    143 +
+ Coding/WebAnw2Backend/dao/brancheDao.js            |     92 +
+ Coding/WebAnw2Backend/dao/downloadDao.js           |     92 +
+ Coding/WebAnw2Backend/dao/einheitDao.js            |     92 +
+ Coding/WebAnw2Backend/dao/filmDao.js               |    111 +
+ Coding/WebAnw2Backend/dao/filmgenreDao.js          |     92 +
+ Coding/WebAnw2Backend/dao/firmaDao.js              |    153 +
+ Coding/WebAnw2Backend/dao/forumsbenutzerDao.js     |    144 +
+ Coding/WebAnw2Backend/dao/forumsbereichDao.js      |    127 +
+ Coding/WebAnw2Backend/dao/forumseintragDao.js      |    181 +
+ Coding/WebAnw2Backend/dao/gerichtDao.js            |    191 +
+ Coding/WebAnw2Backend/dao/kinosaalDao.js           |    112 +
+ Coding/WebAnw2Backend/dao/landDao.js               |     92 +
+ Coding/WebAnw2Backend/dao/mehrwertsteuerDao.js     |     92 +
+ Coding/WebAnw2Backend/dao/personDao.js             |    129 +
+ Coding/WebAnw2Backend/dao/produktDao.js            |    188 +
+ Coding/WebAnw2Backend/dao/produktbildDao.js        |    134 +
+ Coding/WebAnw2Backend/dao/produktkategorieDao.js   |     92 +
+ Coding/WebAnw2Backend/dao/reserviererDao.js        |     92 +
+ Coding/WebAnw2Backend/dao/reserviertersitzDao.js   |    134 +
+ Coding/WebAnw2Backend/dao/reservierungDao.js       |    272 +
+ Coding/WebAnw2Backend/dao/speisenartDao.js         |     92 +
+ Coding/WebAnw2Backend/dao/terminDao.js             |    203 +
+ Coding/WebAnw2Backend/dao/vorstellungDao.js        |    293 +
+ Coding/WebAnw2Backend/dao/zahlungsartDao.js        |     92 +
+ Coding/WebAnw2Backend/dao/zutatDao.js              |     92 +
+ Coding/WebAnw2Backend/dao/zutatenlisteDao.js       |    189 +
+ Coding/WebAnw2Backend/db/.project                  |     11 +
+ Coding/WebAnw2Backend/db/CreateTable.sql           |     28 +
+ Coding/WebAnw2Backend/db/Insert.sql                |      1 +
+ Coding/WebAnw2Backend/db/db.sqlite                 |    Bin 0 -> 163840 bytes
+ Coding/WebAnw2Backend/helper.js                    |    291 +
+ Coding/WebAnw2Backend/node_modules/.bin/mime       |     15 +
+ Coding/WebAnw2Backend/node_modules/.bin/mime.cmd   |      7 +
+ Coding/WebAnw2Backend/node_modules/.bin/mkdirp     |     15 +
+ Coding/WebAnw2Backend/node_modules/.bin/mkdirp.cmd |      7 +
+ .../WebAnw2Backend/node_modules/accepts/HISTORY.md |    236 +
+ Coding/WebAnw2Backend/node_modules/accepts/LICENSE |     23 +
+ .../WebAnw2Backend/node_modules/accepts/README.md  |    142 +
+ .../WebAnw2Backend/node_modules/accepts/index.js   |    238 +
+ .../node_modules/accepts/package.json              |     86 +
+ .../node_modules/array-flatten/LICENSE             |     21 +
+ .../node_modules/array-flatten/README.md           |     43 +
+ .../node_modules/array-flatten/array-flatten.js    |     64 +
+ .../node_modules/array-flatten/package.json        |     64 +
+ .../node_modules/better-sqlite3/.gitattributes     |      1 +
+ .../node_modules/better-sqlite3/.travis.yml        |     17 +
+ .../node_modules/better-sqlite3/LICENSE            |     21 +
+ .../node_modules/better-sqlite3/README.md          |     73 +
+ .../node_modules/better-sqlite3/appveyor.yml       |     17 +
+ .../better-sqlite3/benchmark/benchmark.js          |     31 +
+ .../better-sqlite3/benchmark/drivers.js            |     20 +
+ .../node_modules/better-sqlite3/benchmark/index.js |     84 +
+ .../node_modules/better-sqlite3/benchmark/seed.js  |     47 +
+ .../better-sqlite3/benchmark/trials.js             |     65 +
+ .../better-sqlite3/benchmark/types/insert.js       |     16 +
+ .../better-sqlite3/benchmark/types/select-all.js   |     14 +
+ .../benchmark/types/select-iterate.js              |     23 +
+ .../better-sqlite3/benchmark/types/select.js       |     14 +
+ .../better-sqlite3/benchmark/types/transaction.js  |     40 +
+ .../node_modules/better-sqlite3/binding.gyp        |     37 +
+ .../build/Release/better_sqlite3.exp               |    Bin 0 -> 978 bytes
+ .../build/Release/better_sqlite3.ilk               |    Bin 0 -> 5749120 bytes
+ .../build/Release/better_sqlite3.lib               |    Bin 0 -> 1898 bytes
+ .../build/Release/better_sqlite3.node              |    Bin 0 -> 2151424 bytes
+ .../build/Release/better_sqlite3.pdb               |    Bin 0 -> 10866688 bytes
+ .../Release/obj/better_sqlite3/better_sqlite3.obj  |    Bin 0 -> 1496068 bytes
+ .../better_sqlite3.tlog/CL.16180.write.1.tlog      |    Bin 0 -> 1192 bytes
+ .../better_sqlite3.tlog/CL.command.1.tlog          |    Bin 0 -> 6306 bytes
+ .../better_sqlite3.tlog/CL.read.1.tlog             |    Bin 0 -> 37008 bytes
+ .../better_sqlite3.lastbuildstate                  |      2 +
+ .../better_sqlite3.write.1u.tlog                   |    Bin 0 -> 938 bytes
+ .../better_sqlite3.tlog/link.command.1.tlog        |    Bin 0 -> 2950 bytes
+ .../better_sqlite3.tlog/link.read.1.tlog           |    Bin 0 -> 6440 bytes
+ .../better_sqlite3.tlog/link.write.1.tlog          |    Bin 0 -> 1958 bytes
+ .../obj/better_sqlite3/win_delay_load_hook.obj     |    Bin 0 -> 28734 bytes
+ .../obj/global_intermediate/sqlite3/sqlite3.c      | 223793 ++++++++++++++++++
+ .../obj/global_intermediate/sqlite3/sqlite3.h      |  11792 +
+ .../obj/global_intermediate/sqlite3/sqlite3ext.h   |    634 +
+ .../custombuild.command.1.tlog                     |    Bin 0 -> 1798 bytes
+ .../place_re.2A566C5B.tlog/custombuild.read.1.tlog |    Bin 0 -> 638 bytes
+ .../custombuild.write.1.tlog                       |    Bin 0 -> 1238 bytes
+ .../place_resulting_binaries.lastbuildstate        |      2 +
+ .../Release/obj/test_extension/test_extension.obj  |    Bin 0 -> 27000 bytes
+ .../test_extension.tlog/CL.command.1.tlog          |    Bin 0 -> 6302 bytes
+ .../test_extension.tlog/CL.read.1.tlog             |    Bin 0 -> 18450 bytes
+ .../test_extension.tlog/CL.write.1.tlog            |    Bin 0 -> 1194 bytes
+ .../test_extension.tlog/link.command.1.tlog        |    Bin 0 -> 2950 bytes
+ .../test_extension.tlog/link.read.1.tlog           |    Bin 0 -> 5744 bytes
+ .../test_extension.tlog/link.write.1.tlog          |    Bin 0 -> 1958 bytes
+ .../test_extension.lastbuildstate                  |      2 +
+ .../obj/test_extension/win_delay_load_hook.obj     |    Bin 0 -> 28734 bytes
+ .../better-sqlite3/build/Release/sqlite3.lib       |    Bin 0 -> 7464524 bytes
+ .../build/Release/test_extension.ilk               |    Bin 0 -> 2778440 bytes
+ .../build/Release/test_extension.node              |    Bin 0 -> 547328 bytes
+ .../build/Release/test_extension.pdb               |    Bin 0 -> 6410240 bytes
+ .../better-sqlite3/build/better_sqlite3.node       |    Bin 0 -> 2151424 bytes
+ .../better-sqlite3/build/better_sqlite3.vcxproj    |    143 +
+ .../build/better_sqlite3.vcxproj.filters           |     49 +
+ .../node_modules/better-sqlite3/build/binding.sln  |     64 +
+ .../node_modules/better-sqlite3/build/config.gypi  |    200 +
+ .../locate_sqlite3.tlog/custombuild.command.1.tlog |    Bin 0 -> 798 bytes
+ .../locate_sqlite3.tlog/custombuild.read.1.tlog    |    Bin 0 -> 292 bytes
+ .../locate_sqlite3.tlog/custombuild.write.1.tlog   |    Bin 0 -> 1378 bytes
+ .../locate_sqlite3.lastbuildstate                  |      2 +
+ .../build/deps/Release/obj/sqlite3/sqlite3.obj     |    Bin 0 -> 7280451 bytes
+ .../obj/sqlite3/sqlite3.tlog/CL.command.1.tlog     |    Bin 0 -> 8654 bytes
+ .../obj/sqlite3/sqlite3.tlog/CL.read.1.tlog        |    Bin 0 -> 46006 bytes
+ .../obj/sqlite3/sqlite3.tlog/CL.write.1.tlog       |    Bin 0 -> 1240 bytes
+ .../obj/sqlite3/sqlite3.tlog/Lib-link.read.1.tlog  |    Bin 0 -> 1548 bytes
+ .../obj/sqlite3/sqlite3.tlog/Lib-link.write.1.tlog |    Bin 0 -> 994 bytes
+ .../obj/sqlite3/sqlite3.tlog/Lib.command.1.tlog    |    Bin 0 -> 1200 bytes
+ .../sqlite3/sqlite3.tlog/sqlite3.lastbuildstate    |      2 +
+ .../Release/obj/sqlite3/win_delay_load_hook.obj    |    Bin 0 -> 29318 bytes
+ .../build/deps/locate_sqlite3.vcxproj              |    130 +
+ .../build/deps/locate_sqlite3.vcxproj.filters      |     61 +
+ .../better-sqlite3/build/deps/sqlite3.sln          |     28 +
+ .../better-sqlite3/build/deps/sqlite3.vcxproj      |    136 +
+ .../build/deps/sqlite3.vcxproj.filters             |     58 +
+ .../build/place_resulting_binaries.vcxproj         |    146 +
+ .../build/place_resulting_binaries.vcxproj.filters |     52 +
+ .../better-sqlite3/build/test_extension.node       |    Bin 0 -> 547328 bytes
+ .../better-sqlite3/build/test_extension.vcxproj    |    143 +
+ .../build/test_extension.vcxproj.filters           |     49 +
+ .../node_modules/better-sqlite3/deps/common.gypi   |     70 +
+ .../node_modules/better-sqlite3/deps/defines.gypi  |     28 +
+ .../node_modules/better-sqlite3/deps/download.sh   |     96 +
+ .../node_modules/better-sqlite3/deps/extract.js    |     16 +
+ .../node_modules/better-sqlite3/deps/sqlite3.gyp   |     80 +
+ .../better-sqlite3/deps/sqlite3.tar.gz             |    Bin 0 -> 2189468 bytes
+ .../node_modules/better-sqlite3/deps/symlink.js    |     16 +
+ .../better-sqlite3/deps/test_extension.c           |     17 +
+ .../node_modules/better-sqlite3/docs/api.md        |    518 +
+ .../node_modules/better-sqlite3/docs/benchmark.md  |     38 +
+ .../better-sqlite3/docs/compilation.md             |     38 +
+ .../node_modules/better-sqlite3/docs/integer.md    |     57 +
+ .../better-sqlite3/docs/performance.md             |     39 +
+ .../node_modules/better-sqlite3/docs/tips.md       |     35 +
+ .../better-sqlite3/docs/troubleshooting.md         |     31 +
+ .../node_modules/better-sqlite3/lib/aggregate.js   |     40 +
+ .../node_modules/better-sqlite3/lib/backup.js      |     66 +
+ .../node_modules/better-sqlite3/lib/database.js    |     55 +
+ .../node_modules/better-sqlite3/lib/function.js    |     26 +
+ .../node_modules/better-sqlite3/lib/index.js       |      4 +
+ .../node_modules/better-sqlite3/lib/pragma.js      |     20 +
+ .../better-sqlite3/lib/sqlite-error.js             |     21 +
+ .../node_modules/better-sqlite3/lib/transaction.js |     68 +
+ .../node_modules/better-sqlite3/lib/util.js        |     17 +
+ .../node_modules/better-sqlite3/package.json       |     79 +
+ .../better-sqlite3/src/better_sqlite3.cpp          |   1777 +
+ .../better-sqlite3/src/better_sqlite3.hpp          |    914 +
+ .../better-sqlite3/src/better_sqlite3.lzz          |     41 +
+ .../better-sqlite3/src/objects/backup.lzz          |    149 +
+ .../better-sqlite3/src/objects/database.lzz        |    381 +
+ .../src/objects/statement-iterator.lzz             |    152 +
+ .../better-sqlite3/src/objects/statement.lzz       |    306 +
+ .../better-sqlite3/src/util/bind-map.lzz           |     67 +
+ .../better-sqlite3/src/util/binder.lzz             |    189 +
+ .../better-sqlite3/src/util/constants.lzz          |    159 +
+ .../better-sqlite3/src/util/custom-aggregate.lzz   |    106 +
+ .../better-sqlite3/src/util/custom-function.lzz    |     48 +
+ .../node_modules/better-sqlite3/src/util/data.lzz  |    134 +
+ .../better-sqlite3/src/util/integer.lzz            |     45 +
+ .../better-sqlite3/src/util/macros.lzz             |    154 +
+ .../better-sqlite3/src/util/query-macros.lzz       |     70 +
+ .../node_modules/better-sqlite3/test/00.setup.js   |     26 +
+ .../better-sqlite3/test/01.sqlite-error.js         |     27 +
+ .../better-sqlite3/test/10.database.open.js        |    157 +
+ .../better-sqlite3/test/11.database.close.js       |     68 +
+ .../better-sqlite3/test/12.database.pragma.js      |     65 +
+ .../better-sqlite3/test/13.database.prepare.js     |     51 +
+ .../better-sqlite3/test/14.database.exec.js        |     46 +
+ .../better-sqlite3/test/20.statement.run.js        |    168 +
+ .../better-sqlite3/test/21.statement.get.js        |    101 +
+ .../better-sqlite3/test/22.statement.all.js        |    115 +
+ .../better-sqlite3/test/23.statement.iterate.js    |    209 +
+ .../better-sqlite3/test/24.statement.bind.js       |     95 +
+ .../better-sqlite3/test/25.statement.columns.js    |     46 +
+ .../better-sqlite3/test/30.database.transaction.js |    157 +
+ .../better-sqlite3/test/31.database.checkpoint.js  |     62 +
+ .../better-sqlite3/test/32.database.function.js    |    210 +
+ .../better-sqlite3/test/33.database.aggregate.js   |    602 +
+ .../test/34.database.load-extension.js             |     62 +
+ .../better-sqlite3/test/35.database.backup.js      |    245 +
+ .../better-sqlite3/test/40.integers.js             |    106 +
+ .../node_modules/better-sqlite3/test/41.at-exit.js |     52 +
+ .../better-sqlite3/test/42.integrity.js            |    497 +
+ .../node_modules/better-sqlite3/test/43.verbose.js |    101 +
+ .../node_modules/better-sqlite3/test/50.misc.js    |     44 +
+ .../node_modules/body-parser/HISTORY.md            |    609 +
+ .../node_modules/body-parser/LICENSE               |     23 +
+ .../node_modules/body-parser/README.md             |    443 +
+ .../node_modules/body-parser/index.js              |    157 +
+ .../node_modules/body-parser/lib/read.js           |    181 +
+ .../node_modules/body-parser/lib/types/json.js     |    230 +
+ .../node_modules/body-parser/lib/types/raw.js      |    101 +
+ .../node_modules/body-parser/lib/types/text.js     |    121 +
+ .../body-parser/lib/types/urlencoded.js            |    284 +
+ .../node_modules/body-parser/package.json          |     91 +
+ .../WebAnw2Backend/node_modules/bytes/History.md   |     87 +
+ Coding/WebAnw2Backend/node_modules/bytes/LICENSE   |     23 +
+ Coding/WebAnw2Backend/node_modules/bytes/Readme.md |    126 +
+ Coding/WebAnw2Backend/node_modules/bytes/index.js  |    162 +
+ .../WebAnw2Backend/node_modules/bytes/package.json |     84 +
+ .../node_modules/charenc/LICENSE.mkd               |     27 +
+ .../WebAnw2Backend/node_modules/charenc/README.js  |      1 +
+ .../WebAnw2Backend/node_modules/charenc/charenc.js |     33 +
+ .../node_modules/charenc/package.json              |     54 +
+ Coding/WebAnw2Backend/node_modules/chownr/LICENSE  |     15 +
+ .../WebAnw2Backend/node_modules/chownr/README.md   |      3 +
+ .../WebAnw2Backend/node_modules/chownr/chownr.js   |    125 +
+ .../node_modules/chownr/package.json               |     59 +
+ .../node_modules/content-disposition/HISTORY.md    |     55 +
+ .../node_modules/content-disposition/LICENSE       |     22 +
+ .../node_modules/content-disposition/README.md     |    148 +
+ .../node_modules/content-disposition/index.js      |    458 +
+ .../node_modules/content-disposition/package.json  |     79 +
+ .../node_modules/content-type/HISTORY.md           |     24 +
+ .../node_modules/content-type/LICENSE              |     22 +
+ .../node_modules/content-type/README.md            |     92 +
+ .../node_modules/content-type/index.js             |    222 +
+ .../node_modules/content-type/package.json         |     76 +
+ .../node_modules/cookie-signature/.npmignore       |      4 +
+ .../node_modules/cookie-signature/History.md       |     38 +
+ .../node_modules/cookie-signature/Readme.md        |     42 +
+ .../node_modules/cookie-signature/index.js         |     51 +
+ .../node_modules/cookie-signature/package.json     |     57 +
+ .../WebAnw2Backend/node_modules/cookie/HISTORY.md  |    123 +
+ Coding/WebAnw2Backend/node_modules/cookie/LICENSE  |     24 +
+ .../WebAnw2Backend/node_modules/cookie/README.md   |    253 +
+ Coding/WebAnw2Backend/node_modules/cookie/index.js |    198 +
+ .../node_modules/cookie/package.json               |     78 +
+ .../WebAnw2Backend/node_modules/crypt/LICENSE.mkd  |     27 +
+ .../WebAnw2Backend/node_modules/crypt/README.mkd   |      1 +
+ Coding/WebAnw2Backend/node_modules/crypt/crypt.js  |     96 +
+ .../WebAnw2Backend/node_modules/crypt/package.json |     52 +
+ .../node_modules/debug/.coveralls.yml              |      1 +
+ Coding/WebAnw2Backend/node_modules/debug/.eslintrc |     11 +
+ .../WebAnw2Backend/node_modules/debug/.npmignore   |      9 +
+ .../WebAnw2Backend/node_modules/debug/.travis.yml  |     14 +
+ .../WebAnw2Backend/node_modules/debug/CHANGELOG.md |    362 +
+ Coding/WebAnw2Backend/node_modules/debug/LICENSE   |     19 +
+ Coding/WebAnw2Backend/node_modules/debug/Makefile  |     50 +
+ Coding/WebAnw2Backend/node_modules/debug/README.md |    312 +
+ .../node_modules/debug/component.json              |     19 +
+ .../node_modules/debug/karma.conf.js               |     70 +
+ Coding/WebAnw2Backend/node_modules/debug/node.js   |      1 +
+ .../WebAnw2Backend/node_modules/debug/package.json |     91 +
+ .../node_modules/debug/src/browser.js              |    185 +
+ .../WebAnw2Backend/node_modules/debug/src/debug.js |    202 +
+ .../WebAnw2Backend/node_modules/debug/src/index.js |     10 +
+ .../node_modules/debug/src/inspector-log.js        |     15 +
+ .../WebAnw2Backend/node_modules/debug/src/node.js  |    248 +
+ Coding/WebAnw2Backend/node_modules/depd/History.md |     96 +
+ Coding/WebAnw2Backend/node_modules/depd/LICENSE    |     22 +
+ Coding/WebAnw2Backend/node_modules/depd/Readme.md  |    280 +
+ Coding/WebAnw2Backend/node_modules/depd/index.js   |    522 +
+ .../node_modules/depd/lib/browser/index.js         |     77 +
+ .../depd/lib/compat/callsite-tostring.js           |    103 +
+ .../depd/lib/compat/event-listener-count.js        |     22 +
+ .../node_modules/depd/lib/compat/index.js          |     79 +
+ .../WebAnw2Backend/node_modules/depd/package.json  |     79 +
+ Coding/WebAnw2Backend/node_modules/destroy/LICENSE |     22 +
+ .../WebAnw2Backend/node_modules/destroy/README.md  |     60 +
+ .../WebAnw2Backend/node_modules/destroy/index.js   |     75 +
+ .../node_modules/destroy/package.json              |     71 +
+ .../WebAnw2Backend/node_modules/ee-first/LICENSE   |     22 +
+ .../WebAnw2Backend/node_modules/ee-first/README.md |     80 +
+ .../WebAnw2Backend/node_modules/ee-first/index.js  |     95 +
+ .../node_modules/ee-first/package.json             |     63 +
+ .../node_modules/encodeurl/HISTORY.md              |     14 +
+ .../WebAnw2Backend/node_modules/encodeurl/LICENSE  |     22 +
+ .../node_modules/encodeurl/README.md               |    128 +
+ .../WebAnw2Backend/node_modules/encodeurl/index.js |     60 +
+ .../node_modules/encodeurl/package.json            |     78 +
+ .../node_modules/escape-html/LICENSE               |     24 +
+ .../node_modules/escape-html/Readme.md             |     43 +
+ .../node_modules/escape-html/index.js              |     78 +
+ .../node_modules/escape-html/package.json          |     59 +
+ Coding/WebAnw2Backend/node_modules/etag/HISTORY.md |     83 +
+ Coding/WebAnw2Backend/node_modules/etag/LICENSE    |     22 +
+ Coding/WebAnw2Backend/node_modules/etag/README.md  |    159 +
+ Coding/WebAnw2Backend/node_modules/etag/index.js   |    131 +
+ .../WebAnw2Backend/node_modules/etag/package.json  |     86 +
+ .../WebAnw2Backend/node_modules/express/History.md |   3477 +
+ Coding/WebAnw2Backend/node_modules/express/LICENSE |     24 +
+ .../WebAnw2Backend/node_modules/express/Readme.md  |    155 +
+ .../WebAnw2Backend/node_modules/express/index.js   |     11 +
+ .../node_modules/express/lib/application.js        |    644 +
+ .../node_modules/express/lib/express.js            |    116 +
+ .../node_modules/express/lib/middleware/init.js    |     43 +
+ .../node_modules/express/lib/middleware/query.js   |     47 +
+ .../node_modules/express/lib/request.js            |    525 +
+ .../node_modules/express/lib/response.js           |   1142 +
+ .../node_modules/express/lib/router/index.js       |    662 +
+ .../node_modules/express/lib/router/layer.js       |    181 +
+ .../node_modules/express/lib/router/route.js       |    216 +
+ .../node_modules/express/lib/utils.js              |    306 +
+ .../node_modules/express/lib/view.js               |    182 +
+ .../node_modules/express/package.json              |    154 +
+ .../node_modules/finalhandler/HISTORY.md           |    187 +
+ .../node_modules/finalhandler/LICENSE              |     22 +
+ .../node_modules/finalhandler/README.md            |    148 +
+ .../node_modules/finalhandler/index.js             |    331 +
+ .../node_modules/finalhandler/package.json         |     80 +
+ .../node_modules/forwarded/HISTORY.md              |     16 +
+ .../WebAnw2Backend/node_modules/forwarded/LICENSE  |     22 +
+ .../node_modules/forwarded/README.md               |     57 +
+ .../WebAnw2Backend/node_modules/forwarded/index.js |     76 +
+ .../node_modules/forwarded/package.json            |     78 +
+ .../WebAnw2Backend/node_modules/fresh/HISTORY.md   |     70 +
+ Coding/WebAnw2Backend/node_modules/fresh/LICENSE   |     23 +
+ Coding/WebAnw2Backend/node_modules/fresh/README.md |    119 +
+ Coding/WebAnw2Backend/node_modules/fresh/index.js  |    137 +
+ .../WebAnw2Backend/node_modules/fresh/package.json |     90 +
+ .../node_modules/fs-minipass/LICENSE               |     15 +
+ .../node_modules/fs-minipass/README.md             |     70 +
+ .../node_modules/fs-minipass/index.js              |    387 +
+ .../node_modules/fs-minipass/package.json          |     65 +
+ .../node_modules/http-errors/HISTORY.md            |    149 +
+ .../node_modules/http-errors/LICENSE               |     23 +
+ .../node_modules/http-errors/README.md             |    163 +
+ .../node_modules/http-errors/index.js              |    266 +
+ .../node_modules/http-errors/package.json          |     93 +
+ .../node_modules/iconv-lite/Changelog.md           |    162 +
+ .../WebAnw2Backend/node_modules/iconv-lite/LICENSE |     21 +
+ .../node_modules/iconv-lite/README.md              |    156 +
+ .../iconv-lite/encodings/dbcs-codec.js             |    555 +
+ .../node_modules/iconv-lite/encodings/dbcs-data.js |    176 +
+ .../node_modules/iconv-lite/encodings/index.js     |     22 +
+ .../node_modules/iconv-lite/encodings/internal.js  |    188 +
+ .../iconv-lite/encodings/sbcs-codec.js             |     72 +
+ .../iconv-lite/encodings/sbcs-data-generated.js    |    451 +
+ .../node_modules/iconv-lite/encodings/sbcs-data.js |    174 +
+ .../iconv-lite/encodings/tables/big5-added.json    |    122 +
+ .../iconv-lite/encodings/tables/cp936.json         |    264 +
+ .../iconv-lite/encodings/tables/cp949.json         |    273 +
+ .../iconv-lite/encodings/tables/cp950.json         |    177 +
+ .../iconv-lite/encodings/tables/eucjp.json         |    182 +
+ .../encodings/tables/gb18030-ranges.json           |      1 +
+ .../iconv-lite/encodings/tables/gbk-added.json     |     55 +
+ .../iconv-lite/encodings/tables/shiftjis.json      |    125 +
+ .../node_modules/iconv-lite/encodings/utf16.js     |    177 +
+ .../node_modules/iconv-lite/encodings/utf7.js      |    290 +
+ .../node_modules/iconv-lite/lib/bom-handling.js    |     52 +
+ .../node_modules/iconv-lite/lib/extend-node.js     |    217 +
+ .../node_modules/iconv-lite/lib/index.d.ts         |     24 +
+ .../node_modules/iconv-lite/lib/index.js           |    153 +
+ .../node_modules/iconv-lite/lib/streams.js         |    121 +
+ .../node_modules/iconv-lite/package.json           |     77 +
+ .../WebAnw2Backend/node_modules/inherits/LICENSE   |     16 +
+ .../WebAnw2Backend/node_modules/inherits/README.md |     42 +
+ .../node_modules/inherits/inherits.js              |      7 +
+ .../node_modules/inherits/inherits_browser.js      |     23 +
+ .../node_modules/inherits/package.json             |     61 +
+ .../node_modules/integer/.travis.yml               |     17 +
+ Coding/WebAnw2Backend/node_modules/integer/LICENSE |     21 +
+ .../WebAnw2Backend/node_modules/integer/README.md  |    223 +
+ Coding/WebAnw2Backend/node_modules/integer/TODO    |      1 +
+ .../WebAnw2Backend/node_modules/integer/bench.js   |     14 +
+ .../node_modules/integer/binding.gyp               |     78 +
+ .../node_modules/integer/build/Release/integer.exp |    Bin 0 -> 929 bytes
+ .../node_modules/integer/build/Release/integer.ilk |    Bin 0 -> 3145976 bytes
+ .../node_modules/integer/build/Release/integer.lib |    Bin 0 -> 1716 bytes
+ .../integer/build/Release/integer.node             |    Bin 0 -> 607744 bytes
+ .../node_modules/integer/build/Release/integer.pdb |    Bin 0 -> 7163904 bytes
+ .../integer/build/Release/obj/integer/integer.obj  |    Bin 0 -> 671677 bytes
+ .../obj/integer/integer.tlog/CL.15792.write.1.tlog |    Bin 0 -> 1094 bytes
+ .../obj/integer/integer.tlog/CL.command.1.tlog     |    Bin 0 -> 5450 bytes
+ .../obj/integer/integer.tlog/CL.read.1.tlog        |    Bin 0 -> 35648 bytes
+ .../integer/integer.tlog/integer.lastbuildstate    |      2 +
+ .../obj/integer/integer.tlog/integer.write.1u.tlog |    Bin 0 -> 854 bytes
+ .../obj/integer/integer.tlog/link.command.1.tlog   |    Bin 0 -> 2184 bytes
+ .../obj/integer/integer.tlog/link.read.1.tlog      |    Bin 0 -> 5702 bytes
+ .../obj/integer/integer.tlog/link.write.1.tlog     |    Bin 0 -> 1506 bytes
+ .../Release/obj/integer/win_delay_load_hook.obj    |    Bin 0 -> 28486 bytes
+ .../custombuild.command.1.tlog                     |    Bin 0 -> 830 bytes
+ .../place_re.AF7A9B7C.tlog/custombuild.read.1.tlog |    Bin 0 -> 292 bytes
+ .../custombuild.write.1.tlog                       |    Bin 0 -> 564 bytes
+ .../place_resulting_binary.lastbuildstate          |      2 +
+ .../node_modules/integer/build/binding.sln         |     28 +
+ .../node_modules/integer/build/config.gypi         |    200 +
+ .../node_modules/integer/build/integer.node        |    Bin 0 -> 607744 bytes
+ .../node_modules/integer/build/integer.vcxproj     |    133 +
+ .../integer/build/integer.vcxproj.filters          |     49 +
+ .../integer/build/place_resulting_binary.vcxproj   |    136 +
+ .../build/place_resulting_binary.vcxproj.filters   |     46 +
+ .../node_modules/integer/lib/index.js              |     43 +
+ .../node_modules/integer/package.json              |     62 +
+ .../node_modules/integer/src/integer.cpp           |    408 +
+ .../node_modules/integer/src/integer.hpp           |     20 +
+ .../node_modules/integer/src/macros.hpp            |     49 +
+ .../node_modules/integer/src/result.hpp            |     19 +
+ .../node_modules/integer/test/10.constructor.js    |    128 +
+ .../node_modules/integer/test/11.from-number.js    |     58 +
+ .../node_modules/integer/test/12.from-string.js    |    148 +
+ .../node_modules/integer/test/13.from-bits.js      |     63 +
+ .../node_modules/integer/test/20.to-number.js      |     28 +
+ .../integer/test/21.to-number-unsafe.js            |     24 +
+ .../node_modules/integer/test/22.to-string.js      |     60 +
+ .../node_modules/integer/test/23.getters.js        |     34 +
+ .../node_modules/integer/test/30.arithmetic.js     |    115 +
+ .../node_modules/integer/test/31.bitwise.js        |     79 +
+ .../node_modules/integer/test/32.logical.js        |     60 +
+ .../node_modules/integer/test/33.utility.js        |    113 +
+ .../node_modules/integer/test/40.constants.js      |     86 +
+ .../WebAnw2Backend/node_modules/ipaddr.js/LICENSE  |     19 +
+ .../node_modules/ipaddr.js/README.md               |    233 +
+ .../node_modules/ipaddr.js/ipaddr.min.js           |      1 +
+ .../node_modules/ipaddr.js/lib/ipaddr.js           |    673 +
+ .../node_modules/ipaddr.js/lib/ipaddr.js.d.ts      |     71 +
+ .../node_modules/ipaddr.js/package.json            |     69 +
+ .../WebAnw2Backend/node_modules/is-buffer/LICENSE  |     21 +
+ .../node_modules/is-buffer/README.md               |     53 +
+ .../WebAnw2Backend/node_modules/is-buffer/index.js |     21 +
+ .../node_modules/is-buffer/package.json            |     77 +
+ .../node_modules/is-buffer/test/basic.js           |     24 +
+ Coding/WebAnw2Backend/node_modules/luxon/README.md |     54 +
+ .../node_modules/luxon/build/amd/luxon.js          |   8200 +
+ .../node_modules/luxon/build/amd/luxon.js.map      |      1 +
+ .../node_modules/luxon/build/cjs-browser/luxon.js  |   8198 +
+ .../luxon/build/cjs-browser/luxon.js.map           |      1 +
+ .../node_modules/luxon/build/global/luxon.js       |   8201 +
+ .../node_modules/luxon/build/global/luxon.js.map   |      1 +
+ .../node_modules/luxon/build/global/luxon.min.js   |      1 +
+ .../luxon/build/global/luxon.min.js.map            |      1 +
+ .../node_modules/luxon/build/node/luxon.js         |   7209 +
+ .../node_modules/luxon/build/node/luxon.js.map     |      1 +
+ .../node_modules/luxon/build/readme.md             |      1 +
+ .../WebAnw2Backend/node_modules/luxon/changelog.md |    452 +
+ .../WebAnw2Backend/node_modules/luxon/license.md   |      7 +
+ .../WebAnw2Backend/node_modules/luxon/package.json |    131 +
+ .../node_modules/luxon/src/datetime.js             |   2095 +
+ .../node_modules/luxon/src/duration.js             |    763 +
+ .../node_modules/luxon/src/errors.js               |     61 +
+ .../node_modules/luxon/src/impl/conversions.js     |    157 +
+ .../node_modules/luxon/src/impl/diff.js            |     79 +
+ .../node_modules/luxon/src/impl/digits.js          |     76 +
+ .../node_modules/luxon/src/impl/english.js         |    231 +
+ .../node_modules/luxon/src/impl/formats.js         |    185 +
+ .../node_modules/luxon/src/impl/formatter.js       |    386 +
+ .../node_modules/luxon/src/impl/invalid.js         |     14 +
+ .../node_modules/luxon/src/impl/locale.js          |    468 +
+ .../node_modules/luxon/src/impl/regexParser.js     |    315 +
+ .../node_modules/luxon/src/impl/tokenParser.js     |    400 +
+ .../node_modules/luxon/src/impl/util.js            |    287 +
+ .../node_modules/luxon/src/impl/zoneUtil.js        |     36 +
+ .../WebAnw2Backend/node_modules/luxon/src/info.js  |    186 +
+ .../node_modules/luxon/src/interval.js             |    565 +
+ .../WebAnw2Backend/node_modules/luxon/src/luxon.js |     23 +
+ .../node_modules/luxon/src/luxonFilled.js          |     13 +
+ .../node_modules/luxon/src/settings.js             |    137 +
+ .../WebAnw2Backend/node_modules/luxon/src/zone.js  |     88 +
+ .../node_modules/luxon/src/zones/IANAZone.js       |    175 +
+ .../luxon/src/zones/fixedOffsetZone.js             |     94 +
+ .../node_modules/luxon/src/zones/invalidZone.js    |     53 +
+ .../node_modules/luxon/src/zones/localZone.js      |     63 +
+ Coding/WebAnw2Backend/node_modules/md5/.npmignore  |      1 +
+ Coding/WebAnw2Backend/node_modules/md5/.travis.yml |      4 +
+ Coding/WebAnw2Backend/node_modules/md5/LICENSE     |     27 +
+ Coding/WebAnw2Backend/node_modules/md5/README.md   |    108 +
+ Coding/WebAnw2Backend/node_modules/md5/md5.js      |    160 +
+ .../WebAnw2Backend/node_modules/md5/package.json   |     69 +
+ Coding/WebAnw2Backend/node_modules/md5/test.js     |     45 +
+ .../node_modules/media-typer/HISTORY.md            |     22 +
+ .../node_modules/media-typer/LICENSE               |     22 +
+ .../node_modules/media-typer/README.md             |     81 +
+ .../node_modules/media-typer/index.js              |    270 +
+ .../node_modules/media-typer/package.json          |     61 +
+ .../node_modules/merge-descriptors/HISTORY.md      |     21 +
+ .../node_modules/merge-descriptors/LICENSE         |     23 +
+ .../node_modules/merge-descriptors/README.md       |     48 +
+ .../node_modules/merge-descriptors/index.js        |     60 +
+ .../node_modules/merge-descriptors/package.json    |     69 +
+ .../WebAnw2Backend/node_modules/methods/HISTORY.md |     29 +
+ Coding/WebAnw2Backend/node_modules/methods/LICENSE |     24 +
+ .../WebAnw2Backend/node_modules/methods/README.md  |     51 +
+ .../WebAnw2Backend/node_modules/methods/index.js   |     69 +
+ .../node_modules/methods/package.json              |     79 +
+ .../WebAnw2Backend/node_modules/mime-db/HISTORY.md |    417 +
+ Coding/WebAnw2Backend/node_modules/mime-db/LICENSE |     22 +
+ .../WebAnw2Backend/node_modules/mime-db/README.md  |     94 +
+ Coding/WebAnw2Backend/node_modules/mime-db/db.json |   7834 +
+ .../WebAnw2Backend/node_modules/mime-db/index.js   |     11 +
+ .../node_modules/mime-db/package.json              |    101 +
+ .../node_modules/mime-types/HISTORY.md             |    308 +
+ .../WebAnw2Backend/node_modules/mime-types/LICENSE |     23 +
+ .../node_modules/mime-types/README.md              |    113 +
+ .../node_modules/mime-types/index.js               |    188 +
+ .../node_modules/mime-types/package.json           |     87 +
+ Coding/WebAnw2Backend/node_modules/mime/.npmignore |      0
+ .../WebAnw2Backend/node_modules/mime/CHANGELOG.md  |    164 +
+ Coding/WebAnw2Backend/node_modules/mime/LICENSE    |     21 +
+ Coding/WebAnw2Backend/node_modules/mime/README.md  |     90 +
+ Coding/WebAnw2Backend/node_modules/mime/cli.js     |      8 +
+ Coding/WebAnw2Backend/node_modules/mime/mime.js    |    108 +
+ .../WebAnw2Backend/node_modules/mime/package.json  |     73 +
+ .../WebAnw2Backend/node_modules/mime/src/build.js  |     53 +
+ .../WebAnw2Backend/node_modules/mime/src/test.js   |     60 +
+ Coding/WebAnw2Backend/node_modules/mime/types.json |      1 +
+ .../node_modules/minimist/.travis.yml              |      4 +
+ .../WebAnw2Backend/node_modules/minimist/LICENSE   |     18 +
+ .../node_modules/minimist/example/parse.js         |      2 +
+ .../WebAnw2Backend/node_modules/minimist/index.js  |    187 +
+ .../node_modules/minimist/package.json             |     71 +
+ .../node_modules/minimist/readme.markdown          |     73 +
+ .../node_modules/minimist/test/dash.js             |     24 +
+ .../node_modules/minimist/test/default_bool.js     |     20 +
+ .../node_modules/minimist/test/dotted.js           |     16 +
+ .../node_modules/minimist/test/long.js             |     31 +
+ .../node_modules/minimist/test/parse.js            |    318 +
+ .../node_modules/minimist/test/parse_modified.js   |      9 +
+ .../node_modules/minimist/test/short.js            |     67 +
+ .../node_modules/minimist/test/whitespace.js       |      8 +
+ .../WebAnw2Backend/node_modules/minipass/LICENSE   |     15 +
+ .../WebAnw2Backend/node_modules/minipass/README.md |    606 +
+ .../WebAnw2Backend/node_modules/minipass/index.js  |    537 +
+ .../node_modules/minipass/package.json             |     72 +
+ .../WebAnw2Backend/node_modules/minizlib/LICENSE   |     26 +
+ .../WebAnw2Backend/node_modules/minizlib/README.md |     53 +
+ .../node_modules/minizlib/constants.js             |    115 +
+ .../WebAnw2Backend/node_modules/minizlib/index.js  |    320 +
+ .../node_modules/minizlib/package.json             |     71 +
+ .../WebAnw2Backend/node_modules/mkdirp/.travis.yml |      8 +
+ Coding/WebAnw2Backend/node_modules/mkdirp/LICENSE  |     21 +
+ .../WebAnw2Backend/node_modules/mkdirp/bin/cmd.js  |     33 +
+ .../node_modules/mkdirp/bin/usage.txt              |     12 +
+ .../node_modules/mkdirp/examples/pow.js            |      6 +
+ Coding/WebAnw2Backend/node_modules/mkdirp/index.js |     98 +
+ .../node_modules/mkdirp/package.json               |     62 +
+ .../node_modules/mkdirp/readme.markdown            |    100 +
+ .../node_modules/mkdirp/test/chmod.js              |     41 +
+ .../node_modules/mkdirp/test/clobber.js            |     38 +
+ .../node_modules/mkdirp/test/mkdirp.js             |     28 +
+ .../node_modules/mkdirp/test/opts_fs.js            |     29 +
+ .../node_modules/mkdirp/test/opts_fs_sync.js       |     27 +
+ .../node_modules/mkdirp/test/perm.js               |     32 +
+ .../node_modules/mkdirp/test/perm_sync.js          |     36 +
+ .../node_modules/mkdirp/test/race.js               |     37 +
+ .../WebAnw2Backend/node_modules/mkdirp/test/rel.js |     32 +
+ .../node_modules/mkdirp/test/return.js             |     25 +
+ .../node_modules/mkdirp/test/return_sync.js        |     24 +
+ .../node_modules/mkdirp/test/root.js               |     19 +
+ .../node_modules/mkdirp/test/sync.js               |     32 +
+ .../node_modules/mkdirp/test/umask.js              |     28 +
+ .../node_modules/mkdirp/test/umask_sync.js         |     32 +
+ Coding/WebAnw2Backend/node_modules/ms/index.js     |    152 +
+ Coding/WebAnw2Backend/node_modules/ms/license.md   |     21 +
+ Coding/WebAnw2Backend/node_modules/ms/package.json |     69 +
+ Coding/WebAnw2Backend/node_modules/ms/readme.md    |     51 +
+ .../node_modules/negotiator/HISTORY.md             |    103 +
+ .../WebAnw2Backend/node_modules/negotiator/LICENSE |     24 +
+ .../node_modules/negotiator/README.md              |    203 +
+ .../node_modules/negotiator/index.js               |    124 +
+ .../node_modules/negotiator/lib/charset.js         |    169 +
+ .../node_modules/negotiator/lib/encoding.js        |    184 +
+ .../node_modules/negotiator/lib/language.js        |    179 +
+ .../node_modules/negotiator/lib/mediaType.js       |    294 +
+ .../node_modules/negotiator/package.json           |     84 +
+ .../node_modules/on-finished/HISTORY.md            |     88 +
+ .../node_modules/on-finished/LICENSE               |     23 +
+ .../node_modules/on-finished/README.md             |    154 +
+ .../node_modules/on-finished/index.js              |    196 +
+ .../node_modules/on-finished/package.json          |     73 +
+ .../node_modules/parseurl/HISTORY.md               |     58 +
+ .../WebAnw2Backend/node_modules/parseurl/LICENSE   |     24 +
+ .../WebAnw2Backend/node_modules/parseurl/README.md |    133 +
+ .../WebAnw2Backend/node_modules/parseurl/index.js  |    158 +
+ .../node_modules/parseurl/package.json             |     81 +
+ .../node_modules/path-to-regexp/History.md         |     36 +
+ .../node_modules/path-to-regexp/LICENSE            |     21 +
+ .../node_modules/path-to-regexp/Readme.md          |     35 +
+ .../node_modules/path-to-regexp/index.js           |    129 +
+ .../node_modules/path-to-regexp/package.json       |     59 +
+ .../node_modules/proxy-addr/HISTORY.md             |    150 +
+ .../WebAnw2Backend/node_modules/proxy-addr/LICENSE |     22 +
+ .../node_modules/proxy-addr/README.md              |    155 +
+ .../node_modules/proxy-addr/index.js               |    327 +
+ .../node_modules/proxy-addr/package.json           |     82 +
+ .../WebAnw2Backend/node_modules/qs/.editorconfig   |     30 +
+ .../WebAnw2Backend/node_modules/qs/.eslintignore   |      1 +
+ Coding/WebAnw2Backend/node_modules/qs/.eslintrc    |     21 +
+ Coding/WebAnw2Backend/node_modules/qs/CHANGELOG.md |    256 +
+ Coding/WebAnw2Backend/node_modules/qs/LICENSE      |     28 +
+ Coding/WebAnw2Backend/node_modules/qs/README.md    |    570 +
+ Coding/WebAnw2Backend/node_modules/qs/dist/qs.js   |    782 +
+ .../WebAnw2Backend/node_modules/qs/lib/formats.js  |     18 +
+ Coding/WebAnw2Backend/node_modules/qs/lib/index.js |     11 +
+ Coding/WebAnw2Backend/node_modules/qs/lib/parse.js |    242 +
+ .../node_modules/qs/lib/stringify.js               |    269 +
+ Coding/WebAnw2Backend/node_modules/qs/lib/utils.js |    230 +
+ Coding/WebAnw2Backend/node_modules/qs/package.json |     87 +
+ .../WebAnw2Backend/node_modules/qs/test/.eslintrc  |     17 +
+ .../WebAnw2Backend/node_modules/qs/test/index.js   |      7 +
+ .../WebAnw2Backend/node_modules/qs/test/parse.js   |    676 +
+ .../node_modules/qs/test/stringify.js              |    679 +
+ .../WebAnw2Backend/node_modules/qs/test/utils.js   |    136 +
+ .../node_modules/range-parser/HISTORY.md           |     56 +
+ .../node_modules/range-parser/LICENSE              |     23 +
+ .../node_modules/range-parser/README.md            |     84 +
+ .../node_modules/range-parser/index.js             |    162 +
+ .../node_modules/range-parser/package.json         |     91 +
+ .../node_modules/raw-body/HISTORY.md               |    270 +
+ .../WebAnw2Backend/node_modules/raw-body/LICENSE   |     22 +
+ .../WebAnw2Backend/node_modules/raw-body/README.md |    219 +
+ .../node_modules/raw-body/index.d.ts               |     87 +
+ .../WebAnw2Backend/node_modules/raw-body/index.js  |    286 +
+ .../node_modules/raw-body/package.json             |     90 +
+ .../node_modules/safe-buffer/LICENSE               |     21 +
+ .../node_modules/safe-buffer/README.md             |    584 +
+ .../node_modules/safe-buffer/index.d.ts            |    187 +
+ .../node_modules/safe-buffer/index.js              |     62 +
+ .../node_modules/safe-buffer/package.json          |     63 +
+ .../node_modules/safer-buffer/LICENSE              |     21 +
+ .../node_modules/safer-buffer/Porting-Buffer.md    |    268 +
+ .../node_modules/safer-buffer/Readme.md            |    156 +
+ .../node_modules/safer-buffer/dangerous.js         |     58 +
+ .../node_modules/safer-buffer/package.json         |     60 +
+ .../node_modules/safer-buffer/safer.js             |     77 +
+ .../node_modules/safer-buffer/tests.js             |    406 +
+ Coding/WebAnw2Backend/node_modules/send/HISTORY.md |    496 +
+ Coding/WebAnw2Backend/node_modules/send/LICENSE    |     23 +
+ Coding/WebAnw2Backend/node_modules/send/README.md  |    329 +
+ Coding/WebAnw2Backend/node_modules/send/index.js   |   1129 +
+ .../node_modules/send/node_modules/ms/index.js     |    162 +
+ .../node_modules/send/node_modules/ms/license.md   |     21 +
+ .../node_modules/send/node_modules/ms/package.json |     69 +
+ .../node_modules/send/node_modules/ms/readme.md    |     60 +
+ .../WebAnw2Backend/node_modules/send/package.json  |    106 +
+ .../node_modules/serve-static/HISTORY.md           |    451 +
+ .../node_modules/serve-static/LICENSE              |     25 +
+ .../node_modules/serve-static/README.md            |    259 +
+ .../node_modules/serve-static/index.js             |    210 +
+ .../node_modules/serve-static/package.json         |     77 +
+ .../node_modules/setprototypeof/LICENSE            |     13 +
+ .../node_modules/setprototypeof/README.md          |     31 +
+ .../node_modules/setprototypeof/index.d.ts         |      2 +
+ .../node_modules/setprototypeof/index.js           |     17 +
+ .../node_modules/setprototypeof/package.json       |     64 +
+ .../node_modules/setprototypeof/test/index.js      |     24 +
+ .../node_modules/statuses/HISTORY.md               |     65 +
+ .../WebAnw2Backend/node_modules/statuses/LICENSE   |     23 +
+ .../WebAnw2Backend/node_modules/statuses/README.md |    127 +
+ .../node_modules/statuses/codes.json               |     66 +
+ .../WebAnw2Backend/node_modules/statuses/index.js  |    113 +
+ .../node_modules/statuses/package.json             |     90 +
+ Coding/WebAnw2Backend/node_modules/tar/LICENSE     |     15 +
+ Coding/WebAnw2Backend/node_modules/tar/README.md   |    954 +
+ Coding/WebAnw2Backend/node_modules/tar/index.js    |     18 +
+ .../WebAnw2Backend/node_modules/tar/lib/buffer.js  |     11 +
+ .../WebAnw2Backend/node_modules/tar/lib/create.js  |    105 +
+ .../WebAnw2Backend/node_modules/tar/lib/extract.js |    112 +
+ .../WebAnw2Backend/node_modules/tar/lib/header.js  |    289 +
+ .../node_modules/tar/lib/high-level-opt.js         |     29 +
+ .../node_modules/tar/lib/large-numbers.js          |     97 +
+ Coding/WebAnw2Backend/node_modules/tar/lib/list.js |    130 +
+ .../WebAnw2Backend/node_modules/tar/lib/mkdir.js   |    206 +
+ .../node_modules/tar/lib/mode-fix.js               |     14 +
+ Coding/WebAnw2Backend/node_modules/tar/lib/pack.js |    404 +
+ .../WebAnw2Backend/node_modules/tar/lib/parse.js   |    428 +
+ Coding/WebAnw2Backend/node_modules/tar/lib/pax.js  |    146 +
+ .../node_modules/tar/lib/read-entry.js             |     98 +
+ .../WebAnw2Backend/node_modules/tar/lib/replace.js |    220 +
+ .../WebAnw2Backend/node_modules/tar/lib/types.js   |     44 +
+ .../WebAnw2Backend/node_modules/tar/lib/unpack.js  |    621 +
+ .../WebAnw2Backend/node_modules/tar/lib/update.js  |     36 +
+ .../node_modules/tar/lib/warn-mixin.js             |     14 +
+ .../node_modules/tar/lib/winchars.js               |     23 +
+ .../node_modules/tar/lib/write-entry.js            |    422 +
+ .../WebAnw2Backend/node_modules/tar/package.json   |     82 +
+ .../node_modules/toidentifier/LICENSE              |     21 +
+ .../node_modules/toidentifier/README.md            |     61 +
+ .../node_modules/toidentifier/index.js             |     30 +
+ .../node_modules/toidentifier/package.json         |     76 +
+ .../WebAnw2Backend/node_modules/type-is/HISTORY.md |    259 +
+ Coding/WebAnw2Backend/node_modules/type-is/LICENSE |     23 +
+ .../WebAnw2Backend/node_modules/type-is/README.md  |    170 +
+ .../WebAnw2Backend/node_modules/type-is/index.js   |    266 +
+ .../node_modules/type-is/package.json              |     85 +
+ .../WebAnw2Backend/node_modules/unpipe/HISTORY.md  |      4 +
+ Coding/WebAnw2Backend/node_modules/unpipe/LICENSE  |     22 +
+ .../WebAnw2Backend/node_modules/unpipe/README.md   |     43 +
+ Coding/WebAnw2Backend/node_modules/unpipe/index.js |     69 +
+ .../node_modules/unpipe/package.json               |     63 +
+ .../node_modules/utils-merge/.npmignore            |      9 +
+ .../node_modules/utils-merge/LICENSE               |     20 +
+ .../node_modules/utils-merge/README.md             |     34 +
+ .../node_modules/utils-merge/index.js              |     23 +
+ .../node_modules/utils-merge/package.json          |     66 +
+ Coding/WebAnw2Backend/node_modules/vary/HISTORY.md |     39 +
+ Coding/WebAnw2Backend/node_modules/vary/LICENSE    |     22 +
+ Coding/WebAnw2Backend/node_modules/vary/README.md  |    101 +
+ Coding/WebAnw2Backend/node_modules/vary/index.js   |    149 +
+ .../WebAnw2Backend/node_modules/vary/package.json  |     78 +
+ Coding/WebAnw2Backend/node_modules/yallist/LICENSE |     15 +
+ .../WebAnw2Backend/node_modules/yallist/README.md  |    204 +
+ .../node_modules/yallist/iterator.js               |      8 +
+ .../node_modules/yallist/package.json              |     63 +
+ .../WebAnw2Backend/node_modules/yallist/yallist.js |    426 +
+ Coding/WebAnw2Backend/package-lock.json            |    480 +
+ Coding/WebAnw2Backend/package.json                 |     17 +
+ Coding/WebAnw2Backend/server.js                    |    163 +
+ Coding/WebAnw2Backend/services/adresse.js          |    139 +
+ Coding/WebAnw2Backend/services/benutzer.js         |    191 +
+ Coding/WebAnw2Backend/services/benutzerrolle.js    |    113 +
+ Coding/WebAnw2Backend/services/bestellung.js       |    161 +
+ Coding/WebAnw2Backend/services/bewertung.js        |    169 +
+ Coding/WebAnw2Backend/services/branche.js          |    113 +
+ Coding/WebAnw2Backend/services/download.js         |    121 +
+ Coding/WebAnw2Backend/services/einheit.js          |    113 +
+ Coding/WebAnw2Backend/services/film.js             |    189 +
+ Coding/WebAnw2Backend/services/filmgenre.js        |    113 +
+ Coding/WebAnw2Backend/services/firma.js            |    155 +
+ Coding/WebAnw2Backend/services/forumsbenutzer.js   |    185 +
+ Coding/WebAnw2Backend/services/forumsbereich.js    |    195 +
+ Coding/WebAnw2Backend/services/gericht.js          |    155 +
+ Coding/WebAnw2Backend/services/kinosaal.js         |    171 +
+ Coding/WebAnw2Backend/services/land.js             |    117 +
+ Coding/WebAnw2Backend/services/mehrwertsteuer.js   |    127 +
+ Coding/WebAnw2Backend/services/person.js           |    163 +
+ Coding/WebAnw2Backend/services/produkt.js          |    167 +
+ Coding/WebAnw2Backend/services/produktbild.js      |    123 +
+ Coding/WebAnw2Backend/services/produktkategorie.js |    113 +
+ Coding/WebAnw2Backend/services/reservierer.js      |    127 +
+ Coding/WebAnw2Backend/services/reservierung.js     |    167 +
+ Coding/WebAnw2Backend/services/speisenart.js       |    121 +
+ Coding/WebAnw2Backend/services/termin.js           |    219 +
+ Coding/WebAnw2Backend/services/vorstellung.js      |    211 +
+ Coding/WebAnw2Backend/services/zahlungsart.js      |    113 +
+ Coding/WebAnw2Backend/services/zutat.js            |    117 +
+ Coding/WebAnw2WebDemoClient/index.html             |    108 +
+ Coding/WebAnw2WebDemoClient/style.css              |     25 +
+ 737 files changed, 362769 insertions(+)
+
+commit 3d51ad60015bd3870d136d8cc04ddb3b1ddc04c0
+Merge: 7d4228f 520e349
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 17:47:40 2020 +0200
+
+    Merge pull request #60 from Jugo84/MockUpUpdate-Präsentation
+    
+    update
+
+commit 520e34950bf56afae5fec4762bd5e79a33dd9652
+Author: ngock <ngocbitra@gmail.com>
+Date:   Tue May 26 17:35:47 2020 +0200
+
+    update
+
+ SoftwareEngineering/Mock-Up.xd                 | Bin 676082 -> 667995 bytes
+ "SoftwareEngineering/Pr\303\244sentation.pptx" | Bin 5073839 -> 4797632 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7d4228f4a04407f5ebb6554fe525bebb345aeff9
+Merge: 42aee4e 4501d8a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 16:11:26 2020 +0200
+
+    Merge pull request #59 from Jugo84/JohannesMockup
+    
+    Johannes Mockup
+
+commit 4501d8a28fed9cf00f0bddbcd0cd6721474985c3
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 26 16:10:59 2020 +0200
+
+    Johannes Mockup
+
+ "SoftwareEngineering/Pr\303\244sentation.pptx" | Bin 5070195 -> 5073839 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 42aee4eac0229ef26e44295db0b19b6537da2c73
+Merge: 8c1e1fe 02a5996
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 15:58:48 2020 +0200
+
+    Merge pull request #57 from Jugo84/Mockup
+    
+    Mockup Filmübersicht/Popcorn
+
+commit 02a5996264bd7ae9e299b294f8a7cdf1e4e01171
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue May 26 14:05:11 2020 +0200
+
+    Mockup Filmübersicht/Popcorn
+
+ "SoftwareEngineering/Pr\303\244sentation.pptx" | Bin 5071170 -> 5070195 bytes
+ SoftwareEngineering/SimonMockup.docx           | Bin 20740 -> 0 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 8c1e1fee24fde9a58323eb76b1188da37b8111c7
+Merge: f21b7ac 8856aca
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 13:53:13 2020 +0200
+
+    Merge pull request #56 from Jugo84/Mockup
+    
+    Mockup Simon
+
+commit 8856aca04bfb186ca29492364d2f761f4c9915d8
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue May 26 13:42:27 2020 +0200
+
+    Mockup Simon
+
+ SoftwareEngineering/Mock-Up.xd       | Bin 662376 -> 676082 bytes
+ SoftwareEngineering/SimonMockup.docx | Bin 0 -> 20740 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit f21b7ac8d32f7d0851cab59fe5c07c41a5d56399
+Merge: 95a5a05 69331d6
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 08:34:45 2020 +0200
+
+    Merge pull request #55 from Jugo84/SoftwareEngineeringMockupJulian
+    
+    SoftwareEngineeringMockupJulian
+
+commit 69331d62b83cc815b74c5f100e71c9f48ec98092
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 26 08:34:11 2020 +0200
+
+    SoftwareEngineeringMockupJulian
+
+ "SoftwareEngineering/Pr\303\244sentation.pptx" | Bin 0 -> 5071170 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 95a5a054b0b088384820f9a26180c4af0112992d
+Merge: 15940cc 876d3c7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 10:24:06 2020 +0200
+
+    Merge pull request #54 from Jugo84/Julian-Teil
+    
+    Changed Titles
+
+commit 876d3c7fb8876b09ec7761e3f8a2609b5f2a79d1
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 22 10:23:40 2020 +0200
+
+    Changed Titles
+
+ Coding/filmuebersicht.html | 2 +-
+ Coding/home.html           | 2 +-
+ Coding/kasse.html          | 2 +-
+ Coding/kinosaal.html       | 2 +-
+ Coding/kinosaal_video.html | 2 +-
+ Coding/popcornShop.html    | 2 +-
+ Coding/warenkorb.html      | 2 +-
+ 7 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 15940cc133013767a402c2f349976f3d02f93b14
+Merge: ae7aa9f 00db7f5
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 10:20:16 2020 +0200
+
+    Merge pull request #53 from Jugo84/filmübersicht
+    
+    Popup
+
+commit 00db7f58a639c0e651009211deaefe692a9a36d1
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Fri May 22 10:19:52 2020 +0200
+
+    Popup
+
+ Coding/filmuebersicht.html | 68 ++++++++++++++++++++++++++++++----------------
+ 1 file changed, 44 insertions(+), 24 deletions(-)
+
+commit ae7aa9f94ffd4ac5970e4c5dce41e713720ec784
+Merge: 28c9142 70f5f8e
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 10:15:06 2020 +0200
+
+    Merge pull request #52 from Jugo84/MOckUpJohannes
+    
+    Johannes Mockup
+
+commit 70f5f8e47caedc15928ccd0468d09f23f446d523
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Fri May 22 10:12:07 2020 +0200
+
+    Johannes Mockup
+
+ SoftwareEngineering/JohannesMockup.docx | Bin 0 -> 12783 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 28c91428753a486b3e60a399a2826e53dff17759
+Merge: be8f9da ef54772
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 10:08:16 2020 +0200
+
+    Merge pull request #51 from Jugo84/final
+    
+    final
+
+commit ef5477249a7fdc18bbeaef7a94768dbc7603fd15
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri May 22 10:04:29 2020 +0200
+
+    final
+
+ Coding/Impressum.html |  41 +++++++++++++++++
+ Coding/homeSimon.html | 122 --------------------------------------------------
+ 2 files changed, 41 insertions(+), 122 deletions(-)
+
+commit be8f9da5dea9c705423d220a6b0a3d234683cbd0
+Merge: 636d716 75650cf
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 09:55:51 2020 +0200
+
+    Merge pull request #50 from Jugo84/Home
+    
+    .
+
+commit 75650cf0ca794f686a6751a8bf1fc2104965dc8b
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 22 09:55:19 2020 +0200
+
+    .
+
+ SoftwareEngineering/Mock-Up.xd | Bin 0 -> 662376 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 636d716627f3c2e76acca8892be33fa98f0da70e
+Merge: 136866c 2e065f4
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 09:53:41 2020 +0200
+
+    Merge pull request #49 from Jugo84/Home
+    
+    Last Changes
+
+commit 2e065f4558782437836658de96b71640c45299ed
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 22 09:53:12 2020 +0200
+
+    Last Changes
+
+ Coding/Bilder/Film1.jpg    | Bin 746788 -> 627952 bytes
+ Coding/Bilder/Film2.jpg    | Bin 746788 -> 627952 bytes
+ Coding/Bilder/Film3.jpg    | Bin 247403 -> 207833 bytes
+ Coding/Bilder/Film4.jpg    | Bin 125383 -> 120825 bytes
+ Coding/Checkout.html       |  12 ++++++------
+ Coding/Impressum.html      |   2 +-
+ Coding/filmuebersicht.html |   4 ++--
+ Coding/home.html           |   2 +-
+ Coding/kasse.html          |   5 ++---
+ Coding/kinosaal.html       |   2 +-
+ Coding/kinosaal_video.html |   2 +-
+ Coding/popcornShop.html    |   2 +-
+ Coding/warenkorb.html      |   3 +--
+ 13 files changed, 16 insertions(+), 18 deletions(-)
+
+commit 136866c4d6f29b9dd162b73853cb2486561d9e19
+Merge: f07b8f5 d6fe5a5
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 09:36:29 2020 +0200
+
+    Merge pull request #48 from Jugo84/Popcorn
+    
+    PopcornShop
+
+commit d6fe5a513a980db15dbceb7538f4438a9c204a54
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Fri May 22 09:34:51 2020 +0200
+
+    PopcornShop
+
+ Coding/CSS-Styles/stylePopcornShop.css |  13 ++
+ Coding/filmuebersicht.html             | 209 +++++++++++++++++----------------
+ Coding/popcornShop.html                |  65 ++++++++--
+ 3 files changed, 173 insertions(+), 114 deletions(-)
+
+commit f07b8f54722f34df7a5f52d65ab1316667941af3
+Merge: 7b7affa a2118a7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Thu May 21 17:22:38 2020 +0200
+
+    Merge pull request #47 from Jugo84/Warenkorb_überarbeiten
+    
+    Warenkorb geändert
+
+commit a2118a7c9e986babeb3943bc8f9d33ea7418ab79
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue May 19 15:55:23 2020 +0200
+
+    Warenkorb geändert
+
+ Coding/CSS-Styles/style.css    | 55 ++-----------------------------------
+ Coding/Javascript/Warenkorb.js | 41 ++++++++++++++++++++++++++++
+ Coding/kasse.html              | 14 ++++++++++
+ Coding/warenkorb.html          | 62 ++++++++++++++++++++++++++++++++++++------
+ 4 files changed, 110 insertions(+), 62 deletions(-)
+
+commit 7b7affab28490fbddadb3cba93211db2ea0bc14d
+Merge: 4abf174 7362aa1
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 19 09:22:21 2020 +0200
+
+    Merge pull request #46 from Jugo84/Julian-Teil
+    
+    Extras to Kinosaal
+
+commit 7362aa10b2d63ba0398824a567ad2cd46e21c2ae
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 19 09:21:48 2020 +0200
+
+    Extras to Kinosaal
+
+ Coding/CSS-Styles/kinosaal_style.css        | 39 ++++++++++++++++++++++-------
+ Coding/Javascript/kinosaal_functionality.js |  4 +++
+ Coding/home.html                            | 12 +++++++--
+ Coding/kinosaal_video.html                  | 12 ++++-----
+ 4 files changed, 50 insertions(+), 17 deletions(-)
+
+commit 4abf17439e29954ec4ab50f2281989aba3e1b830
+Merge: 6466ac3 f7c958c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 19 08:04:52 2020 +0200
+
+    Merge pull request #45 from Jugo84/User-Story-updated
+    
+    updated and auf ilias hochgeladen
+
+commit f7c958c91a2440ac874886c427fa0085c400fd6f
+Author: ngock <ngocbitra@gmail.com>
+Date:   Mon May 18 22:22:58 2020 +0200
+
+    updated and auf ilias hochgeladen
+
+ .../Team NJJS_Virtual Cinema_UserStories.pdf           | Bin 0 -> 242390 bytes
+ SoftwareEngineering/UserStories-updated.docx           | Bin 0 -> 549012 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 6466ac37df1aa35c0d61ec4501ec1d98d395aaa5
+Merge: 8593b32 560577f
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 13:06:02 2020 +0200
+
+    Merge pull request #44 from Jugo84/UserStory
+    
+    User story
+
+commit 560577f5784bc73b3a87bb068d3ace08455a79f4
+Merge: 8db619f 53542c9
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Sat May 16 13:04:13 2020 +0200
+
+    Merge branch 'UserStory' of https://github.com/Jugo84/WebAnwendungen2Praktikum into UserStory
+    
+    # Conflicts:
+    #       SoftwareEngineering/UserStories.docx
+
+commit 8db619f4c9dcf7188a12561e569c21f5f06a5139
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Sat May 16 13:00:08 2020 +0200
+
+    User Story
+
+ ...-Impressum-User Story.docx => UserStories.docx} | Bin 518077 -> 530825 bytes
+ .../UserStory-Home-Kinosaal_Chat.docx              | Bin 14270 -> 0 bytes
+ SoftwareEngineering/UserStory-Kasse-Warenkorb.docx | Bin 14280 -> 0 bytes
+ ...UserStory_PocornShop_Film\303\274bersicht.docx" | Bin 21020 -> 0 bytes
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 53542c9b2ace8b373b417d57677ca65ce55ec75a
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Sat May 16 13:00:08 2020 +0200
+
+    User Story
+
+ ...-Impressum-User Story.docx => UserStories.docx} | Bin 518077 -> 530449 bytes
+ .../UserStory-Home-Kinosaal_Chat.docx              | Bin 14270 -> 0 bytes
+ SoftwareEngineering/UserStory-Kasse-Warenkorb.docx | Bin 14280 -> 0 bytes
+ ...UserStory_PocornShop_Film\303\274bersicht.docx" | Bin 21020 -> 0 bytes
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 8593b32127824dd17fb2c877ea047e0ce8fbf8cf
+Merge: 7af3dc0 48ecb32
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 12:14:01 2020 +0200
+
+    Merge pull request #43 from Jugo84/Story-Kasse_Warenkorb-verbessert
+    
+    Story_Kasse_Warenkorb_verbessert
+
+commit 7af3dc04705587d77adcf1bb82734caa26001195
+Merge: b0b6c49 5a3a1fc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 12:13:35 2020 +0200
+
+    Merge pull request #42 from Jugo84/UserStory
+    
+    .
+
+commit 48ecb32740248b0092201de3e730fd6f0746712d
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat May 16 12:13:25 2020 +0200
+
+    Story_Kasse_Warenkorb_verbessert
+
+ SoftwareEngineering/UserStory-Kasse-Warenkorb.docx | Bin 13929 -> 14280 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5a3a1fcf50f234cad2a518b06a91cd64746bb23a
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 16 12:12:34 2020 +0200
+
+    .
+
+ .../UserStory-Home-Kinosaal_Chat.docx               | Bin 14097 -> 14270 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b0b6c49cd4f76ac67c968fbf97ba5d4bbaaa6644
+Merge: 4674860 f277d90
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:50:40 2020 +0200
+
+    Merge pull request #41 from Jugo84/userStoryKasse
+    
+    userStoryWarenkorb_Kasse
+
+commit f277d900b3d671f6003e092e2f393af3fc1b367a
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat May 16 11:49:46 2020 +0200
+
+    userStoryWarenkorb_Kasse
+
+ SoftwareEngineering/UserStory-Kasse-Warenkorb.docx | Bin 0 -> 13929 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 467486061733fc430a68aa0732ba831948f6fbab
+Merge: 57d5502 a8bb75e
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:49:19 2020 +0200
+
+    Merge pull request #40 from Jugo84/UserStory
+    
+    UserStory
+
+commit a8bb75e8e910027acfcaee98c1ec13b2443f12ad
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Sat May 16 11:47:47 2020 +0200
+
+    UserStory
+
+ .../UserStory_PocornShop_Film\303\274bersicht.docx"     | Bin 0 -> 21020 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 57d5502fa77356a8bf893f896d0ba795bdd24e08
+Merge: d2acc87 631b3a7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:46:45 2020 +0200
+
+    Merge pull request #39 from Jugo84/UserStory
+    
+    UserStory
+
+commit 631b3a70ab6510c33c3a1077cc658a5873ff4c34
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 16 11:46:28 2020 +0200
+
+    UserStory
+
+ .../Check-out-Impressum-User Story.docx                 | Bin
+ SoftwareEngineering/UserStory-Home-Kinosaal_Chat.docx   | Bin 0 -> 14097 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit d2acc873f65791c45e3a86237c1ebc73b1af1a02
+Merge: 67d9ad7 6da2273
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:07:32 2020 +0200
+
+    Merge pull request #38 from Jugo84/PopcornShop
+    
+    PopcornShop
+
+commit 67d9ad72bb160c61351504b653138b217b460535
+Merge: 1b5768f 53f19f1
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:04:01 2020 +0200
+
+    Merge pull request #37 from Jugo84/Julian-Teil
+    
+    .
+
+commit 53f19f13b9ee4690270a0a96238ce609ccb77e11
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 16 11:03:32 2020 +0200
+
+    .
+
+ Coding/kinosaal.html | 8 --------
+ 1 file changed, 8 deletions(-)
+
+commit 1b5768f8670824d4ed7bd51775e52c0d50afd8af
+Merge: 30e5970 30e470d
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:00:03 2020 +0200
+
+    Merge pull request #36 from Jugo84/Warenkorb/kasse
+    
+    Kasse/Warenkorb
+
+commit 30e470d8e297d1e5391c087fa7e0387fb6f4e0ff
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat May 16 10:56:02 2020 +0200
+
+    Kasse/Warenkorb
+
+ Coding/CSS-Styles/style.css |  59 ++++++++++++++
+ Coding/kasse.html           | 170 +++++++++++++++++++++++++++++++++++++++
+ Coding/warenkorb.html       | 191 ++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 420 insertions(+)
+
+commit 30e5970969406d824d677cce9dbfc9ca7fc97563
+Merge: 9cba5ed dde8d6c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 10:55:44 2020 +0200
+
+    Merge pull request #34 from Jugo84/user-story-check-out
+    
+    user-story-check-out
+
+commit 9cba5edd11eeb87fb15df897a277074ea161ae79
+Merge: c75703c 9d3b88b
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 10:55:28 2020 +0200
+
+    Merge pull request #35 from Jugo84/Julian-Teil
+    
+    Kinosaal
+
+commit 9d3b88b61914b79349aab04dcdf316b1f857ccf0
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 16 10:54:58 2020 +0200
+
+    Kinosaal
+
+ Coding/CSS-Styles/kinosaal_style.css        |  55 ++++++++++++++
+ Coding/CSS-Styles/style.css                 |  23 +-----
+ Coding/Javascript/kinosaal_functionality.js |  64 ++++++++++++++++
+ Coding/kinosaal_chat.html                   | 109 ----------------------------
+ Coding/kinosaal_video.html                  |  26 +++++--
+ 5 files changed, 142 insertions(+), 135 deletions(-)
+
+commit dde8d6c3941e29c8f78102d76a9cd4d4c5328e09
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri May 15 19:46:00 2020 +0200
+
+    user-story-check-out
+
+ Check-out-Impressum-User Story.docx | Bin 0 -> 518077 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit c75703c65a24e10bba1cd0b21a7edc6009ef32b2
+Merge: 3258bb3 d9d0cdb
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 15 15:42:09 2020 +0200
+
+    Merge pull request #33 from Jugo84/Julian-Teil
+    
+    Julian teil
+
+commit d9d0cdb1a501e9a718689e940136129ee4c28413
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 15 15:41:39 2020 +0200
+
+    removed background
+
+ Coding/Bilder/kino-leinwand.jpg | Bin 78496 -> 0 bytes
+ Coding/CSS-Styles/style.css     |   8 +-------
+ 2 files changed, 1 insertion(+), 7 deletions(-)
+
+commit 6da2273e44366add490a019b83803849db9f1d07
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Fri May 15 10:08:42 2020 +0200
+
+    PopcornShop
+
+ Coding/CSS-Styles/stylePopcornShop.css |  4 ++++
+ Coding/popcornShop.html                | 23 +++++++++--------------
+ 2 files changed, 13 insertions(+), 14 deletions(-)
+
+commit 2d4dd2247cb5c6d571bebb7e810ff8cfd93e5e58
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 16:12:56 2020 +0200
+
+    style background
+
+ Coding/CSS-Styles/style.css | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 3258bb32b932f02ba965ad71629fbf5b8a308453
+Merge: dedd4a4 45623ab
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 16:59:02 2020 +0200
+
+    Merge pull request #32 from Jugo84/PopcornShop
+    
+    fixed many
+
+commit 45623ab74fbb3174342b60ba8ff672128d14ea39
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 16:58:26 2020 +0200
+
+    fixed many
+
+ Coding/CSS-Styles/style.css | 11 +++++++-
+ Coding/Checkout.html        | 12 ++++----
+ Coding/Impressum.html       | 69 +++++++++++++++++++++++----------------------
+ Coding/filmuebersicht.html  |  4 +--
+ Coding/home.html            | 11 ++++----
+ Coding/kinosaal.html        |  6 ++--
+ Coding/kinosaal_chat.html   |  6 ++--
+ Coding/kinosaal_video.html  |  6 ++--
+ Coding/popcornShop.html     | 10 +++----
+ 9 files changed, 75 insertions(+), 60 deletions(-)
+
+commit dedd4a4f51e3772fda22b42f753e03d77b7f62c9
+Merge: 4e61dd3 d6dd67f
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 16:29:09 2020 +0200
+
+    Merge pull request #31 from Jugo84/impressum
+    
+    impressum
+
+commit d6dd67feee049a49e47a6e304ffa099a76352a57
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 16:16:33 2020 +0200
+
+    impressum
+
+ Coding/CSS-Styles/style.css | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 4e61dd31490797d92f01aeff8394f8d184fd330c
+Merge: df6a839 e9c82b6
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 16:13:34 2020 +0200
+
+    Merge pull request #30 from Jugo84/Style
+    
+    style background
+
+commit e9c82b61e81b413cd07b1a3cbb2f1b1667a16e99
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 16:12:56 2020 +0200
+
+    style background
+
+ Coding/CSS-Styles/style.css | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit df6a8399e724bd6d94f29033b2911f67d068746a
+Merge: 114dbc8 c166413
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 15:56:01 2020 +0200
+
+    Merge pull request #29 from Jugo84/Julian-Teil
+    
+    Added Background Image
+
+commit c1664130c5ea3db373c33bd252b95a8599c218f6
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 12 15:55:30 2020 +0200
+
+    Added Background Image
+
+ Coding/Bilder/cinema.jpg    | Bin 0 -> 393943 bytes
+ Coding/CSS-Styles/style.css |  14 ++++++
+ Coding/popcornShop.html     | 101 +++++++++++++++++++++++---------------------
+ 3 files changed, 66 insertions(+), 49 deletions(-)
+
+commit 114dbc8d995ca9ef6476bb569db6c86e4323d947
+Merge: 1acca81 e85ea7b
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 15:38:45 2020 +0200
+
+    Merge pull request #28 from Jugo84/Julian-Teil
+    
+    Improved some things
+
+commit e85ea7b0637d56f20b7fe4f012525fcb0eb566ea
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 12 15:38:09 2020 +0200
+
+    Improved some things
+
+ Coding/CSS-Styles/style.css | 7 +++++++
+ Coding/Impressum.html       | 2 +-
+ Coding/home.html            | 1 +
+ 3 files changed, 9 insertions(+), 1 deletion(-)
+
+commit 1acca8199714d79f4ebb7f7a827203ee7a5777c0
+Merge: 5f3965a 19bff57
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 15:17:59 2020 +0200
+
+    Merge pull request #27 from Jugo84/Julian-Teil
+    
+    Julian Teil
+
+commit 19bff57c73233b8ddb9109ffac69ee14a05e5eb4
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 12 15:17:03 2020 +0200
+
+    Julian Teil
+
+ Coding/Bilder/kino-leinwand.jpg   | Bin 0 -> 78496 bytes
+ Coding/Bilder/sitze-footer-1.png  | Bin 0 -> 104729 bytes
+ Coding/CSS-Styles/style.css       |  83 ++++++++++++++++++++++++++++-
+ Coding/Videos/Ruf_der_Wildnis.mp4 | Bin 0 -> 9709275 bytes
+ Coding/kinosaal.html              | 106 ++++++++++++++++++++++++++++++++++++
+ Coding/kinosaal_chat.html         | 109 ++++++++++++++++++++++++++++++++++++++
+ Coding/kinosaal_video.html        |  91 +++++++++++++++++++++++++++++++
+ 7 files changed, 388 insertions(+), 1 deletion(-)
+
+commit 5f3965aab5e49df6b46fa77fa1371b4734a3c6f9
+Merge: bea7ab7 10e548f
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 15:13:17 2020 +0200
+
+    Merge pull request #26 from Jugo84/Filmübersicht
+    
+    Filmübersicht
+
+commit 10e548f1dabafb3e88e6d7585862760aa78f8f60
+Merge: 30d1ed8 bea7ab7
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 15:12:17 2020 +0200
+
+    Merge branch 'master' into Filmübersicht
+    
+    # Conflicts:
+    #       Coding/CSS-Styles/style.css
+
+commit 30d1ed8c2f059c4707be2df96eb8acf8f7ed3978
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 15:08:18 2020 +0200
+
+    Popcorn, Filmübersicht
+
+ Coding/Bilder/popcorn.jpg   | Bin 0 -> 26463 bytes
+ Coding/CSS-Styles/style.css |   8 ++
+ Coding/filmuebersicht.html  | 204 ++++++++++++++++++++++++++++++++++++++++++++
+ Coding/home.html            |   7 +-
+ Coding/popcornShop.html     | 143 +++++++++++++++++++++++++++++++
+ 5 files changed, 358 insertions(+), 4 deletions(-)
+
+commit bea7ab70d53aa280b8c8ee7fce6b2b5a8c00e1cd
+Merge: a03c045 b8d1746
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 9 23:29:58 2020 +0200
+
+    Merge pull request #24 from Jugo84/corrected-mastercard-branch
+    
+    Corrected mastercard link
+
+commit b8d174606ac97bd66c90893b79d5a5b48f8a563b
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 9 23:29:15 2020 +0200
+
+    Corrected mastercard link
+
+ Coding/Checkout.html  | 2 +-
+ Coding/Impressum.html | 2 +-
+ Coding/home.html      | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+commit a03c04553edd3f2e03c160e157d66fbddfd32557
+Merge: cf0434a b01cb39
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 9 23:24:40 2020 +0200
+
+    Merge pull request #23 from Jugo84/checkout&impressum
+    
+    choice Teil
+
+commit b01cb390ac4c7f0a8a54ee297eec7a661b30b128
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sat May 9 21:14:07 2020 +0200
+
+    choice Teil
+
+ Coding/Bilder/zollernalb.jpg | Bin 0 -> 7619 bytes
+ Coding/CSS-Styles/style.css  |   7 +++
+ Coding/Checkout.html         | 137 +++++++++++++++++++++++++++++++++++++++++++
+ Coding/Impressum.html        | 121 ++++++++++++++++++++++++++++++++++++++
+ Coding/home.html             |   2 +-
+ 5 files changed, 266 insertions(+), 1 deletion(-)
+
+commit cf0434a97a152b9afd8768eed5339cd4c3c6c913
+Merge: 3ca7770 841e723
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 9 16:23:52 2020 +0200
+
+    Merge pull request #22 from Jugo84/updated-Power-Point-
+    
+    Updated power point
+
+commit 841e723ed90ae612715eb126b9cb86a108a6d934
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri May 8 16:26:31 2020 +0200
+
+    update PP
+
+ "Pr\303\244sentation.pptx" | Bin 5407606 -> 5408769 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 13d60ba39b19aa37ddf10a39e5f89dc909d7b45b
+Author: ngock <ngocbitra@gmail.com>
+Date:   Thu May 7 11:02:29 2020 +0200
+
+    updated
+
+ "Pr\303\244sentation.pptx" | Bin 5407470 -> 5407606 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit c72ff3c7b43d504ea67d47eedb965dfbb08ea434
+Author: ngock <ngocbitra@gmail.com>
+Date:   Wed May 6 16:27:21 2020 +0200
+
+    Neue
+    
+    Diagramm updated
+
+ "Pr\303\244sentation.pptx" | Bin 5440452 -> 5407470 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 3ca77706120f08d756a951d72ecf89318fbb4710
+Merge: fafb3a5 b547dfb
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed May 6 14:09:24 2020 +0200
+
+    Merge pull request #20 from Jugo84/Präsentation_Login
+    
+    Gantt,PowerPoint
+
+commit fafb3a5e419aa5ed4776c2ec35586e96919bc084
+Merge: c81f95f 6eaeaf5
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed May 6 14:09:03 2020 +0200
+
+    Merge pull request #21 from Jugo84/Init-Style
+    
+    Removed Sign up and Login Page
+
+commit 6eaeaf554b42cc78d9b0b494700f2c939f8e19f7
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed May 6 14:08:32 2020 +0200
+
+    Removed Sign up and Login Page
+
+ Coding/home.html | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit b547dfb5c5fcc5c2945b2717c8fe5e81178e23f9
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Wed May 6 13:46:16 2020 +0200
+
+    Gantt,PowerPoint
+
+ Gantt_Diagramm.xlsx        | Bin 43452 -> 43242 bytes
+ "Pr\303\244sentation.pptx" | Bin 5687525 -> 5440452 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit c81f95f4d8ec68b6b22ce4510290b6e1a9f39e5b
+Merge: 92be6c4 0d6d5fc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 5 17:07:22 2020 +0200
+
+    Merge pull request #19 from Jugo84/Init-Style
+    
+    Init Style fixed
+
+commit 0d6d5fc59aefb2bbc150872b6321c983de9d2ce9
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 5 17:06:35 2020 +0200
+
+    Init Style fixed
+
+ Coding/home.html         | 286 +++++++++++++++++++++++++++++------------------
+ Coding/homeSimon.html    | 122 ++++++++++++++++++++
+ Coding/homeinternet.html | 188 -------------------------------
+ 3 files changed, 298 insertions(+), 298 deletions(-)
+
+commit 92be6c4c73a53f84053cf1b1bf8eb37d2ae40f5d
+Merge: 1b2d6ee 07d58a0
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 5 17:05:01 2020 +0200
+
+    Merge pull request #18 from Jugo84/Init-Style
+    
+    Init Style
+
+commit 07d58a00dfb3eb5ab94ab95e79d46083a339b33c
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 5 17:04:15 2020 +0200
+
+    Init Style
+
+ Coding/Bilder/Film1.jpg            | Bin 0 -> 746788 bytes
+ Coding/Bilder/Film2.jpg            | Bin 0 -> 746788 bytes
+ Coding/Bilder/Film3.jpg            | Bin 0 -> 247403 bytes
+ Coding/Bilder/Film4.jpg            | Bin 0 -> 125383 bytes
+ Coding/CSS-Styles/style.css        |  48 ++++++++++
+ Coding/Javascript/functionality.js |   8 ++
+ Coding/home.html                   | 122 ++++++++++++++++++++++++
+ Coding/homeinternet.html           | 188 +++++++++++++++++++++++++++++++++++++
+ 8 files changed, 366 insertions(+)
+
+commit 1b2d6ee74e2ef961a4ed3662c4ea79b804cbf804
+Merge: 5e3652d c95405d
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 16:29:24 2020 +0200
+
+    Merge pull request #17 from Jugo84/Präsentation
+    
+    Präsentation
+
+commit c95405d4fd60e70368347493f79b702fb90e065d
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Fri May 1 16:27:50 2020 +0200
+
+    Präsentation
+
+ Gantt_Diagramm.xlsx        | Bin 42573 -> 43452 bytes
+ "Pr\303\244sentation.pptx" | Bin 0 -> 5687525 bytes
+ WebAnw2.pptx               | Bin 646705 -> 0 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 5e3652d277d4bcf68a7e5717a1d5da920cd03ae7
+Merge: 23df631 1eb792c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:59:59 2020 +0200
+
+    Merge pull request #16 from Jugo84/added-icons
+    
+    cool
+
+commit 1eb792cf3e60179338af26b1e29fee58a3f844aa
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 1 15:59:34 2020 +0200
+
+    cool
+
+ Mock-Up.xd | Bin 672073 -> 662376 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 23df63112c1c1e2444abf5f1c5daff08a24c6c31
+Merge: 79bba5e 43d10e9
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:37:52 2020 +0200
+
+    Merge pull request #15 from Jugo84/verknüpfungen
+    
+    letzer verknüpfung
+
+commit 43d10e957dec95c1c95d70bc752de68220698a56
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Fri May 1 15:35:31 2020 +0200
+
+    letzer verknüpfung
+
+ Mock-Up.xd | Bin 671760 -> 672073 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 79bba5e5b89b645b84bee2228c0d853452494a7f
+Merge: 3e39329 8111041
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:34:56 2020 +0200
+
+    Merge pull request #14 from Jugo84/bilderexport
+    
+    export images
+
+commit 8111041035a249880c75bbb04482748bbd069987
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 1 15:34:25 2020 +0200
+
+    export images
+
+ .../Bezahlm\303\266glichkeiten.jpg"                | Bin 0 -> 134881 bytes
+ ExportMockupImages/Check-Out.jpg                   | Bin 229738 -> 228827 bytes
+ "ExportMockupImages/Film\303\274bersicht.jpg"      | Bin 288925 -> 287988 bytes
+ .../HauptSeite- Film \303\234bersicht.jpg"         | Bin 298726 -> 297743 bytes
+ ExportMockupImages/Impressum.jpg                   | Bin 0 -> 123943 bytes
+ ExportMockupImages/Kasse.jpg                       | Bin 166738 -> 165712 bytes
+ .../Kinosaal mit Chat Vorher-Nachher.jpg           | Bin 313548 -> 312634 bytes
+ .../Kinosaal \342\200\223 Ticket-Code.jpg"         | Bin 183942 -> 183356 bytes
+ ExportMockupImages/Kinosaal.jpg                    | Bin 280032 -> 279371 bytes
+ ExportMockupImages/Login.jpg                       | Bin 112434 -> 111658 bytes
+ ExportMockupImages/Popcorn.jpg                     | Bin 183417 -> 182307 bytes
+ ExportMockupImages/Registrieren.jpg                | Bin 134564 -> 133581 bytes
+ ExportMockupImages/Sozial Media.jpg                | Bin 0 -> 139292 bytes
+ ExportMockupImages/Warenkorb.jpg                   | Bin 165838 -> 164882 bytes
+ 14 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 3e3932979f5e9eda070204b16d9e1a05edd48a22
+Merge: 01b26aa 23aff5e
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:31:53 2020 +0200
+
+    Merge pull request #13 from Jugo84/verknüpfungen
+    
+    Verknüpfugen
+
+commit 23aff5e2b16bed47d5f81febfd3dbcf2ff0f1151
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Fri May 1 15:31:12 2020 +0200
+
+    Verknüpfugen
+
+ Mock-Up.xd | Bin 647122 -> 671760 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 01b26aae30bd44fd2cdf2e616ae3182e20dcce51
+Merge: f719802 c99483a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:12:39 2020 +0200
+
+    Merge pull request #12 from Jugo84/CssStyling
+    
+    Added Exported Images of Mockup
+
+commit c99483a9d71dacbd9392be9c6226e76f615920bc
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 1 15:12:09 2020 +0200
+
+    Added Exported Images of Mockup
+
+ ExportMockupImages/Check-Out.jpg                       | Bin 0 -> 229738 bytes
+ "ExportMockupImages/Film\303\274bersicht.jpg"          | Bin 0 -> 288925 bytes
+ .../HauptSeite- Film \303\234bersicht.jpg"             | Bin 0 -> 298726 bytes
+ ExportMockupImages/Kasse.jpg                           | Bin 0 -> 166738 bytes
+ .../Kinosaal mit Chat Vorher-Nachher.jpg               | Bin 0 -> 313548 bytes
+ .../Kinosaal \342\200\223 Ticket-Code.jpg"             | Bin 0 -> 183942 bytes
+ ExportMockupImages/Kinosaal.jpg                        | Bin 0 -> 280032 bytes
+ ExportMockupImages/Login.jpg                           | Bin 0 -> 112434 bytes
+ ExportMockupImages/Popcorn.jpg                         | Bin 0 -> 183417 bytes
+ ExportMockupImages/Registrieren.jpg                    | Bin 0 -> 134564 bytes
+ ExportMockupImages/Warenkorb.jpg                       | Bin 0 -> 165838 bytes
+ 11 files changed, 0 insertions(+), 0 deletions(-)
+
+commit f7198022a0e61539f931332adffdfbfe2a931e3c
+Merge: 2882fe7 36a9df0
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 23:04:27 2020 +0200
+
+    Merge pull request #11 from Jugo84/powerpoint
+    
+    Webanw
+
+commit 36a9df0431a97e7c6a228e71e45d0a496da38261
+Author: ngock <ngocbitra@gmail.com>
+Date:   Tue Apr 28 23:03:25 2020 +0200
+
+    Webanw
+
+ WebAnw2.pptx                           | Bin 0 -> 646705 bytes
+ "WebAnwendungPr\303\244sentation.pptx" | Bin 33590 -> 0 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 2882fe7e51cd9e945bf70444c2ced195cc030dcb
+Merge: f4b9fab fcf0631
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 22:57:37 2020 +0200
+
+    Merge pull request #10 from Jugo84/Gantt
+    
+    Gantt
+
+commit fcf0631b06995ca18132cebb8398cf450c90a2c2
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue Apr 28 22:56:46 2020 +0200
+
+    Gantt
+
+ Gantt_Diagramm.xlsx | Bin 0 -> 42573 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f4b9fabce437f6c0c0cc2f0c0ecc1474db2e56f7
+Merge: aba7dbe a64d479
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 21:43:10 2020 +0200
+
+    Merge pull request #9 from Jugo84/Mock-Up
+    
+    Mock-Up
+
+commit a64d47907f041ab1b8d0c7a0085dfb612fa4b0af
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue Apr 28 21:36:39 2020 +0200
+
+    Mock-Up
+
+ Check-out.xd               | Bin 589614 -> 0 bytes
+ "Fillm\303\234bersicht.xd" | Bin 457047 -> 0 bytes
+ Mock-Up.xd                 | Bin 0 -> 647122 bytes
+ Warenkorb.xd               | Bin 248282 -> 0 bytes
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+
+commit aba7dbed8db796e4aab051a38dd7e9217774302e
+Merge: a16b202 3581689
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 20:56:11 2020 +0200
+
+    Merge pull request #8 from Jugo84/check-out-page
+    
+    check-out-page
+
+commit 358168950d3a7dadb07ab1be01b9079f857f900a
+Author: ngock <ngocbitra@gmail.com>
+Date:   Tue Apr 28 20:53:39 2020 +0200
+
+    check-out-page
+
+ Check-out.xd | Bin 0 -> 589614 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a16b202ae1b2c8303bec1ee25d0faff8803c4f4e
+Merge: b57a142 d4e9e80
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 20:10:09 2020 +0200
+
+    Merge pull request #7 from Jugo84/Mock-Up_SImon
+    
+    Merge pull request #5 from Jugo84/KinoSaalStyling
+
+commit d4e9e80861f05a2db85d46377e8fdd2d0499afda
+Merge: 391bd21 6994d0a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 19:18:31 2020 +0200
+
+    Merge pull request #5 from Jugo84/KinoSaalStyling
+    
+    KinoSaalStyling
+
+commit b57a142dc615b1477671a350641c7a358ab436c2
+Merge: ef1b933 a06ce17
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 20:07:08 2020 +0200
+
+    Merge pull request #6 from Jugo84/Johannes
+    
+    johannes warekorb
+
+commit a06ce17f4c51c6c953aebe005d92937ce2f68062
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Apr 28 20:04:51 2020 +0200
+
+    johannes warekorb
+
+ Warenkorb.xd | Bin 0 -> 248282 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ef1b9330d64c8bab7c2307b0d14cc22c73be34f8
+Merge: 391bd21 6994d0a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 19:18:31 2020 +0200
+
+    Merge pull request #5 from Jugo84/KinoSaalStyling
+    
+    KinoSaalStyling
+
+commit 6994d0acb56f18de4443123cfe83b0e8664cebfa
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue Apr 28 19:17:45 2020 +0200
+
+    KinoSaalStyling
+
+ "Fillm\303\234bersicht.xd" | Bin 280449 -> 286454 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 391bd21c00e42c1df7dcb3a24a9cf3ad653690ff
+Merge: 86cf30b 58140dd
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 21:41:19 2020 +0200
+
+    Merge pull request #4 from Jugo84/test_simon
+    
+    Merge pull request #3 from Jugo84/test2
+
+commit 58140ddaa74ab5ab5762400885d87059679585a6
+Merge: 7ab9608 67e34d7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 21:29:36 2020 +0200
+
+    Merge pull request #3 from Jugo84/test2
+    
+    removed test2.txt
+
+commit 86cf30bf44eb6516bd0b5f8b3e914e5d1c52ff91
+Merge: 7ab9608 67e34d7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 21:29:36 2020 +0200
+
+    Merge pull request #3 from Jugo84/test2
+    
+    removed test2.txt
+
+commit 67e34d7e3e0f131f8d4285d6007e350e5ba084ce
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 21:29:10 2020 +0200
+
+    removed test2.txt
+
+ test2.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7ab960814f97482b98866ab1adb5c0b0c3998d17
+Merge: 9aacd3d 9ab0ae4
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 21:28:25 2020 +0200
+
+    Merge pull request #2 from Jugo84/Moqup-Teil-1
+    
+    Init FilmÜbersicht
+
+commit 9ab0ae4ca3d187797f239eba4bfa00edcf0738f9
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 21:27:48 2020 +0200
+
+    Init FilmÜbersicht
+
+ "Fillm\303\234bersicht.xd" | Bin 0 -> 280449 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9aacd3d3bff245355344eb36c7f248dad9b1f868
+Merge: ff419b0 fbb7115
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 20:22:46 2020 +0200
+
+    Merge pull request #1 from Jugo84/test2
+    
+    test2 init
+
+commit fbb7115254bc81e16af65e09f7dc0655dba2da94
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 20:21:39 2020 +0200
+
+    test2 init
+
+ test2.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ff419b03de5cea4201d3c15b224d859c08a0b6e8
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 20:12:48 2020 +0200
+
+    PP init
+
+ "WebAnwendungPr\303\244sentation.pptx" | Bin 0 -> 34457 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
