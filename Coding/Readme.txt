@@ -3,6 +3,8 @@ Beschreibung um sich ein Video anzuschauen:
 Aktuell existiert nur ein Video zu Ruf der Wildnis 
 
 1. Erstellen Sie in der Datenbank eine neue Vorstellung für die FIlmID 1(da für die anderen Filme keine Videos hinterlegt sind)
+	- INSERT INTO Vorstellung (FilmID,Datum) VALUES (1,'2020-05-31T20:15'); 
+	- Datum ändern
 2. Achten Sie darauf, dass der Zeitpunkt der Vorstellung in der Zukunft liegt und genug Zeit ist um die nächsten Schritte auszuführen
 3. Starten Sie den Frontend und Backend Server
 4. Wählen Sie den Film auf der Startseite aus und wählen die neu angelegte Vorstellung
