@@ -131,7 +131,6 @@ class BenutzerDao {
         //Email
         sendEmail(updatedObj, this._conn);
         
-
         return updatedObj;
     }
 

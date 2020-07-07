@@ -104,10 +104,10 @@ class SnackDao {
         return false;
     }
 
-    create(snackTypid = null, benutzerid = null, menge = 1){
-        var sql = "INSERT INTO Snack (SnackTypID,BenutzerID,Menge) VALUES (?,?,?)";
+    create(snackTypid = null, benutzerid = null, menge = 1, bezahlt = 0){
+        var sql = "INSERT INTO Snack (SnackTypID,BenutzerID,Menge,Bezahlt) VALUES (?,?,?,?)";
         var statement = this._conn.prepare(sql);
-        var params = [snackTypid, benutzerid, menge];
+        var params = [snackTypid, benutzerid, menge, bezahlt];
         var result = statement.run(params);
 
         if (result.changes != 1) 

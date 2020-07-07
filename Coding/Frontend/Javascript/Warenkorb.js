@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 function bezahlen(){
-    console.log('in bezahlen');
     var benutzerId = window.localStorage.getItem("benutzerId");
     $.ajax({
         url: "http://localhost:8000/api/ticket/gib/BenutzerId/"+benutzerId,
@@ -150,6 +149,7 @@ function bezahlen(){
             var snacktypID = response['daten'][inhalt]['snacktypid'];
             updateSnack(parseInt(ids),parseInt(snacktypID),parseInt(benutzerId),menge3.valueAsNumber);
         }
+        window.location.href = 'kasse.html';
     }).fail(function (jqXHR, statusText, error) {
         console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
         $("#output").html("Ein Fehler ist aufgetreten");

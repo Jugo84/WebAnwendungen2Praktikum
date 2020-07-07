@@ -89,7 +89,12 @@ function createCard(film){
             }
             if (vorstellung >= heute){
                 datum[i] = datumString;
-                uhrzeit[i] = vorstellung.getHours() + ':' + vorstellung.getMinutes() + ' Uhr';
+                if (vorstellung.getMinutes() > 9){
+                    uhrzeit[i] = vorstellung.getHours() + ':' + vorstellung.getMinutes() + ' Uhr';
+                }else{
+                    uhrzeit[i] = vorstellung.getHours() + ':0' + vorstellung.getMinutes() + ' Uhr';
+                }
+                
                 i += 1;
             }
         }
