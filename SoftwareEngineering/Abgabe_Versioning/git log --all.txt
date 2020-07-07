@@ -1,0 +1,1741 @@
+commit 760115e50170b93f6d6417181778a2fcc14edf11
+Merge: 91d9079 cb8958c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jul 7 14:19:10 2020 +0200
+
+    Merge pull request #100 from Jugo84/gitignore
+    
+    gitignore
+
+commit 91d9079d599dc333158d7e5564f6cb99af73ce12
+Merge: 61a83d2 df625bc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jul 7 14:01:49 2020 +0200
+
+    Merge pull request #99 from Jugo84/Warenkorb-bild
+    
+    Bilderpfad angepasst
+
+commit df625bc68bbf3c0ce5fd79fe683efd1d423dc0b8
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jul 7 12:25:00 2020 +0200
+
+    Bilderpfad angepasst
+
+commit cb8958c4f97660acdb3ddbe8974520f248c0eb97
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jul 7 10:31:06 2020 +0200
+
+    gitignore
+
+commit 61a83d25dc3f839cc3f235410992a8d2472c660d
+Merge: 11c4eaa feded1a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jul 7 09:38:07 2020 +0200
+
+    Merge pull request #98 from Jugo84/FixesForKinosaal
+    
+    Little Fixes for Kinosaal
+
+commit feded1a7791f5b8bac81a68f04d5d0cee4372d3f
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue Jul 7 09:37:44 2020 +0200
+
+    Little Fixes for Kinosaal
+
+commit 11c4eaa5f16deaac4361e38dbc053396f919677c
+Merge: 19c7ae0 defc8e6
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jul 6 16:22:55 2020 +0200
+
+    Merge pull request #97 from Jugo84/Kasse
+    
+    Kasse
+
+commit 19c7ae07c2da2260bf06cd9148ef06ba834a7171
+Merge: b095fd8 d311001
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jul 6 16:22:43 2020 +0200
+
+    Merge pull request #96 from Jugo84/warenkorb-benutzerId
+    
+    benutzerid --> benutzerId
+
+commit defc8e67c5129387cad6b8c1b369db4cda731160
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Mon Jul 6 14:39:54 2020 +0200
+
+    zu Checkout weiterleiten
+
+commit bcc58bae23373ec5b2ba820ddbe2ee0e66444c29
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Mon Jul 6 14:12:04 2020 +0200
+
+    Kasse
+
+commit d31100125c5bedaae148edbf1d844e027194331c
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 11:49:00 2020 +0200
+
+    benutzerid --> benutzerId
+
+commit b095fd8320c18b1489ec586cb4aa43c5c50587e8
+Merge: fc6e8e2 cc9927a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jul 6 11:38:33 2020 +0200
+
+    Merge pull request #95 from Jugo84/Warenkorb-fertig
+    
+    Warenkorb fertig tickets erstellen und menge anpssen
+
+commit cc9927ad2268e47ada5a8178ecad41657a04a1ee
+Merge: 7b3d66a 6b1bff2
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 11:35:48 2020 +0200
+
+    Merge branch 'master' into Warenkorb-fertig
+
+commit 6b1bff2a411a10a0ad36468457cf0344fbfc585a
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 10:07:32 2020 +0200
+
+    Warenkorb fertig tickets erstellen und menge anpssen
+
+commit 6245a9b864f5fda053f4139aefa132ca87dacd44
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 10:08:21 2020 +0200
+
+    rf
+
+commit 7b3d66a636588f893ef73d7e5563773b3c7e3ed5
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jul 6 10:07:32 2020 +0200
+
+    Warenkorb fertig tickets erstellen und menge anpssen
+
+commit fc6e8e29c3e733fd8a6a4af8bdf845550c58f04f
+Merge: e1dd482 cffea23
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jul 6 09:48:39 2020 +0200
+
+    Merge pull request #94 from Jugo84/HTML-Site-Delivery
+    
+    HTML SiteDelivery
+
+commit cffea23a46c7d535d63bcab4e96f0b0ee78b4883
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Mon Jul 6 09:47:41 2020 +0200
+
+    HTML SiteDelivery
+
+commit 8d6e2c4b70208de77a2ec6500f2a21cdd4cee686
+Merge: e1dd482 61780ce
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Mon Jul 6 09:46:43 2020 +0200
+
+    On HTML-Site-Delivery: Html2
+
+commit 61780ce3578933d6c8b91c17f86a4dd8bc9be7ae
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Mon Jul 6 09:46:43 2020 +0200
+
+    index on HTML-Site-Delivery: e1dd482 Merge pull request #92 from Jugo84/Kasse
+
+commit e1dd482939883dbb57cace327c98c7dce681def0
+Merge: 61bbec5 1b2f8a7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sun Jul 5 15:26:29 2020 +0200
+
+    Merge pull request #92 from Jugo84/Kasse
+    
+    update Snack and Ticket
+
+commit 1b2f8a7c1b562f16b04ecd596e55e30b71fccc86
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sat Jul 4 15:52:51 2020 +0200
+
+    update Snack and Ticket
+
+commit 61bbec5cf829f96a77075a62aba209296c0dcfee
+Merge: b2ea77a aebff31
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat Jul 4 14:06:11 2020 +0200
+
+    Merge pull request #91 from Jugo84/Kasse
+    
+    Kasse
+
+commit aebff31b0baf10d0fabeef0907eba353539adb69
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sat Jul 4 12:58:32 2020 +0200
+
+    DB Snack Ticket
+
+commit 7c729f8c3c76450db9f4d28e516e550cd0f98665
+Merge: 22f17b7 b2ea77a
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sat Jul 4 12:55:22 2020 +0200
+
+    Merge branch 'master' into Kasse
+    
+    # Conflicts:
+    #       Coding/WebAnw2Backend/db/db.sqlite
+
+commit 22f17b7db8b599b67129f0b0061669ce4b74a085
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sat Jul 4 12:52:12 2020 +0200
+
+    send Email und Datenbank Snack,Ticket
+
+commit b2ea77aed362df275405dcc335a94e0865fa5316
+Merge: 9622476 6008c01
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat Jul 4 11:51:32 2020 +0200
+
+    Merge pull request #90 from Jugo84/Warenkorb-neue-berechnung
+    
+    Warenkorb neue berechnung (Preis uas Datenbank und alles dynamisch)
+
+commit 942732029a9d755697f045930ff5451682f13fda
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sat Jul 4 11:36:20 2020 +0200
+
+    snacks Daten aktualisiert
+
+commit 6008c01a3bb0468fd5e4c6de61ba982b6c02ea51
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat Jul 4 09:22:49 2020 +0200
+
+    Preis aus Datenbank gelesen und alles dynamisch berechnen
+
+commit 21253e4bc944baf488be3f20c7da69ef7eb6f8f8
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jun 30 15:51:01 2020 +0200
+
+    db
+
+commit 96224761d08f279bd2f0b092525d51818411f65f
+Merge: 9f19b07 ce32de2
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Jul 3 20:11:32 2020 +0200
+
+    Merge pull request #89 from Jugo84/popcornAPI
+    
+    popcorn
+
+commit 7f44b234aa85c8e204d7a60698c9ccaaa95ebfc2
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Fri Jul 3 14:43:00 2020 +0200
+
+    send Email
+
+commit ce32de2f84c9c9a6f6aeb60d44370565d4aee22a
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jul 3 12:18:38 2020 +0200
+
+    popcorn
+    
+    Bilder und backend
+
+commit 9f19b072a62a669a9c947feb8fff8b0b86519408
+Merge: 44901c5 6956c64
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Thu Jul 2 22:05:28 2020 +0200
+
+    Merge pull request #88 from Jugo84/Kasse
+    
+    update Benutzer (Kasse)
+
+commit 6956c642b01efc82fb9e0251638a2c397f9f4063
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jul 2 17:04:50 2020 +0200
+
+    update Benutzer
+
+commit 83bdf917448a9444421bacb381f14551d6fe05bd
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jun 30 15:45:44 2020 +0200
+
+    Warenkorb Ticket erstellen am ende
+
+commit 44901c5c14f9049af9c31e56dcd3a61df37358f1
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:58:49 2020 +0200
+
+    Update node.js.yml
+
+commit 9ad2c1210ee116f77fbe4cc77e8866c57f715a50
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:56:09 2020 +0200
+
+    Update node.js.yml
+
+commit b236515e60dc13e094c8dc4b4cd549250595428f
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:54:49 2020 +0200
+
+    Update node.js.yml
+
+commit 54bf2e603ccfc428c9161ddfb5e73237fa4dc107
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:53:10 2020 +0200
+
+    Update node.js.yml
+
+commit 890d887dca870d1da3242fbe34df83d7ec6c5bab
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:50:43 2020 +0200
+
+    Update node.js.yml
+
+commit 5cbc7faf928471d29e50da35642cff3782c6a557
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:41:29 2020 +0200
+
+    Update node.js.yml
+
+commit dac95819d1dd1150665c9126f502e05974988a4c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:34:31 2020 +0200
+
+    Update node.js.yml
+
+commit 09c603d833a419134484cd9ec256e67e26e97b9a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 30 14:28:53 2020 +0200
+
+    Create node.js.yml
+
+commit 5aabc801b86d76b211b5a3221b69a3402708a8e3
+Merge: ef9442c a2eed1a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 29 13:20:58 2020 +0200
+
+    Merge pull request #87 from Jugo84/TestSoftwareEngineering
+    
+    SoftwareEngineeringZip
+
+commit a2eed1a68aa78bc8c5cc9be43ab48bde5a78d3d3
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Mon Jun 29 13:20:33 2020 +0200
+
+    SoftwareEngineeringZip
+
+commit ef9442c20e4ab747dc007dca39bcb8a59db5f6a2
+Merge: bf05a34 abd9c79
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 29 13:05:06 2020 +0200
+
+    Merge pull request #86 from Jugo84/Warenkorbberechnung
+    
+    Warenkorb berechnen komplett
+
+commit abd9c79ee589bc523b3bfedd3d5a9e8a764e047e
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Mon Jun 29 10:15:35 2020 +0200
+
+    Warenkorb berechnen
+
+commit bf05a34aa6bf3688794a5f6b42e4f62eeba452f3
+Merge: 5b43c47 2dd4442
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 23 16:34:19 2020 +0200
+
+    Merge pull request #85 from Jugo84/screens
+    
+    Screens
+
+commit 5b43c4797e391671080d205fbee4afacd0f184ba
+Merge: f6bc859 ad6a1f9
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 23 16:34:02 2020 +0200
+
+    Merge pull request #83 from Jugo84/STuer-richtig
+    
+    Steuer nicht ändernbar
+
+commit f6bc859bbc4300c370ce78f0cf8b92f29832c6b5
+Merge: ef7d48a e1b31fc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 23 16:33:45 2020 +0200
+
+    Merge pull request #84 from Jugo84/Test
+    
+    Test
+
+commit 2dd4442babe001360a84ea2ee62b6a754f787083
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue Jun 23 16:33:26 2020 +0200
+
+    Screens
+
+commit e1b31fc0b91d1107f1e3ba97299bef4f2cea5a7e
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jun 23 16:29:01 2020 +0200
+
+    Jest-Test
+
+commit f2924725c79b4d8ea295dcbb263fd08b680ee965
+Merge: ef7d48a 39e5ec4
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jun 23 16:28:15 2020 +0200
+
+    Merge branch 'gitignore' into Test
+
+commit ad6a1f9618b62cbaa1c5be13aa34a2204edcdbd8
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jun 23 13:58:38 2020 +0200
+
+    Steuer nicht ändern
+
+commit ef7d48a09e6f4174a4a8894c3a222f197ddd7f4a
+Merge: 76e1f91 253b8cc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 22 16:08:54 2020 +0200
+
+    Merge pull request #82 from Jugo84/Chats
+    
+    Added some ChatMessages and Chats to the Vorstellungen
+
+commit 253b8cc2174fc0a979d726aba3486fdba1223070
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Mon Jun 22 16:08:26 2020 +0200
+
+    Added some ChatMessages and Chats to the Vorstellungen
+
+commit 76e1f910d192f85d448ded7e849140b2a0db0c53
+Merge: 7758a45 2249097
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 22 15:56:00 2020 +0200
+
+    Merge pull request #81 from Jugo84/Home
+    
+    Home
+
+commit 22490970902eed43c20f2e8f51490bfe0ef9e993
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Mon Jun 22 14:20:00 2020 +0200
+
+    Home
+
+commit 7758a4500d5e3e994618da9f2172febed53e83bd
+Merge: 7b841de d99fbd9
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat Jun 20 13:01:00 2020 +0200
+
+    Merge pull request #80 from Jugo84/WarenkorbDynamisch
+    
+    Warenkorbdynamisch_ohneBerechnung
+
+commit d99fbd924e562253b60f9ab3d1793b19c109f99d
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat Jun 20 12:43:00 2020 +0200
+
+    Warenkorbdynamisch_ohneBerechnung
+
+commit 7b841dec0483273b50265992203e0ecf98d286c6
+Merge: 16d6ef1 127c728
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Thu Jun 18 15:02:07 2020 +0200
+
+    Merge pull request #79 from Jugo84/Benutzer
+    
+    Benutzer
+
+commit 127c72829aa3f3af69ae6292ad1c4d00ab4c209b
+Merge: 4723b0f ba5c159
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:33:54 2020 +0200
+
+    Merge branch 'Benutzer' of https://github.com/Jugo84/WebAnwendungen2Praktikum into Benutzer
+
+commit 4723b0f995eabd7446e05b2f578cf7ddc49fdd8c
+Merge: d8ffffb 85f878c
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:32:17 2020 +0200
+
+    Benutzer
+
+commit ba5c15976bda54e4dc7f44d6b49f1710aeefa520
+Merge: d8ffffb 85f878c
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:32:17 2020 +0200
+
+    Merge branch 'Benutzer' of https://github.com/Jugo84/WebAnwendungen2Praktikum into Benutzer
+
+commit d8ffffbd0a94d229607360a502195c72cf58a1eb
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:25:16 2020 +0200
+
+    Benutzer
+
+commit 85f878ca7d7451059826321fa14e00bd126654a8
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 14:25:16 2020 +0200
+
+    Benutzer
+
+commit 97fba31f1ca95d321326bdd1db6548873e3cf30e
+Merge: 8eca348 16d6ef1
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 13:55:17 2020 +0200
+
+    Merge branch 'master' into Benutzer
+
+commit 16d6ef104c9f041438b26930a831c7a3e4e1ce66
+Merge: c95eada 70a8dd9
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Thu Jun 18 13:42:23 2020 +0200
+
+    Merge pull request #78 from Jugo84/KinosaalChatFunctionality
+    
+    Removed the unused, copied Routes
+
+commit 70a8dd98789dd49f3d2bddca96f9ea033f2e00ed
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Thu Jun 18 13:41:50 2020 +0200
+
+    Removed the unused, copied Routes
+
+commit 39e5ec48a0928651fdc168b96e83cedf9b8666a1
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 10:32:22 2020 +0200
+
+    gitignore
+
+commit 8eca348719507380dd11f5740f7c4b89e2103a76
+Merge: 0dc819f c95eada
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 09:55:00 2020 +0200
+
+    Merge branch 'master' into Benutzer
+
+commit 0dc819f1dc75bfbb306ae5b28b1e8e5fd1a2c65a
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 18 09:54:28 2020 +0200
+
+    Benutzer
+
+commit c95eada6381f69890835239aa9a7e7addfdc9a31
+Merge: 53d58d7 754bce2
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 17 16:42:05 2020 +0200
+
+    Merge pull request #77 from Jugo84/KinosaalChatFunctionality
+    
+    Chat Functionality
+
+commit 754bce20b231f00699674864fd194b8a2c2b71fd
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 17 16:41:30 2020 +0200
+
+    Chat Functionality
+
+commit 53d58d7dbe2330f1a6a5d1d96cafe392fc2bfd8d
+Merge: c128655 5eae22a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 16 15:18:43 2020 +0200
+
+    Merge pull request #76 from Jugo84/SNackfunktionen
+    
+    snack
+
+commit 5eae22ae57b2a9695c7accf8d684013ad1cf92b6
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Jun 16 15:14:15 2020 +0200
+
+    snack
+    
+    Snakc
+
+commit c1286556b3a5a59f16872d67f9993c1bae95280a
+Merge: 37c7208 e387c6d
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 15 08:15:13 2020 +0200
+
+    Merge pull request #74 from Jugo84/popcornShop-backend
+    
+    popcornShop-draft
+
+commit 3c07c82cbd173ccaf232850bb8dbb187bca5e3d1
+Merge: 1568f7f 51282bc
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sun Jun 14 08:40:46 2020 +0200
+
+    Merge branch 'master' into server-js-update
+
+commit 1568f7fc19078ef3c8ec133fa8214d7b06210748
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sun Jun 14 08:39:49 2020 +0200
+
+    popcorn-db
+
+commit 51282bc9d76ee3ea13016c03d157da56afb3b841
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sun Jun 14 08:37:56 2020 +0200
+
+    db-popcornShop
+
+commit e4d651b0270f7e25c5d5f9e6f8425d3f92f0269e
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sat Jun 13 22:19:04 2020 +0200
+
+    popcornShop
+    
+    snackTyp.js is included in server.js
+
+commit e387c6db89a4a1b4cb103d59777768635983b83e
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sat Jun 13 18:17:28 2020 +0200
+
+    popcornShop-draft
+
+commit 37c72088a711e7fe2ce4ff8f84a6539db07423c0
+Merge: 555283d a2889b5
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Jun 12 16:29:15 2020 +0200
+
+    Merge pull request #73 from Jugo84/Filmübersicht
+    
+    Filmübersicht - Ticket erstellen
+
+commit 555283d24a8734a36a7a4572f0f4f401689f17e5
+Merge: 257d848 0f893c2
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Jun 12 16:28:46 2020 +0200
+
+    Merge pull request #72 from Jugo84/db-update-popcornShopimage
+    
+    db-images
+
+commit a2889b5e1e8e3b8341a54147b816c93cae007650
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Thu Jun 11 12:46:55 2020 +0200
+
+    Filmübersicht - Ticket erstellen
+
+commit 0f893c2962f0644248c87e04af2e4543af184e19
+Author: ngock <ngocbitra@gmail.com>
+Date:   Wed Jun 10 22:59:08 2020 +0200
+
+    db-images
+
+commit 257d848b05dec19159a3de3d40f23b478f73de19
+Merge: f5f9bdf 6e69de7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 10 16:02:51 2020 +0200
+
+    Merge pull request #71 from Jugo84/KinosaalTicketDBFunction
+    
+    Kinosaal ticket and video function
+
+commit f5f9bdfdab76f0c4af25ceec395579366e928c40
+Merge: 5d4e5ab 92c149c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 10 16:02:08 2020 +0200
+
+    Merge pull request #68 from Jugo84/ppt-rename
+    
+    ppt-rename
+
+commit 6e69de7240c3d8ab605cef7cf8940c47a20ae820
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 10 16:01:07 2020 +0200
+
+    Fixed data
+
+commit 6ba85e20b88133c339cb911e2ff6a5b24152b1cc
+Merge: fdd31df 5d4e5ab
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 10 15:50:37 2020 +0200
+
+    Merge branch 'master' into KinosaalTicketDBFunction
+    
+    # Conflicts:
+    #       Coding/WebAnw2Backend/db/db.sqlite
+
+commit fdd31df4f64d8340ed580896d95e934a1f92ef50
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 10 15:47:05 2020 +0200
+
+    Made Ticket Input and Chat live dynamic
+
+commit 5d4e5ab89c30f79336baacc1fe35d329c35f18d9
+Merge: 385dbc5 358deec
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Jun 9 15:05:56 2020 +0200
+
+    Merge pull request #70 from Jugo84/home_filmübersicht
+    
+    Home filmübersicht
+
+commit 358deec3e9e04e6f3093085d9d410abadcf41000
+Merge: f7e43f9 385dbc5
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jun 9 14:10:09 2020 +0200
+
+    Merge branch 'master' into home_filmübersicht
+    
+    # Conflicts:
+    #       Coding/WebAnw2Backend/Bilder/Film4.jpg
+    #       Coding/WebAnw2Backend/Bilder/RufderWildnis.jpg
+    #       Coding/WebAnw2Backend/db/db.sqlite
+
+commit 92c149cc4ad8c2c40a4d265b141dfa2b81740298
+Author: ngock <ngocbitra@gmail.com>
+Date:   Tue Jun 9 13:18:04 2020 +0200
+
+    ppt-rename
+
+commit 8bbecd8722f5d563d97f492339fa5c2815082a0a
+Author: ngock <ngocbitra@gmail.com>
+Date:   Mon Jun 8 20:27:39 2020 +0200
+
+    popcornShop-db-incomplete
+
+commit f7e43f94d8f325716fc179496a3a65b234de3767
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Mon Jun 8 11:59:15 2020 +0200
+
+    home_filmübersicht
+
+commit d7ad63528228dd37495396cad4b4df865b7d0813
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jun 5 21:50:58 2020 +0200
+
+    home_API_Versuch
+
+commit 483f2dfd3f107687542cf5f6e6d9ec057b18ea27
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jun 5 21:50:58 2020 +0200
+
+    home_API_Versuch
+
+commit 385dbc5bfa3cf42fd95304f7773c7e547ab16fce
+Merge: cd12939 30c1467
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Jun 5 21:07:06 2020 +0200
+
+    Merge pull request #65 from Jugo84/db_update
+    
+    db update
+
+commit 30c14671159d4ec7bd52da3cc194339e2f5d2a0e
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jun 5 19:32:07 2020 +0200
+
+    db update
+
+commit d242a3a3824bcb0dc50943b8343e66205c91cbf7
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri Jun 5 19:19:42 2020 +0200
+
+    db update
+
+commit cd129392464ba5edf7ad7671294435f1af8afcae
+Merge: 9f6fcb4 13ed3f2
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 3 16:44:44 2020 +0200
+
+    Merge pull request #64 from Jugo84/Datenbank
+    
+    Datenbank
+
+commit 13ed3f231ec00a7e2d75d378621c339afa385336
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Wed Jun 3 16:44:06 2020 +0200
+
+    Datenbank
+
+commit 9f6fcb4ca051c3cd8a5778e8bdd1b785cf5e34f3
+Merge: 5b7a83c 7a9ee03
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 3 15:21:40 2020 +0200
+
+    Merge pull request #63 from Jugo84/uml
+    
+    uml
+
+commit 7a9ee0353f91e345e53bfd9b139253aea9461a90
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed Jun 3 15:20:53 2020 +0200
+
+    uml
+
+commit 5b7a83c28f430d4c5f4f6edd4575e51872ba5b7f
+Merge: 301bebb 771e2df
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed Jun 3 08:11:06 2020 +0200
+
+    Merge pull request #62 from Jugo84/Backend
+    
+    Backend
+
+commit 771e2df7b15cd318e81a18e75162b7ba5b8dfd42
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue Jun 2 17:15:06 2020 +0200
+
+    Backend
+
+commit 301bebb80fc24ce420b51dec56e2a16c5a9d4696
+Merge: 3d51ad6 a4d1db1
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Mon Jun 1 11:09:34 2020 +0200
+
+    Merge pull request #61 from Jugo84/Backend
+    
+    Backend
+
+commit a4d1db1c1f8c3eb9f0d2b83c74fe3e86e5f9f35d
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Sun May 31 12:05:28 2020 +0200
+
+    Backend
+
+commit 3d51ad60015bd3870d136d8cc04ddb3b1ddc04c0
+Merge: 7d4228f 520e349
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 17:47:40 2020 +0200
+
+    Merge pull request #60 from Jugo84/MockUpUpdate-Präsentation
+    
+    update
+
+commit 520e34950bf56afae5fec4762bd5e79a33dd9652
+Author: ngock <ngocbitra@gmail.com>
+Date:   Tue May 26 17:35:47 2020 +0200
+
+    update
+
+commit 7d4228f4a04407f5ebb6554fe525bebb345aeff9
+Merge: 42aee4e 4501d8a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 16:11:26 2020 +0200
+
+    Merge pull request #59 from Jugo84/JohannesMockup
+    
+    Johannes Mockup
+
+commit 4501d8a28fed9cf00f0bddbcd0cd6721474985c3
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 26 16:10:59 2020 +0200
+
+    Johannes Mockup
+
+commit 42aee4eac0229ef26e44295db0b19b6537da2c73
+Merge: 8c1e1fe 02a5996
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 15:58:48 2020 +0200
+
+    Merge pull request #57 from Jugo84/Mockup
+    
+    Mockup Filmübersicht/Popcorn
+
+commit a4deb4b7175d2030628d94ccbe88026c0d176ba7
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue May 26 15:23:13 2020 +0200
+
+    Merge pull request #56 from Jugo84/Mockup
+    
+    Mockup Simon
+
+commit 02a5996264bd7ae9e299b294f8a7cdf1e4e01171
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue May 26 14:05:11 2020 +0200
+
+    Mockup Filmübersicht/Popcorn
+
+commit 8c1e1fee24fde9a58323eb76b1188da37b8111c7
+Merge: f21b7ac 8856aca
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 13:53:13 2020 +0200
+
+    Merge pull request #56 from Jugo84/Mockup
+    
+    Mockup Simon
+
+commit 8856aca04bfb186ca29492364d2f761f4c9915d8
+Author: hertelsi <hertelsi@hs-albsig.de>
+Date:   Tue May 26 13:42:27 2020 +0200
+
+    Mockup Simon
+
+commit f21b7ac8d32f7d0851cab59fe5c07c41a5d56399
+Merge: 95a5a05 69331d6
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 26 08:34:45 2020 +0200
+
+    Merge pull request #55 from Jugo84/SoftwareEngineeringMockupJulian
+    
+    SoftwareEngineeringMockupJulian
+
+commit 69331d62b83cc815b74c5f100e71c9f48ec98092
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 26 08:34:11 2020 +0200
+
+    SoftwareEngineeringMockupJulian
+
+commit 95a5a054b0b088384820f9a26180c4af0112992d
+Merge: 15940cc 876d3c7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 10:24:06 2020 +0200
+
+    Merge pull request #54 from Jugo84/Julian-Teil
+    
+    Changed Titles
+
+commit 876d3c7fb8876b09ec7761e3f8a2609b5f2a79d1
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 22 10:23:40 2020 +0200
+
+    Changed Titles
+
+commit 15940cc133013767a402c2f349976f3d02f93b14
+Merge: ae7aa9f 00db7f5
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 10:20:16 2020 +0200
+
+    Merge pull request #53 from Jugo84/filmübersicht
+    
+    Popup
+
+commit 00db7f58a639c0e651009211deaefe692a9a36d1
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Fri May 22 10:19:52 2020 +0200
+
+    Popup
+
+commit ae7aa9f94ffd4ac5970e4c5dce41e713720ec784
+Merge: 28c9142 70f5f8e
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 10:15:06 2020 +0200
+
+    Merge pull request #52 from Jugo84/MOckUpJohannes
+    
+    Johannes Mockup
+
+commit 70f5f8e47caedc15928ccd0468d09f23f446d523
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Fri May 22 10:12:07 2020 +0200
+
+    Johannes Mockup
+
+commit 28c91428753a486b3e60a399a2826e53dff17759
+Merge: be8f9da ef54772
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 10:08:16 2020 +0200
+
+    Merge pull request #51 from Jugo84/final
+    
+    final
+
+commit ef5477249a7fdc18bbeaef7a94768dbc7603fd15
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri May 22 10:04:29 2020 +0200
+
+    final
+
+commit be8f9da5dea9c705423d220a6b0a3d234683cbd0
+Merge: 636d716 75650cf
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 09:55:51 2020 +0200
+
+    Merge pull request #50 from Jugo84/Home
+    
+    .
+
+commit 75650cf0ca794f686a6751a8bf1fc2104965dc8b
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 22 09:55:19 2020 +0200
+
+    .
+
+commit 636d716627f3c2e76acca8892be33fa98f0da70e
+Merge: 136866c 2e065f4
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 09:53:41 2020 +0200
+
+    Merge pull request #49 from Jugo84/Home
+    
+    Last Changes
+
+commit 2e065f4558782437836658de96b71640c45299ed
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 22 09:53:12 2020 +0200
+
+    Last Changes
+
+commit 136866c4d6f29b9dd162b73853cb2486561d9e19
+Merge: f07b8f5 d6fe5a5
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 22 09:36:29 2020 +0200
+
+    Merge pull request #48 from Jugo84/Popcorn
+    
+    PopcornShop
+
+commit d6fe5a513a980db15dbceb7538f4438a9c204a54
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Fri May 22 09:34:51 2020 +0200
+
+    PopcornShop
+
+commit f07b8f54722f34df7a5f52d65ab1316667941af3
+Merge: 7b7affa a2118a7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Thu May 21 17:22:38 2020 +0200
+
+    Merge pull request #47 from Jugo84/Warenkorb_überarbeiten
+    
+    Warenkorb geändert
+
+commit a2118a7c9e986babeb3943bc8f9d33ea7418ab79
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue May 19 15:55:23 2020 +0200
+
+    Warenkorb geändert
+
+commit 7b7affab28490fbddadb3cba93211db2ea0bc14d
+Merge: 4abf174 7362aa1
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 19 09:22:21 2020 +0200
+
+    Merge pull request #46 from Jugo84/Julian-Teil
+    
+    Extras to Kinosaal
+
+commit 7362aa10b2d63ba0398824a567ad2cd46e21c2ae
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 19 09:21:48 2020 +0200
+
+    Extras to Kinosaal
+
+commit 4abf17439e29954ec4ab50f2281989aba3e1b830
+Merge: 6466ac3 f7c958c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 19 08:04:52 2020 +0200
+
+    Merge pull request #45 from Jugo84/User-Story-updated
+    
+    updated and auf ilias hochgeladen
+
+commit f7c958c91a2440ac874886c427fa0085c400fd6f
+Author: ngock <ngocbitra@gmail.com>
+Date:   Mon May 18 22:22:58 2020 +0200
+
+    updated and auf ilias hochgeladen
+
+commit 6466ac37df1aa35c0d61ec4501ec1d98d395aaa5
+Merge: 8593b32 560577f
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 13:06:02 2020 +0200
+
+    Merge pull request #44 from Jugo84/UserStory
+    
+    User story
+
+commit 560577f5784bc73b3a87bb068d3ace08455a79f4
+Merge: 8db619f 53542c9
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Sat May 16 13:04:13 2020 +0200
+
+    Merge branch 'UserStory' of https://github.com/Jugo84/WebAnwendungen2Praktikum into UserStory
+    
+    # Conflicts:
+    #       SoftwareEngineering/UserStories.docx
+
+commit 8db619f4c9dcf7188a12561e569c21f5f06a5139
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Sat May 16 13:00:08 2020 +0200
+
+    User Story
+
+commit 53542c9b2ace8b373b417d57677ca65ce55ec75a
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Sat May 16 13:00:08 2020 +0200
+
+    User Story
+
+commit 8593b32127824dd17fb2c877ea047e0ce8fbf8cf
+Merge: 7af3dc0 48ecb32
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 12:14:01 2020 +0200
+
+    Merge pull request #43 from Jugo84/Story-Kasse_Warenkorb-verbessert
+    
+    Story_Kasse_Warenkorb_verbessert
+
+commit 7af3dc04705587d77adcf1bb82734caa26001195
+Merge: b0b6c49 5a3a1fc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 12:13:35 2020 +0200
+
+    Merge pull request #42 from Jugo84/UserStory
+    
+    .
+
+commit 48ecb32740248b0092201de3e730fd6f0746712d
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat May 16 12:13:25 2020 +0200
+
+    Story_Kasse_Warenkorb_verbessert
+
+commit 5a3a1fcf50f234cad2a518b06a91cd64746bb23a
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 16 12:12:34 2020 +0200
+
+    .
+
+commit b0b6c49cd4f76ac67c968fbf97ba5d4bbaaa6644
+Merge: 4674860 f277d90
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:50:40 2020 +0200
+
+    Merge pull request #41 from Jugo84/userStoryKasse
+    
+    userStoryWarenkorb_Kasse
+
+commit f277d900b3d671f6003e092e2f393af3fc1b367a
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat May 16 11:49:46 2020 +0200
+
+    userStoryWarenkorb_Kasse
+
+commit 467486061733fc430a68aa0732ba831948f6fbab
+Merge: 57d5502 a8bb75e
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:49:19 2020 +0200
+
+    Merge pull request #40 from Jugo84/UserStory
+    
+    UserStory
+
+commit a8bb75e8e910027acfcaee98c1ec13b2443f12ad
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Sat May 16 11:47:47 2020 +0200
+
+    UserStory
+
+commit 57d5502fa77356a8bf893f896d0ba795bdd24e08
+Merge: d2acc87 631b3a7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:46:45 2020 +0200
+
+    Merge pull request #39 from Jugo84/UserStory
+    
+    UserStory
+
+commit 631b3a70ab6510c33c3a1077cc658a5873ff4c34
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 16 11:46:28 2020 +0200
+
+    UserStory
+
+commit d2acc873f65791c45e3a86237c1ebc73b1af1a02
+Merge: 67d9ad7 6da2273
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:07:32 2020 +0200
+
+    Merge pull request #38 from Jugo84/PopcornShop
+    
+    PopcornShop
+
+commit 67d9ad72bb160c61351504b653138b217b460535
+Merge: 1b5768f 53f19f1
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:04:01 2020 +0200
+
+    Merge pull request #37 from Jugo84/Julian-Teil
+    
+    .
+
+commit 53f19f13b9ee4690270a0a96238ce609ccb77e11
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 16 11:03:32 2020 +0200
+
+    .
+
+commit 1b5768f8670824d4ed7bd51775e52c0d50afd8af
+Merge: 30e5970 30e470d
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 11:00:03 2020 +0200
+
+    Merge pull request #36 from Jugo84/Warenkorb/kasse
+    
+    Kasse/Warenkorb
+
+commit 30e470d8e297d1e5391c087fa7e0387fb6f4e0ff
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Sat May 16 10:56:02 2020 +0200
+
+    Kasse/Warenkorb
+
+commit 30e5970969406d824d677cce9dbfc9ca7fc97563
+Merge: 9cba5ed dde8d6c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 10:55:44 2020 +0200
+
+    Merge pull request #34 from Jugo84/user-story-check-out
+    
+    user-story-check-out
+
+commit 9cba5edd11eeb87fb15df897a277074ea161ae79
+Merge: c75703c 9d3b88b
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 16 10:55:28 2020 +0200
+
+    Merge pull request #35 from Jugo84/Julian-Teil
+    
+    Kinosaal
+
+commit 9d3b88b61914b79349aab04dcdf316b1f857ccf0
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 16 10:54:58 2020 +0200
+
+    Kinosaal
+
+commit dde8d6c3941e29c8f78102d76a9cd4d4c5328e09
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri May 15 19:46:00 2020 +0200
+
+    user-story-check-out
+
+commit c75703c65a24e10bba1cd0b21a7edc6009ef32b2
+Merge: 3258bb3 d9d0cdb
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 15 15:42:09 2020 +0200
+
+    Merge pull request #33 from Jugo84/Julian-Teil
+    
+    Julian teil
+
+commit d9d0cdb1a501e9a718689e940136129ee4c28413
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 15 15:41:39 2020 +0200
+
+    removed background
+
+commit 6da2273e44366add490a019b83803849db9f1d07
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Fri May 15 10:08:42 2020 +0200
+
+    PopcornShop
+
+commit 2d4dd2247cb5c6d571bebb7e810ff8cfd93e5e58
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 16:12:56 2020 +0200
+
+    style background
+
+commit 3258bb32b932f02ba965ad71629fbf5b8a308453
+Merge: dedd4a4 45623ab
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 16:59:02 2020 +0200
+
+    Merge pull request #32 from Jugo84/PopcornShop
+    
+    fixed many
+
+commit 45623ab74fbb3174342b60ba8ff672128d14ea39
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 16:58:26 2020 +0200
+
+    fixed many
+
+commit dedd4a4f51e3772fda22b42f753e03d77b7f62c9
+Merge: 4e61dd3 d6dd67f
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 16:29:09 2020 +0200
+
+    Merge pull request #31 from Jugo84/impressum
+    
+    impressum
+
+commit d6dd67feee049a49e47a6e304ffa099a76352a57
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 16:16:33 2020 +0200
+
+    impressum
+
+commit 4e61dd31490797d92f01aeff8394f8d184fd330c
+Merge: df6a839 e9c82b6
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 16:13:34 2020 +0200
+
+    Merge pull request #30 from Jugo84/Style
+    
+    style background
+
+commit e9c82b61e81b413cd07b1a3cbb2f1b1667a16e99
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 16:12:56 2020 +0200
+
+    style background
+
+commit df6a8399e724bd6d94f29033b2911f67d068746a
+Merge: 114dbc8 c166413
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 15:56:01 2020 +0200
+
+    Merge pull request #29 from Jugo84/Julian-Teil
+    
+    Added Background Image
+
+commit c1664130c5ea3db373c33bd252b95a8599c218f6
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 12 15:55:30 2020 +0200
+
+    Added Background Image
+
+commit 114dbc8d995ca9ef6476bb569db6c86e4323d947
+Merge: 1acca81 e85ea7b
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 15:38:45 2020 +0200
+
+    Merge pull request #28 from Jugo84/Julian-Teil
+    
+    Improved some things
+
+commit e85ea7b0637d56f20b7fe4f012525fcb0eb566ea
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 12 15:38:09 2020 +0200
+
+    Improved some things
+
+commit 1acca8199714d79f4ebb7f7a827203ee7a5777c0
+Merge: 5f3965a 19bff57
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 15:17:59 2020 +0200
+
+    Merge pull request #27 from Jugo84/Julian-Teil
+    
+    Julian Teil
+
+commit 19bff57c73233b8ddb9109ffac69ee14a05e5eb4
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 12 15:17:03 2020 +0200
+
+    Julian Teil
+
+commit 5f3965aab5e49df6b46fa77fa1371b4734a3c6f9
+Merge: bea7ab7 10e548f
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 12 15:13:17 2020 +0200
+
+    Merge pull request #26 from Jugo84/Filmübersicht
+    
+    Filmübersicht
+
+commit 10e548f1dabafb3e88e6d7585862760aa78f8f60
+Merge: 30d1ed8 bea7ab7
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 15:12:17 2020 +0200
+
+    Merge branch 'master' into Filmübersicht
+    
+    # Conflicts:
+    #       Coding/CSS-Styles/style.css
+
+commit 30d1ed8c2f059c4707be2df96eb8acf8f7ed3978
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue May 12 15:08:18 2020 +0200
+
+    Popcorn, Filmübersicht
+
+commit bea7ab70d53aa280b8c8ee7fce6b2b5a8c00e1cd
+Merge: a03c045 b8d1746
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 9 23:29:58 2020 +0200
+
+    Merge pull request #24 from Jugo84/corrected-mastercard-branch
+    
+    Corrected mastercard link
+
+commit b8d174606ac97bd66c90893b79d5a5b48f8a563b
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Sat May 9 23:29:15 2020 +0200
+
+    Corrected mastercard link
+
+commit a03c04553edd3f2e03c160e157d66fbddfd32557
+Merge: cf0434a b01cb39
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 9 23:24:40 2020 +0200
+
+    Merge pull request #23 from Jugo84/checkout&impressum
+    
+    choice Teil
+
+commit b01cb390ac4c7f0a8a54ee297eec7a661b30b128
+Author: ngock <ngocbitra@gmail.com>
+Date:   Sat May 9 21:14:07 2020 +0200
+
+    choice Teil
+
+commit cf0434a97a152b9afd8768eed5339cd4c3c6c913
+Merge: 3ca7770 841e723
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Sat May 9 16:23:52 2020 +0200
+
+    Merge pull request #22 from Jugo84/updated-Power-Point-
+    
+    Updated power point
+
+commit 841e723ed90ae612715eb126b9cb86a108a6d934
+Author: ngock <ngocbitra@gmail.com>
+Date:   Fri May 8 16:26:31 2020 +0200
+
+    update PP
+
+commit 24429296af08a6b139b11da68d2829ce86161907
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 8 15:02:25 2020 +0200
+
+    test
+
+commit 13d60ba39b19aa37ddf10a39e5f89dc909d7b45b
+Author: ngock <ngocbitra@gmail.com>
+Date:   Thu May 7 11:02:29 2020 +0200
+
+    updated
+
+commit c72ff3c7b43d504ea67d47eedb965dfbb08ea434
+Author: ngock <ngocbitra@gmail.com>
+Date:   Wed May 6 16:27:21 2020 +0200
+
+    Neue
+    
+    Diagramm updated
+
+commit 3ca77706120f08d756a951d72ecf89318fbb4710
+Merge: fafb3a5 b547dfb
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed May 6 14:09:24 2020 +0200
+
+    Merge pull request #20 from Jugo84/Präsentation_Login
+    
+    Gantt,PowerPoint
+
+commit fafb3a5e419aa5ed4776c2ec35586e96919bc084
+Merge: c81f95f 6eaeaf5
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Wed May 6 14:09:03 2020 +0200
+
+    Merge pull request #21 from Jugo84/Init-Style
+    
+    Removed Sign up and Login Page
+
+commit 6eaeaf554b42cc78d9b0b494700f2c939f8e19f7
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Wed May 6 14:08:32 2020 +0200
+
+    Removed Sign up and Login Page
+
+commit b547dfb5c5fcc5c2945b2717c8fe5e81178e23f9
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Wed May 6 13:46:16 2020 +0200
+
+    Gantt,PowerPoint
+
+commit c81f95f4d8ec68b6b22ce4510290b6e1a9f39e5b
+Merge: 92be6c4 0d6d5fc
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 5 17:07:22 2020 +0200
+
+    Merge pull request #19 from Jugo84/Init-Style
+    
+    Init Style fixed
+
+commit 0d6d5fc59aefb2bbc150872b6321c983de9d2ce9
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 5 17:06:35 2020 +0200
+
+    Init Style fixed
+
+commit 92be6c4c73a53f84053cf1b1bf8eb37d2ae40f5d
+Merge: 1b2d6ee 07d58a0
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue May 5 17:05:01 2020 +0200
+
+    Merge pull request #18 from Jugo84/Init-Style
+    
+    Init Style
+
+commit 07d58a00dfb3eb5ab94ab95e79d46083a339b33c
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue May 5 17:04:15 2020 +0200
+
+    Init Style
+
+commit 1b2d6ee74e2ef961a4ed3662c4ea79b804cbf804
+Merge: 5e3652d c95405d
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 16:29:24 2020 +0200
+
+    Merge pull request #17 from Jugo84/Präsentation
+    
+    Präsentation
+
+commit c95405d4fd60e70368347493f79b702fb90e065d
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Fri May 1 16:27:50 2020 +0200
+
+    Präsentation
+
+commit 5e3652d277d4bcf68a7e5717a1d5da920cd03ae7
+Merge: 23df631 1eb792c
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:59:59 2020 +0200
+
+    Merge pull request #16 from Jugo84/added-icons
+    
+    cool
+
+commit 1eb792cf3e60179338af26b1e29fee58a3f844aa
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 1 15:59:34 2020 +0200
+
+    cool
+
+commit 23df63112c1c1e2444abf5f1c5daff08a24c6c31
+Merge: 79bba5e 43d10e9
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:37:52 2020 +0200
+
+    Merge pull request #15 from Jugo84/verknüpfungen
+    
+    letzer verknüpfung
+
+commit 43d10e957dec95c1c95d70bc752de68220698a56
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Fri May 1 15:35:31 2020 +0200
+
+    letzer verknüpfung
+
+commit 79bba5e5b89b645b84bee2228c0d853452494a7f
+Merge: 3e39329 8111041
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:34:56 2020 +0200
+
+    Merge pull request #14 from Jugo84/bilderexport
+    
+    export images
+
+commit 8111041035a249880c75bbb04482748bbd069987
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 1 15:34:25 2020 +0200
+
+    export images
+
+commit 3e3932979f5e9eda070204b16d9e1a05edd48a22
+Merge: 01b26aa 23aff5e
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:31:53 2020 +0200
+
+    Merge pull request #13 from Jugo84/verknüpfungen
+    
+    Verknüpfugen
+
+commit 23aff5e2b16bed47d5f81febfd3dbcf2ff0f1151
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Fri May 1 15:31:12 2020 +0200
+
+    Verknüpfugen
+
+commit 01b26aae30bd44fd2cdf2e616ae3182e20dcce51
+Merge: f719802 c99483a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri May 1 15:12:39 2020 +0200
+
+    Merge pull request #12 from Jugo84/CssStyling
+    
+    Added Exported Images of Mockup
+
+commit c99483a9d71dacbd9392be9c6226e76f615920bc
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri May 1 15:12:09 2020 +0200
+
+    Added Exported Images of Mockup
+
+commit f7198022a0e61539f931332adffdfbfe2a931e3c
+Merge: 2882fe7 36a9df0
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 23:04:27 2020 +0200
+
+    Merge pull request #11 from Jugo84/powerpoint
+    
+    Webanw
+
+commit 36a9df0431a97e7c6a228e71e45d0a496da38261
+Author: ngock <ngocbitra@gmail.com>
+Date:   Tue Apr 28 23:03:25 2020 +0200
+
+    Webanw
+
+commit 2882fe7e51cd9e945bf70444c2ced195cc030dcb
+Merge: f4b9fab fcf0631
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 22:57:37 2020 +0200
+
+    Merge pull request #10 from Jugo84/Gantt
+    
+    Gantt
+
+commit fcf0631b06995ca18132cebb8398cf450c90a2c2
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue Apr 28 22:56:46 2020 +0200
+
+    Gantt
+
+commit f4b9fabce437f6c0c0cc2f0c0ecc1474db2e56f7
+Merge: aba7dbe a64d479
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 21:43:10 2020 +0200
+
+    Merge pull request #9 from Jugo84/Mock-Up
+    
+    Mock-Up
+
+commit a64d47907f041ab1b8d0c7a0085dfb612fa4b0af
+Author: hertelsi <simon-hertel@gmx.de>
+Date:   Tue Apr 28 21:36:39 2020 +0200
+
+    Mock-Up
+
+commit aba7dbed8db796e4aab051a38dd7e9217774302e
+Merge: a16b202 3581689
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 20:56:11 2020 +0200
+
+    Merge pull request #8 from Jugo84/check-out-page
+    
+    check-out-page
+
+commit 358168950d3a7dadb07ab1be01b9079f857f900a
+Author: ngock <ngocbitra@gmail.com>
+Date:   Tue Apr 28 20:53:39 2020 +0200
+
+    check-out-page
+
+commit a16b202ae1b2c8303bec1ee25d0faff8803c4f4e
+Merge: b57a142 d4e9e80
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 20:10:09 2020 +0200
+
+    Merge pull request #7 from Jugo84/Mock-Up_SImon
+    
+    Merge pull request #5 from Jugo84/KinoSaalStyling
+
+commit d4e9e80861f05a2db85d46377e8fdd2d0499afda
+Merge: 391bd21 6994d0a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 19:18:31 2020 +0200
+
+    Merge pull request #5 from Jugo84/KinoSaalStyling
+    
+    KinoSaalStyling
+
+commit b57a142dc615b1477671a350641c7a358ab436c2
+Merge: ef1b933 a06ce17
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 20:07:08 2020 +0200
+
+    Merge pull request #6 from Jugo84/Johannes
+    
+    johannes warekorb
+
+commit a06ce17f4c51c6c953aebe005d92937ce2f68062
+Author: johannes j <juengejo@hs-albsig.de>
+Date:   Tue Apr 28 20:04:51 2020 +0200
+
+    johannes warekorb
+
+commit ef1b9330d64c8bab7c2307b0d14cc22c73be34f8
+Merge: 391bd21 6994d0a
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Tue Apr 28 19:18:31 2020 +0200
+
+    Merge pull request #5 from Jugo84/KinoSaalStyling
+    
+    KinoSaalStyling
+
+commit 6994d0acb56f18de4443123cfe83b0e8664cebfa
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Tue Apr 28 19:17:45 2020 +0200
+
+    KinoSaalStyling
+
+commit 391bd21c00e42c1df7dcb3a24a9cf3ad653690ff
+Merge: 86cf30b 58140dd
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 21:41:19 2020 +0200
+
+    Merge pull request #4 from Jugo84/test_simon
+    
+    Merge pull request #3 from Jugo84/test2
+
+commit 58140ddaa74ab5ab5762400885d87059679585a6
+Merge: 7ab9608 67e34d7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 21:29:36 2020 +0200
+
+    Merge pull request #3 from Jugo84/test2
+    
+    removed test2.txt
+
+commit 86cf30bf44eb6516bd0b5f8b3e914e5d1c52ff91
+Merge: 7ab9608 67e34d7
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 21:29:36 2020 +0200
+
+    Merge pull request #3 from Jugo84/test2
+    
+    removed test2.txt
+
+commit 67e34d7e3e0f131f8d4285d6007e350e5ba084ce
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 21:29:10 2020 +0200
+
+    removed test2.txt
+
+commit 7ab960814f97482b98866ab1adb5c0b0c3998d17
+Merge: 9aacd3d 9ab0ae4
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 21:28:25 2020 +0200
+
+    Merge pull request #2 from Jugo84/Moqup-Teil-1
+    
+    Init FilmÜbersicht
+
+commit 9ab0ae4ca3d187797f239eba4bfa00edcf0738f9
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 21:27:48 2020 +0200
+
+    Init FilmÜbersicht
+
+commit 9aacd3d3bff245355344eb36c7f248dad9b1f868
+Merge: ff419b0 fbb7115
+Author: Jugo84 <56642419+Jugo84@users.noreply.github.com>
+Date:   Fri Apr 24 20:22:46 2020 +0200
+
+    Merge pull request #1 from Jugo84/test2
+    
+    test2 init
+
+commit fbb7115254bc81e16af65e09f7dc0655dba2da94
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 20:21:39 2020 +0200
+
+    test2 init
+
+commit 6cebb0e70a6edd806ed0f2a7085010c7726760a7
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 20:18:51 2020 +0200
+
+    test
+
+commit ff419b03de5cea4201d3c15b224d859c08a0b6e8
+Author: Julian Gombold <juliangombold2000@gmail.com>
+Date:   Fri Apr 24 20:12:48 2020 +0200
+
+    PP init
