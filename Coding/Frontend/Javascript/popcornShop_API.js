@@ -63,6 +63,26 @@ function createCard(allsnacks){
 
 function showProductDetails(produktId) {
     //console.log('Produkt mit der id: ' + produktId + ' anzeigen');
+    var benutzerId = getLocalData("benutzerId");
+     /* wenn Benutzer Id noch nicht vorhanden?           
+    if (benutzerId == null){
+        $.ajax({
+            url: "http://localhost:8000/api/benutzer",
+            method: "post",
+            contentType: "application/json",
+            data: JSON.stringify(obj)
+        }).done(function (response) {
+            console.log(response);
+            $("#output").html(JSON.stringify(response));
+            benutzerId = response['daten']['id'];
+            setLocalData("benutzerId",benutzerId)
+            benutzerId = getLocalData("benutzerId");
+        }).fail(function (jqXHR, statusText, error) {
+            console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
+            $("#output").html("Ein Fehler ist aufgetreten");
+        });
+    } */
+      
     $( document ).ready(function() {
         $.ajax({
             url: "http://localhost:8000/api/snacktyp/gib/" + produktId,
@@ -91,6 +111,7 @@ function showProductDetails(produktId) {
                 'data-toggle' : 'modal',
                 'data-target' : '#exampleModal'
             })
+            button.attr('onClick','createSnack(' + produktId + ',' + benutzerId + ')');
             button.text('In den Warenkorb');
             span.append(div,button);
             $('#snackText').html(span);
@@ -99,38 +120,12 @@ function showProductDetails(produktId) {
             console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
             $("#output").html("Ein Fehler ist aufgetreten");
         });
-
-        $(document).on("click", ".createSnack" , function() {
-            var obj = {};
-            var produktId = this.value;
-            var benutzerId = getLocalData("benutzerId");
-            if (benutzerId == null){
-                $.ajax({
-                    url: "http://localhost:8000/api/benutzer",
-                    method: "post",
-                    contentType: "application/json",
-                    data: JSON.stringify(obj)
-                }).done(function (response) {
-                    console.log(response);
-                    $("#output").html(JSON.stringify(response));
-                    benutzerId = response['daten']['id'];
-                    setLocalData("benutzerId",benutzerId)
-                    benutzerId = getLocalData("benutzerId");
-                    createSnack(produktId, benutzerId);
-                }).fail(function (jqXHR, statusText, error) {
-                    console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
-                    $("#output").html("Ein Fehler ist aufgetreten");
-                });
-            }
-            else{
-                createSnack(produktId, benutzerId);
-            }  
-        }); //end on click
+       
     });
 } //end 
 
 function createSnack(produktId, benutzerId){
-    var obj = { 'produktID' : produktId, 'BenutzerID': benutzerId};
+    var obj = { 'produktId' : produktId, 'benutzerId': benutzerId};
     $.ajax({
         url: "http://localhost:8000/api/snack",
         method: "post",
@@ -139,6 +134,7 @@ function createSnack(produktId, benutzerId){
     }).done(function (response){
         console.log(response);
         $("#output").html(JSON.stringify(response));
+        //Snack in der Datenbank anlegen?
         }).fail(function (jqXHR, statusText, error) {
             console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
             $("#output").html("Ein Fehler ist aufgetreten");
