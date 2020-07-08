@@ -64,8 +64,9 @@ function createCard(allsnacks){
 function showProductDetails(produktId) {
     //console.log('Produkt mit der id: ' + produktId + ' anzeigen');
     var benutzerId = getLocalData("benutzerId");
-     /* wenn Benutzer Id noch nicht vorhanden?           
-    if (benutzerId == null){
+    /* wenn Benutzer Id noch nicht vorhanden 
+     var obj={};         
+     if (benutzerId == null){
         $.ajax({
             url: "http://localhost:8000/api/benutzer",
             method: "post",
@@ -81,8 +82,10 @@ function showProductDetails(produktId) {
             console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
             $("#output").html("Ein Fehler ist aufgetreten");
         });
-    } */
-      
+    }
+    */
+    console.log(benutzerId); 
+     
     $( document ).ready(function() {
         $.ajax({
             url: "http://localhost:8000/api/snacktyp/gib/" + produktId,
@@ -104,23 +107,31 @@ function showProductDetails(produktId) {
             );
             // Produkt Beschreibung    
             var span = $('<span>').text(produkt.beschreibung);
-            var div = $('<div>', { class: 'row'});
-            var button = $('<button>', { class: 'createSnack mt-4 mb-0 btn btn-md btn-block btn-outline-primary'});
-            button.attr({
-                'type' : 'button',
-                'data-toggle' : 'modal',
-                'data-target' : '#exampleModal'
-            })
-            button.attr('onClick','createSnack(' + produktId + ',' + benutzerId + ')');
-            button.text('In den Warenkorb');
-            span.append(div,button);
+            var row = $('<div>', { class: 'row' });
+                var sub_div1 = $('<div>', { class: 'col-md-4'});
+                var text_preis = $('<h7>', { class: 'mt-4 mb-0 form-control'})
+                text_preis.text(produkt.preis + '€');
+                sub_div1.append(text_preis);
+                row.append(sub_div1);
+                // class createSnack for Warenkorb button
+                var sub_div2 =  $('<div>', { class: 'col-md-8'});
+                var button = $('<button>', { class: 'createSnack mt-4 mb-0 btn btn-md btn-block btn-outline-primary'});
+                button.attr({
+                    'type' : 'button',
+                    'data-toggle' : 'modal',
+                    'data-target' : '#exampleModal'
+                })
+                button.attr('onClick','createSnack(' + produktId + ',' + benutzerId + ')');
+                button.text('In den Warenkorb');
+                sub_div2.append(button);
+                row.append(sub_div2);
+            span.append(row);
             $('#snackText').html(span);
             
         }).fail(function (jqXHR, statusText, error) {
             console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
             $("#output").html("Ein Fehler ist aufgetreten");
         });
-       
     });
 } //end 
 
@@ -134,7 +145,7 @@ function createSnack(produktId, benutzerId){
     }).done(function (response){
         console.log(response);
         $("#output").html(JSON.stringify(response));
-        //Snack in der Datenbank anlegen?
+        //Snack in der Datenbank anlegen
         }).fail(function (jqXHR, statusText, error) {
             console.log("Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText);
             $("#output").html("Ein Fehler ist aufgetreten");
