@@ -1,6 +1,6 @@
 // globale variable
 var produktDaten = [];
-
+showProductDetails(1);
 $( document ).ready(function() {
     $.ajax({
         url: "http://localhost:8000/api/snacktyp/alleFrontend",
@@ -64,7 +64,7 @@ function createCard(allsnacks){
 function showProductDetails(produktId) {
     //console.log('Produkt mit der id: ' + produktId + ' anzeigen');
     var benutzerId = getLocalData("benutzerId");
-    /* wenn Benutzer Id noch nicht vorhanden 
+    // wenn Benutzer Id noch nicht vorhanden 
      var obj={};         
      if (benutzerId == null){
         $.ajax({
@@ -83,8 +83,6 @@ function showProductDetails(produktId) {
             $("#output").html("Ein Fehler ist aufgetreten");
         });
     }
-    */
-    console.log(benutzerId); 
      
     $( document ).ready(function() {
         $.ajax({

@@ -78,18 +78,15 @@ class SnackDao {
         
 
         if (helper.isUndefined(result)){
-            helper.log("hier drin");
             return [];
         }
 
         result = helper.arrayObjectKeysToLower(result);
-        helper.log(result.length);
         for (var i = 0; i < result.length; i++){
             delete result[i].benutzerid;
             result[i].snack = snackTypDao.loadById(result[i].snacktypid);
 
         }
-        helper.log(result);
         return result;
     }
 

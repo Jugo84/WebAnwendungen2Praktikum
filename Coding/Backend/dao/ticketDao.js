@@ -36,9 +36,7 @@ class TicketDao {
         if (helper.isUndefined(result)) 
             throw new Error("No Record found by BenutzerID=" + id);
 
-        helper.log(result);
         result = helper.arrayObjectKeysToLower(result);
-        helper.log(result.length);
         for (var i = 0; i < result.length; i++){
             delete result[i].benutzerid;
             result[i].film = vorstellungDao.loadById(result[i].vorstellungsid);

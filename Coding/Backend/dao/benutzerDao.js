@@ -163,7 +163,6 @@ function sendEmail(obj,_conn){
 
     const ticketDao = new TicketDao(_conn);
     tickets = ticketDao.loadByBenutzerID(id);
-    helper.log(tickets);
     var codes = [];
     var filme = [];
     var i = 0;
@@ -174,7 +173,6 @@ function sendEmail(obj,_conn){
             i ++;
         }
     }
-    helper.log(codes);
 
     var nachicht = ''
     if (codes.length == 1){
